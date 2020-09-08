@@ -9,7 +9,9 @@ Mosaichat was designed using KiCAD, an open source suite for Electric Design Aut
 
 Following is the schematic plan, for higher quility check [PDF plan](schematic.pdf).
 
-![Mosaichat Schematic](schematic_big.PNG)
+<img src="schematic_big.PNG" width="60%">
+
 
 A top 3D view of Mosaichat with main components marked
-![Mosaichat 3D](3dplan.PNG)
+<img src="3dplan.PNG" width="60%">
+
