@@ -11,4 +11,5 @@ Following is the schematic plan, for higher quility check [PDF plan](schematic.p
 
 ![Mosaichat Schematic](schematic_big.PNG)
 
-
+A top 3D view of Mosaichat with main components marked
+![Mosaichat 3D](3dplan.PNG)
