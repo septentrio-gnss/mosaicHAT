@@ -7,6 +7,6 @@ Other than the female Raspberry Pi connecter, all components are placed on the T
 
 Mosaichat was designed using KiCAD, an open source suite for Electric Design Automation. KiCAD provides a beautiful 3D viewer besides its design capabilities.
 
-![nice](/doc_resources/schematic_big.png?)
+![nice](schematic_big.PNG)
 
 
