@@ -12,7 +12,12 @@ Following is the schematic plan, for higher quility check [PDF plan](schematic.p
 <img src="schematic_big.PNG" width="60%">
 
 
-A top 3D view of Mosaichat showing main components
+A top 3D view of Mosaichat showing main components.
 
 <img src="3dplan.PNG" width="60%">
 
+The following sections provide more details on Mosaichat design.
+
+### 1.2 Power Sources
+
+Mosaichat could be powered by three options; Raspberry Pi, Micro USB and external power pin headers. mosaic module itself runs on 3.3V, thus a voltage regulator is used (LD1117AS33TR). According to its datasheet, the regulator's maximum input is 15V. Raspberry Pi and Micro USB already provide 5V. User should be careful when connecting higher voltage to external power pin headers. Though 5V is preferable, user can input up to 15V only if 
