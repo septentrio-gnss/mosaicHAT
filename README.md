@@ -34,7 +34,10 @@ Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Dec
 
 ### 1.4 Antennas
 
-#### 1.4.1	Technical Specifications
-#### 1.4.2	Line Impedance
+mosaic is a dual-antenna module. It can perfectly function with one antenna, however, connecting a second antenna increases accuracy and enables orientation sensing.
+ 
+#### 1.4.2	First Antenna
+The first antenna SMA connector is directly connected to ANT1 pad. ANT1 is ESD-protected within the module and carries DC voltage. 
+
 #### 1.4.3	Second Antenna
 
