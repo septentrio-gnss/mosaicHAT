@@ -37,7 +37,11 @@ Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Dec
 mosaic is a dual-antenna module. It can perfectly function with one antenna, however, connecting a second antenna increases accuracy and enables orientation sensing.
  
 #### 1.4.2	First Antenna
-The first antenna SMA connector is directly connected to ANT1 pad. ANT1 is ESD-protected within the module and carries DC voltage. For more details check mosaic's [Hardware Manual](HWManual.pdf)
+The first antenna SMA connector is directly connected to ANT1 pad. ANT1 is ESD-protected within the module and carries DC voltage. For more details on antennas check mosaic's [Hardware Manual](HWManual.pdf)
+
+The nominal input impedence of the RF line is 50 Ohms. Thus, antenna trace should have a charachtaristic impdence (Zo) of 50 Ohms. Line impedence could be measured by different tools, such as the freeware Saturn PCB toolkit.
+
+<img src="line_impdence.PNG" width="60%">
 
 #### 1.4.3	Second Antenna
 
