@@ -37,7 +37,7 @@ Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Dec
 mosaic is a dual-antenna module. It can perfectly function with one antenna, however, connecting a second antenna increases accuracy and enables orientation sensing.
  
 #### 1.4.2	First Antenna
-The first antenna SMA connector is directly connected to ANT1 pad. ANT1 is ESD-protected within the module and carries DC voltage. 
+The first antenna SMA connector is directly connected to ANT1 pad. ANT1 is ESD-protected within the module and carries DC voltage. For more details check mosaic's [Hardware Manual](HWManual.pdf)
 
 #### 1.4.3	Second Antenna
 
