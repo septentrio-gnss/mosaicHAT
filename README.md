@@ -33,3 +33,8 @@ Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Dec
 // to add photo & highlighted parts
 
 ### 1.4 Antennas
+
+#### 1.4.1	Technical Specifications
+#### 1.4.2	Line Impedance
+#### 1.4.3	Second Antenna
+
