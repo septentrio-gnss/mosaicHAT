@@ -5,7 +5,7 @@ Mosaichat is a 4-Layer Printed Circuit Board (PCB) designed to stack on top of R
 
 Other than the female Raspberry Pi connecter, all components are placed on the Top layer. All components are Surface Mount Devices (SMD) except for connectors.
 
-Mosaichat was designed using KiCAD, an open source suite for Electric Design Automation. KiCAD provides a beautiful 3D viewer besides its design capabilities.
+Mosaichat was designed using [KiCAD](https://kicad-pcb.org), an open source suite for Electric Design Automation. KiCAD provides a beautiful 3D viewer besides its design capabilities.
 
 Following is the schematic plan, for higher quility check [PDF plan](schematic.pdf).
 
@@ -39,9 +39,13 @@ mosaic is a dual-antenna module. It can perfectly function with one antenna, how
 #### 1.4.2	First Antenna
 The first antenna SMA connector is directly connected to ANT1 pad. ANT1 is ESD-protected within the module and carries DC voltage. For more details on antennas check mosaic's [Hardware Manual](HWManual.pdf)
 
-The nominal input impedence of the RF line is 50 Ohms. Thus, antenna trace should have a charachtaristic impdence (Zo) of 50 Ohms. Line impedence could be measured by different tools, such as the freeware Saturn PCB toolkit.
+The nominal input impedence of the RF line is 50 Ohms. Thus, antenna trace should have a charachtaristic impdence (Zo) of 50 Ohms. Line impedence could be measured by different tools, such as the freeware [Saturn PCB toolkit](https://saturnpcb.com/pcb_toolkit).
 
 <img src="line_impdence.PNG" width="60%">
+
+Right Zo (45-55 Ohms) could be reached by adjusting the width of RF line (Conductor Width) having PCB specifications fixed. Frequency is set to 1575 MHz as the GPS L1 Frequency. Conductor Hight is the thickness of the dielectric material between Top layer and the next copper layer which depends on manufacturing service and specifications. 
+
+// ask about the freq
 
 #### 1.4.3	Second Antenna
 
