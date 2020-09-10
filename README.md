@@ -35,6 +35,10 @@ Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Dec
 ### 1.4 Antennas
 
 mosaic is a dual-antenna module. It can perfectly function with one antenna, however, connecting a second antenna increases accuracy and enables orientation sensing.
+
+Following is the antennas part in schematic.
+
+<img src="ant_sch.PNG" width="60%">
  
 #### 1.4.2	First Antenna
 The first antenna SMA connector is directly connected to ANT1 pad. ANT1 is ESD-protected within the module and carries DC voltage. For more details on antennas check mosaic's [Hardware Manual](HWManual.pdf)
@@ -43,7 +47,10 @@ The nominal input impedence of the RF line is 50 Ohms. Thus, antenna trace shoul
 
 <img src="line_impdence.PNG" width="60%">
 
-Right Zo (45-55 Ohms) could be reached by adjusting the width of RF line (Conductor Width) having PCB specifications fixed. Frequency is set to 1575 MHz as the GPS L1 Frequency. Conductor Hight is the thickness of the dielectric material between Top layer and the next copper layer which depends on manufacturing service and specifications. 
+Right Zo (45-55 Ohms) could be reached by adjusting the width of RF line (Conductor Width) having PCB specifications fixed. Frequency is set to 1575 MHz as the GPS L1 Frequency. Conductor Hight is the thickness of the dielectric material between Top layer and the next copper layer which depends on manufacturing service and board specifications, in Mosaichat's case it's 0.36 mm.
+
+
+
 
 // ask about the freq
 
