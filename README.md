@@ -26,11 +26,13 @@ The following sections provide more details on Mosaichat design.
 
 Mosaichat could be powered by three options; Raspberry Pi, Micro USB and external power pin headers. mosaic module itself runs on 3.3V, thus a voltage regulator is used (LD1117AS33TR). According to its datasheet, the regulator's maximum input is 15V. Raspberry Pi and Micro USB already provide 5V. User should be careful when connecting higher voltage to external power pin headers. Though 5V is preferable, user can input up to 15V only if both VANT and FTDI PWR SRC jumpers are connected to 3.3V. Pin headers of 5V in the jumpers are connected directly to the input source as it's presumed to be 5V.
 
-Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Decoupling capacirors (100nF and 10uF) are used according to regualtor's datasheet. 
+Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Decoupling capacirors (100nF and 10uF) are used according to regualtor's datasheet. Following is the power part of schematic.
 
 <img src="regulator_sch.PNG" width="60%">
 
 <img src="power_brd.png" width="60%">
+
+In the figure above:
 
 1. Regulator's circuit.
 
