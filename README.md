@@ -30,7 +30,15 @@ Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Dec
 
 <img src="regulator_sch.PNG" width="60%">
 
-// to add photo & highlighted parts
+<img src="power_brd.png" width="60%">
+
+1. Regulator's circuit.
+
+2. Raspberrpi power source (5V pins).
+
+3. External power source headers.
+
+4. Micro USB power source.
 
 ### 1.4 Antennas
 
