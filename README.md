@@ -44,14 +44,14 @@ In the figure above:
 
 ### 1.4 Antennas
 
-mosaic is a dual-antenna module. It can perfectly function with one antenna, however, connecting a second antenna increases accuracy and enables orientation sensing.
+mosaic is a dual-antenna module. It can perfectly function with one antenna, however, connecting a second antenna increases accuracy and enables heading sensing.
 
 Following is the antennas part in schematic.
 
 <img src="ant_sch.PNG" width="60%">
  
 #### 1.4.2	First Antenna
-The first antenna SMA connector is directly connected to ANT1 pad. ANT1 is ESD-protected within the module and carries DC voltage. For more details on antennas check mosaic's [Hardware Manual](HWManual.pdf)
+The first antenna SMA connector is directly connected to ANT1 pad. ANT1 is ESD-protected within the module and carries DC voltage. The DC voltage of ANT1 is supplied from mosaic's VANT pad. Mosaichat's user could choose between 3.3V and 5V supply to VANT using 2.00 mm header jumpers.
 
 The nominal input impedance of the RF line is 50 Ohms. Thus, antenna trace should have a characteristic impedance (Zo) of 50 Ohms. Line impedance could be measured by different tools, such as the freeware [Saturn PCB toolkit](https://saturnpcb.com/pcb_toolkit).
 
@@ -65,7 +65,7 @@ It is also important to stich vias every few millimetres around the RF line for 
 
 <img src="stiching_vias.PNG" width="60%">
 
-For more details on interference please refer to mosaic's [Hardware Manual](HWManual.pdf).
+For more details on antennas and interference please refer to mosaic's [Hardware Manual](HWManual.pdf).
 
 Following is the first antenna part of board layout. The center of SMA connector is copper freed to prevent undesired capacitance due to high copper density.
 
@@ -79,12 +79,22 @@ Following is the first antenna part of board layout. The center of SMA connector
 
 The second antenna is similar to first antenna except that ANT2 pad in mosaic is not internally ESD-protected and does not carry DC voltage by itself. Wherefore, both protection and DC biasing are needed.
 
-For ESD protection, TVS diode (SESD0402X1BN-0010-098) is used. TVS diode protects the module against sudden removal of the antenna. As any stubs branching out of the RF line could cause undesired reflections, TVS diode should be placed exactly on top of the RF trace.
+For ESD protection, TVS diode (SESD0402X1BN-0010-098) is used. TVS diode protects the module against sudden removal of the antenna. As any stubs branching out of the RF line could cause undesired reflections, TVS diode shoud be placed exactly on top of the RF trace.
 
 Biasing inductors are used to supply the ANT2 with DC voltage from ANT1 trace. Two inductors, one for each RF line, are used to avoid stubs and provide single tracks for RF signals. The inductor value is best to be around 33 nH with self resonant frequency of 1.4 GHz. A 100 nF bypass capacitor has been placed between inductors to filter out any AC noise.
 
 
 <img src="ant_board.png" width="60%">
 
+In the figure above:
 
+1. ANT1 RF trace.
+
+2. DC biasing circuit.
+
+3. ANT2 RF trace.
+
+4. VANT source headers.
+
+5. TVS diode.
 
