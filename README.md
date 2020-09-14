@@ -63,12 +63,15 @@ Having right characteristic impedence insures reduced reflections in the opposit
 
 It is also important to stich vias every few millimetres around the RF line for good ground coherence. Stiching vias help to protect line from interference.
 
-![from HW manual]<img src="stiching_vias.PNG" width="60%">
+<img src="stiching_vias.PNG" width="60%">
 
 For more details on interference please refer to mosaic's [Hardware Manual](HWManual.pdf).
 
+Following is the first antenna part of board layout. The area around SMA connector is copper freed to prevent undesired capacitance due to high copper density.  
+
 
 // ask about the freq
+// check about capacitance
 
 #### 1.4.3	Second Antenna
 
