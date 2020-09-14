@@ -61,6 +61,8 @@ Right charachteristic impedence (45-55 Ohms) could be reached by adjusting the w
 
 Having right characteristic impedence insures reduced reflections in the opposite direction thus higher quality of signals. For uniform lines, charachterstic impedence is not dependent on trace length.
 
+It is also important to stich vias every few millimetres around the RF line for good ground coherence. Stiching vias could also help to protect line from interference. For more details on interference please refer to mosaic's [Hardware Manual](HWManual.pdf).
+
 
 // ask about the freq
 
