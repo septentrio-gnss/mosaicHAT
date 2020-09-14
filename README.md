@@ -7,7 +7,7 @@ Other than the female Raspberry Pi connecter, all components are placed on the T
 
 Mosaichat was designed using [KiCAD](https://kicad-pcb.org), an open source suite for Electric Design Automation. KiCAD provides a beautiful 3D viewer besides its design capabilities.
 
-Following is the schematic plan, for higher quility check [PDF plan](schematic.pdf).
+Following is the schematic plan, for higher quality check [PDF plan](schematic.pdf).
 
 <img src="schematic_big.PNG" width="60%">
 
@@ -26,7 +26,7 @@ The following sections provide more details on Mosaichat design.
 
 Mosaichat could be powered by three options; Raspberry Pi, Micro USB and external power pin headers. mosaic module itself runs on 3.3V, thus a voltage regulator is used (LD1117AS33TR). According to its datasheet, the regulator's maximum input is 15V. Raspberry Pi and Micro USB already provide 5V. User should be careful when connecting higher voltage to external power pin headers. Though 5V is preferable, user can input up to 15V only if both VANT and FTDI PWR SRC jumpers are connected to 3.3V. Pin headers of 5V in the jumpers are connected directly to the input source as it's presumed to be 5V.
 
-Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Decoupling capacirors (100nF and 10uF) are used according to regualtor's datasheet. Following is the power part of schematic.
+Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Decoupling capacirors (100nF and 10uF) are used according to regulator’s datasheet. Following is the power part of schematic.
 
 <img src="regulator_sch.PNG" width="60%">
 
@@ -53,15 +53,15 @@ Following is the antennas part in schematic.
 #### 1.4.2	First Antenna
 The first antenna SMA connector is directly connected to ANT1 pad. ANT1 is ESD-protected within the module and carries DC voltage. For more details on antennas check mosaic's [Hardware Manual](HWManual.pdf)
 
-The nominal input impedence of the RF line is 50 Ohms. Thus, antenna trace should have a charachtaristic impdence (Zo) of 50 Ohms. Line impedence could be measured by different tools, such as the freeware [Saturn PCB toolkit](https://saturnpcb.com/pcb_toolkit).
+The nominal input impedance of the RF line is 50 Ohms. Thus, antenna trace should have a characteristic impedance (Zo) of 50 Ohms. Line impedance could be measured by different tools, such as the freeware [Saturn PCB toolkit](https://saturnpcb.com/pcb_toolkit).
 
 <img src="line_impdence.PNG" width="60%">
 
-Right charachteristic impedence (45-55 Ohms) could be reached by adjusting the width of RF line (Conductor Width) having PCB specifications fixed. Frequency is set to 1575 MHz as the GPS L1 Frequency. Conductor Hight is the thickness of the dielectric material between Top layer and the next copper layer which depends on manufacturing service and board specifications, in Mosaichat's case it's 0.36 mm.
+Right characteristic impedance (45-55 Ohms) could be reached by adjusting the width of RF line (Conductor Width) having PCB specifications fixed. Frequency is set to 1575 MHz as the GPS L1 Frequency. Conductor Hight is the thickness of the dielectric material between Top layer and the next copper layer which depends on manufacturing service and board specifications, in Mosaichat's case it's 0.36 mm.
 
-Having right characteristic impedence insures reduced reflections in the opposite direction thus higher quality of signals. For uniform lines, charachterstic impedence is not dependent on trace length.
+Having right characteristic impedance insures reduced reflections in the opposite direction thus higher quality of signals. For uniform lines, characteristic impedance is not dependent on trace length.
 
-It is also important to stich vias every few millimetres around the RF line for good ground coherence. Stiching GND vias help to protect line from interference.
+It is also important to stich vias every few millimetres around the RF line for good ground coherence. Stitching GND vias help to protect line from interference.
 
 <img src="stiching_vias.PNG" width="60%">
 
