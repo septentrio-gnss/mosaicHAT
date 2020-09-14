@@ -79,4 +79,6 @@ Following is the first antenna part of board layout. The center of SMA connector
 
 The second antenna is similar to first antenna except that ANT2 pad in mosaic is not internally ESD-protected and does not carry DC voltage by itself. Wherefore, both protection and DC biasing are needed.
 
-For ESD protection, TVS diode (SESD0402X1BN-0010-098) is used.TVS protects the module against sudden removal of the antenna.
+For ESD protection, TVS diode (SESD0402X1BN-0010-098) is used. TVS diode protects the module against sudden removal of the antenna. As any traces branching out of the RF line could cause undesired reflections, TVS should be placed exactly on top of the RF trace.
+
+
