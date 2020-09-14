@@ -77,5 +77,6 @@ Following is the first antenna part of board layout. The center of SMA connector
 
 #### 1.4.3	Second Antenna
 
-Second antenna is similar to first antenna except that ANT2 pad in mosaic is not inernally protected and does not carry DC voltage.
+The second antenna is similar to first antenna except that ANT2 pad in mosaic is not internally ESD-protected and does not carry DC voltage by itself. Wherefore, both protection and DC biasing are needed.
 
+For ESD protection, TVS diode (SESD0402X1BN-0010-098) is used. The 
