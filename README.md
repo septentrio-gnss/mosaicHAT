@@ -98,3 +98,17 @@ In the figure above:
 
 5. TVS diode.
 
+### 1.5	Raspberry Pi Serial
+
+### 1.6	Micro USB
+
+### 1.7	PPS and Events
+
+### 1.8	FTDI
+
+### 1.9	LEDs
+
+### 1.10	Reset Input
+
+### 1.11	Clock Frequency Reference 
+
