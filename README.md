@@ -72,7 +72,10 @@ Following is the first antenna part of board layout. The center of SMA connector
 <img src="ant1layout.PNG" width="60%">
 
 // ask about the freq
+
 // check about capacitance
 
 #### 1.4.3	Second Antenna
+
+Second antenna is similar to first antenna except that ANT2 pad in mosaic is not inernally protected and does not carry DC voltage.
 
