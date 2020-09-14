@@ -63,7 +63,7 @@ Having right characteristic impedence insures reduced reflections in the opposit
 
 It is also important to stich vias every few millimetres around the RF line for good ground coherence. Stiching vias help to protect line from interference.
 
-<img src="stiching_vias.PNG" width="60%">
+![from HW manual]<img src="stiching_vias.PNG" width="60%">
 
 For more details on interference please refer to mosaic's [Hardware Manual](HWManual.pdf).
 
