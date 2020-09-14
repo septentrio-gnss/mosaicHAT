@@ -1,4 +1,14 @@
 # Mosaichat
+
+## 0.	Connecting to Raspberry Pi
+### 0.1	Setting Up Mosaichat
+### 0.2	Serial Communication
+### 0.3	Input Reset
+### 0.4	General Purpose LEDs
+### 0.5	USB Communication
+### 0.6	Applications
+
+
 ## 1. Mosaichat Design
 ### 1.1 Design Overview
 Mosaichat is a 4-Layer Printed Circuit Board (PCB) designed to stack on top of Raspberry Pi. Both Top and Back layers are used for power and signals. The first inner layer is a GND plane whereas the second inner layer functions as a 3.3V power plane with a slight use of other connections.
