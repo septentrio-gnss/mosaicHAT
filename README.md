@@ -61,14 +61,15 @@ Right charachteristic impedence (45-55 Ohms) could be reached by adjusting the w
 
 Having right characteristic impedence insures reduced reflections in the opposite direction thus higher quality of signals. For uniform lines, charachterstic impedence is not dependent on trace length.
 
-It is also important to stich vias every few millimetres around the RF line for good ground coherence. Stiching vias help to protect line from interference.
+It is also important to stich vias every few millimetres around the RF line for good ground coherence. Stiching GND vias help to protect line from interference.
 
 <img src="stiching_vias.PNG" width="60%">
 
 For more details on interference please refer to mosaic's [Hardware Manual](HWManual.pdf).
 
-Following is the first antenna part of board layout. The area around SMA connector is copper freed to prevent undesired capacitance due to high copper density.  
+Following is the first antenna part of board layout. The center of SMA connector is copper freed to prevent undesired capacitance due to high copper density.
 
+<img src="ant1layout.PNG" width="60%">
 
 // ask about the freq
 // check about capacitance
