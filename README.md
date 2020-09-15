@@ -138,13 +138,14 @@ A common mode filter with ESD protection for USB 2.0 (ECMF02-2AMX6) is used with
 
 As USB uses a diffrential pair, diffrential pair impedance (Zdiffrential) should be tuned to avoid reflections. Zdifferential needs to be around 90 Ohms. Zdiffrential coud be calculated using Saturn's PCB toolkit. For Mosaichat USB, traces width was set to 0.35 mm with 0.15 mm spacing.
 
-<<img src="doc_resources/diff_impedence.PNG" width="60%">>
+<img src="doc_resources/diff_impedence.PNG" width="60%">
+
+Following board figure shows USB parts highlighted. GND vias were stitched around the traces to insure good ground coherence. 
 
 <img src="doc_resources/psdboard_usb.png" width="60%">
 
-In the figure above:
 
-1. USB connector (Molex 1050170001).
+1. Micro USB connector (Molex 1050170001).
 
 2. Common mode filter.
 
