@@ -126,7 +126,12 @@ Thus, MosaicRX1 signal has been tri-stated by MODULE_RDY using tri-state buffer 
 
 ### 1.6	Micro USB
 
+To use mosaic as a USB device, the following pins of the module should be connected to a USB connector.
+
 <img src="usb_hwmanual.PNG" width="60%">
+
+A common mode filter with ESD protection for USB 2.0 (ECMF02-2AMX6) is used with D+ and D- for protection. The filter suppresses EMI/RFI common
+mode noise on high speed differential USB lines.  
 
 <img src="microusb.PNG" width="60%">
 
