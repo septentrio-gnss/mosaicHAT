@@ -110,16 +110,16 @@ In the figure above:
 
 ### 1.5	Raspberry Pi Serial
 
-Serial communication with Raspberry Pi is conducted by connecting COM1 of mosaic to Raspberry Pi UART pins: Tx (GPIO 14) and Rx (GPIO 15). GPIO 14 is pin 8 on the GPIO header whereas GPIO 15 is pin 10. 
+Serial communication with Raspberry Pi is conducted by connecting COM1 of mosaic to Raspberry Pi UART pins: TX (GPIO 14) and RX (GPIO 15). GPIO 14 is pin 8 on the GPIO header whereas GPIO 15 is pin 10. Raspberry Pi's TX is connected to mosiac's RX1 while RX is connected to mosaic's TX1.
 
 According to the hardware manual, non-zero voltage should not be driven to mosaic's input pads while in standby mode.
 
-<img src="drive_nonzero.PNG" width="60%">
+<img src="drive_nonzero.PNG" width="100%">
+
+Thus, MosaicRX1 signal has been tri-stated by MODULE_RDY using tri-state buffer (SN74LVC1G126DRLR). 
 
 
-
-
-<img src="serial_sch.PNG" width="60%">
+<img src="serial_sch.PNG" width="80%">
 
 
 ### 1.10	Reset Input
