@@ -126,6 +126,8 @@ Thus, MosaicRX1 signal has been tri-stated by MODULE_RDY using tri-state buffer 
 
 ### 1.6	Micro USB
 
+<img src="microusb.PNG" width="60%">
+
 ### 1.7	PPS and Events
 
 ### 1.8	FTDI
