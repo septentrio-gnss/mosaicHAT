@@ -132,9 +132,11 @@ To use mosaic as a USB device, the following pins of the module should be connec
 
 <img src="usb_hwmanual.PNG" width="60%">
 
-A common mode filter with ESD protection for USB 2.0 (ECMF02-2AMX6) is used with D+ and D- for protection. The filter suppresses EMI/RFI common mode noise on high speed differential USB lines.  
+A common mode filter with ESD protection for USB 2.0 (ECMF02-2AMX6) is used with USB_DEV_P (D+) and USB_DEV_N (D-) for protection. The filter suppresses EMI/RFI common mode noise on high speed differential USB lines.  
 
 <img src="microusb.PNG" width="60%">
+
+As 
 
 <img src="psdboard_usb.png" width="60%">
 
