@@ -112,7 +112,7 @@ In the figure above:
 
 Serial communication with Raspberry Pi is conducted by connecting COM1 of mosaic to Raspberry Pi UART pins: Tx (GPIO 14) and Rx (GPIO 15). GPIO 14 is pin 8 on the GPIO header whereas GPIO 15 is pin 10. 
 
-<img src="serial_sch.png" width="60%">
+<img src="serial_sch.PNG" width="60%">
 
 
 ### 1.10	Reset Input
