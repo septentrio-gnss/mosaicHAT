@@ -108,6 +108,8 @@ In the figure above:
 
 5. TVS diode.
 
+// highlight SMA connectors
+
 ### 1.5	Raspberry Pi Serial
 
 Serial communication with Raspberry Pi is conducted by connecting COM1 of mosaic to Raspberry Pi UART pins: TX (GPIO 14) and RX (GPIO 15). GPIO 14 is pin 8 on the GPIO header whereas GPIO 15 is pin 10. Raspberry Pi's TX is connected to mosiac's RX1 while RX is connected to mosaic's TX1.
