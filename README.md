@@ -19,12 +19,12 @@ Mosaichat was designed using [KiCAD](https://kicad-pcb.org), an open source suit
 
 Following is the schematic plan, for higher quality check [PDF plan](schematic.pdf).
 
-<img src="schematic_big.PNG" width="60%">
+<img src="doc_resources/schematic_big.PNG" width="60%">
 
 
 A top 3D view of Mosaichat showing main components.
 
-<img src="3dplan.PNG" width="60%">
+<img src="doc_resources/3dplan.PNG" width="60%">
 
 The following sections provide more details on Mosaichat design.
 
@@ -38,9 +38,9 @@ Mosaichat could be powered by three options; Raspberry Pi, Micro USB and externa
 
 Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Decoupling capacirors (100nF and 10uF) are used according to regulator’s datasheet. Following is the power part of schematic.
 
-<img src="regulator_sch.PNG" width="60%">
+<img src="doc_resources/regulator_sch.PNG" width="60%">
 
-<img src="power_brd.png" width="60%">
+<img src="doc_resources/power_brd.png" width="60%">
 
 In the figure above:
 
@@ -58,14 +58,14 @@ mosaic is a dual-antenna module. It can perfectly function with one antenna, how
 
 Following is the antennas part in schematic.
 
-<img src="ant_sch.PNG" width="60%">
+<img src="doc_resources/ant_sch.PNG" width="60%">
  
 #### 1.4.2	First Antenna
 The first antenna SMA connector is directly connected to ANT1 pad. ANT1 is ESD-protected within the module and carries DC voltage. The DC voltage of ANT1 is supplied from mosaic's VANT pad. Mosaichat's user could choose between 3.3V and 5V supply to VANT using 2.00 mm header jumpers.
 
 The nominal input impedance of the RF line is 50 Ohms. Thus, antenna trace should have a characteristic impedance (Zo) of 50 Ohms. Line impedance could be measured by different tools, such as the freeware [Saturn PCB toolkit](https://saturnpcb.com/pcb_toolkit).
 
-<img src="line_impdence.PNG" width="60%">
+<img src="doc_resources/line_impdence.PNG" width="60%">
 
 Right characteristic impedance (45-55 Ohms) could be reached by adjusting the width of RF line (Conductor Width) having PCB specifications fixed. Frequency is set to 1575 MHz as the GPS L1 Frequency. Conductor Hight is the thickness of the dielectric material between Top layer and the next copper layer which depends on manufacturing service and board specifications, in Mosaichat's case it's 0.36 mm.
 
@@ -73,13 +73,13 @@ Having right characteristic impedance insures reduced reflections in the opposit
 
 It is also important to stich vias every few millimetres around the RF line for good ground coherence. Stitching GND vias help to protect line from interference.
 
-<img src="stiching_vias.PNG" width="60%">
+<img src="doc_resources/stiching_vias.PNG" width="60%">
 
 For more details on antennas and interference please refer to mosaic's [Hardware Manual](HWManual.pdf).
 
 Following is the first antenna part of board layout. The center of SMA connector is copper freed to prevent undesired capacitance due to high copper density.
 
-<img src="ant1layout.PNG" width="60%">
+<img src="doc_resources/ant1layout.PNG" width="60%">
 
 // ask about the freq
 
@@ -94,7 +94,7 @@ For ESD protection, TVS diode (SESD0402X1BN-0010-098) is used. TVS diode protect
 Biasing inductors are used to supply the ANT2 with DC voltage from ANT1 trace. Two inductors, one for each RF line, are used to avoid stubs and provide single tracks for RF signals. The inductor value is best to be around 33 nH with self resonant frequency of 1.4 GHz. A 100 nF bypass capacitor has been placed between inductors to filter out any AC noise.
 
 
-<img src="ant_board.png" width="60%">
+<img src="doc_resources/ant_board.png" width="60%">
 
 In the figure above:
 
@@ -116,12 +116,12 @@ Serial communication with Raspberry Pi is conducted by connecting COM1 of mosaic
 
 According to the hardware manual, non-zero voltage should not be driven to mosaic's input pads while in standby mode.
 
-<img src="drive_nonzero.PNG" width="100%">
+<img src="doc_resources/drive_nonzero.PNG" width="100%">
 
 Thus, MosaicRX1 signal has been tri-stated by MODULE_RDY using tri-state buffer (SN74LVC1G126DRLR). 
 
 
-<img src="serial_sch.PNG" width="80%">
+<img src="doc_resources/serial_sch.PNG" width="80%">
 
 
 ### 1.10	Reset Input
@@ -130,17 +130,17 @@ Thus, MosaicRX1 signal has been tri-stated by MODULE_RDY using tri-state buffer 
 
 To use mosaic as a USB device, the following pins of the module should be connected to a USB connector.
 
-<img src="usb_hwmanual.PNG" width="60%">
+<img src="doc_resources/usb_hwmanual.PNG" width="60%">
 
 A common mode filter with ESD protection for USB 2.0 (ECMF02-2AMX6) is used with USB_DEV_P (D+) and USB_DEV_N (D-) for protection. The filter suppresses the noise of electromagnetic interference (EMI) on high speed differential USB lines.  
 
-<img src="microusb.PNG" width="60%">
+<img src="doc_resources/microusb.PNG" width="60%">
 
 As USB uses a diffrential pair, diffrential pair impedence (Zdiffrential) should be tuned to avoid reflections. Zdifferential needs to be 90 Ohms. Zdiffrential coud be calculated using Saturn's PCB toolkit. 
 
 
 
-<img src="psdboard_usb.png" width="60%">
+<img src="doc_resources/psdboard_usb.png" width="60%">
 
 In the figure above:
 
