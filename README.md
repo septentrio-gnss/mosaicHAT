@@ -104,11 +104,18 @@ In the figure above:
 
 3. ANT2 RF trace.
 
-4. VANT source headers.
+4. VANT source jumper 2.00 mm headers.
 
 5. TVS diode.
 
 ### 1.5	Raspberry Pi Serial
+
+Serial communication with Raspberry Pi is conducted by connecting COM1 of mosaic to Raspberry Pi UART pins: Tx (GPIO 14) and Rx (GPIO 15). GPIO 14 is pin 8 on the GPIO header whereas GPIO 15 is pin 10. 
+
+<img src="serial_sch.png" width="60%">
+
+
+### 1.10	Reset Input
 
 ### 1.6	Micro USB
 
@@ -118,7 +125,6 @@ In the figure above:
 
 ### 1.9	LEDs
 
-### 1.10	Reset Input
 
 ### 1.11	Clock Frequency Reference 
 
