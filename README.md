@@ -136,7 +136,7 @@ A common mode filter with ESD protection for USB 2.0 (ECMF02-2AMX6) is used with
 
 <img src="microusb.PNG" width="60%">
 
-As USB uses a diffrential pair, diffrential pair impedence (Z diffrential) should be taken into consideration. 
+As USB uses a diffrential pair, diffrential pair impedence (Zdiffrential) should be tuned to avoid reflections. Zdifferential needs to be 90 Ohms. Zdiffrential coud be calculated using Saturn's PCB toolkit. 
 
 
 
