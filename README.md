@@ -166,7 +166,7 @@ Both EVENTS and PPSO 3.3V levels are connected to 2.54 mm pin headers.
 
 Port A tracks 1.8V while port B tracks 3.3V level. Direction could be set for two channels, each provides two connections. (1DIR) is set to low for mosaic input direction while (2DIR) is set to high for output direction. Both (O̅E̅) pins are set to low to enable low impedence state. VCCB is connected to +3.3V while VCCA is connected to +1.8V, which is supplied by 1V8_OUT pin of mosaic. Bypass capacitors are used on power supplies according to datasheet.
  
-
+<img src="doc_resources/psdboard_events.png" width="60%">
 
 ### 1.8	FTDI
 
