@@ -168,6 +168,13 @@ Port A tracks 1.8V while port B tracks 3.3V level. Direction could be set for tw
  
 <img src="doc_resources/psdboard_events.png" width="60%">
 
+1. EVENTS, PPSO and 1V8_OUT vias, connected to level shifter via Back layer.
+
+2. Level shifter.
+
+3. 3.3V level pin headers.
+
+
 ### 1.8	FTDI
 
 ### 1.9	LEDs
