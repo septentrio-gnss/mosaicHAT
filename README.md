@@ -160,6 +160,10 @@ mosaic offers two event inputs which could be used to time tag external events. 
 
 Pulse Per Second Output (PPSO) is a mosaic clock output. Polarity, frequency and pulse width of PPSO could be configured by setPPSParameters command. As PPSO uses 1.8V level as well, same level shifter is used to get 3.3V level signals.
 
+<img src="doc_resources/levelshifter_sch.PNG" width="60%">
+
+
+
  
 
 
