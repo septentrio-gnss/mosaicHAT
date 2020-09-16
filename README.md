@@ -154,7 +154,14 @@ Following board figure shows USB parts highlighted. GND vias were stitched aroun
 
 4. USB_V.
 
-### 1.7	PPS and Events
+### 1.7	Events and PPSO
+
+mosaic offers two event inputs which could be used to time tag external events. Both input pads of mosaic, EVENTA and EVENTB, use 1.8V level. For better integration with external applications, a level shifter (SN74AVC4T245PWR) is used to transform signals into 3.3V level.
+
+Pulse Per Second Output (PPSO) is a mosaic clock output. Polarity, frequency and pulse width of PPSO could be configured by setPPSParameters command. As PPSO uses 1.8V level as well, same level shifter is used to get 3.3V level signals.
+
+ 
+
 
 ### 1.8	FTDI
 
