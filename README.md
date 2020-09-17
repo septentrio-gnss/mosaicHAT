@@ -195,11 +195,6 @@ Mosaichat comes with five blue indicator LEDs.
 
 5. Indicator LEDs, PWR LED is directly connected to 3.3V power plane. 
 
-<ul>
-<li>Line 1</li>
-<li>Line 2</li>
-</ul>
-
 PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the Hardware Manual for blinking behaviour of each mode. Both General LEDs (GL1 and GL2) could be directly controlled by Raspberry Pi for customized user applications.
 
 ### 1.11	Clock Frequency Reference 
