@@ -193,9 +193,9 @@ Mosaichat comes with five blue indicator LEDs.
 
 4. Trace to mosaic's GPLED pin, connected to PVT LED.
 
-5. Indicator LEDS, PWR LED is directly connected to 3.3V power plane. 
+5. Indicator LEDs, PWR LED is directly connected to 3.3V power plane. 
 
-PPSO clock could be tuned using **setPPSParameters** command. GPLED could be configured to work in different modes (PVTLED, DIFFCORLED and TRACKLED) using **setLEDMode** command.  
+PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the hardware manual for 
 
 
 
