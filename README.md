@@ -185,13 +185,13 @@ Mosaichat comes with five blue indicator LEDs.
 
 <img src="doc_resources/psdboard_leds.png" width="60%">
 
-1. Raspberry Pi's (GPIO 6) which is pin 31 in header, connected to GL1 LED.
+1. Raspberry Pi's (GPIO 6) which is pin 31 in header, connected to GL1 LED.  
 
-2. Raspberry Pi's (GPIO 26) which is pin 37 in header, connected to GL2 LED.
+2. Raspberry Pi's (GPIO 26) which is pin 37 in header, connected to GL2 LED.  
 
-3. PPSO 3.3V level, connected to PPS LED.
+3. PPSO 3.3V level, connected to PPS LED.  
 
-4. Trace to mosaic's GPLED pin, connected to PVT LED.
+4. Trace to mosaic's GPLED pin, connected to PVT LED.  
 
 5. Indicator LEDs, PWR LED is directly connected to 3.3V power plane. 
 
@@ -202,5 +202,7 @@ PPSO clock could be tuned using **setPPSParameters** command. While GPLED defaul
 mosaic module embeds an internal Temperature Compensated Crystal Oscillator (TCXO) for frequency reference. The module can either use its internal TCXO frequency reference or an external frequency reference. In Mosiachat's case, internal reference is used. Following are  Hardware Manual instructions for using internal TCXO.
 
 <img src="doc_resources/ref_hwmanual.PNG" width="60%">
+
+
 
 
