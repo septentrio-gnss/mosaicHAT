@@ -177,6 +177,8 @@ Port A tracks 1.8V while port B tracks 3.3V level. Direction could be set for tw
 
 ### 1.8	FTDI
 
+Second serial connection to mosaic (COM2) is exposed through 2.54 mm pin headers. 
+
 ### 1.9	LEDs
 
 Mosaichat comes with five blue indicator LEDs.
