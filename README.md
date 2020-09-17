@@ -158,7 +158,7 @@ Following board figure shows USB parts highlighted. GND vias were stitched aroun
 
 mosaic offers two event inputs which could be used to time tag external events. Both input pads of mosaic, EVENTA and EVENTB, use 1.8V level. For better integration with external applications, a level shifter (SN74AVC4T245PWR) is used to transform signals into 3.3V level.
 
-Pulse Per Second Output (PPSO) is a mosaic clock output. Polarity, frequency and pulse width of PPSO could be configured by setPPSParameters command. As PPSO uses 1.8V level as well, same level shifter is used to get 3.3V level signals.
+Pulse Per Second Output (PPSO) is a mosaic clock output. Polarity, frequency and pulse width of PPSO could be configured by **setPPSParameters** command. As PPSO uses 1.8V level as well, same level shifter is used to get 3.3V level signals.
 
 Both EVENTS and PPSO 3.3V levels are connected to 2.54 mm pin headers.
 
@@ -194,6 +194,8 @@ Mosaichat comes with five blue indicator LEDs.
 4. Trace to mosaic's GPLED pin, connected to PVT LED.
 
 5. Indicator LEDS, PWR LED is directly connected to 3.3V power plane. 
+
+PPSO clock could be tuned using **setPPSParameters** command. GPLED could be configured to work in different modes (PVTLED, DIFFCORLED and TRACKLED) using **setLEDMode** command.  
 
 
 
