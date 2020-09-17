@@ -208,6 +208,9 @@ mosaic module embeds an internal Temperature Compensated Crystal Oscillator (TCX
 
 <img src="doc_resources/ref_hwmanual.PNG" width="60%">
 
+Layout connections for REF and 2V8.
+
+<img src="doc_resources/REF_2V8_lyo.png" width="60%">
 
 
 
