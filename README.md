@@ -185,15 +185,15 @@ Mosaichat comes with five blue indicator LEDs.
 
 <img src="doc_resources/psdboard_leds.png" width="60%">
 
-1. Raspberry Pi's (GPIO 6) which is pin 31 in header, connected to GL1 LED.  
+1. Raspberry Pi's (GPIO 6) which is pin 31 in header, connected to GL1 LED. <br />
 
-2. Raspberry Pi's (GPIO 26) which is pin 37 in header, connected to GL2 LED.  
+2. Raspberry Pi's (GPIO 26) which is pin 37 in header, connected to GL2 LED.  <br />
 
-3. PPSO 3.3V level, connected to PPS LED.  
+3. PPSO 3.3V level, connected to PPS LED.  <br />
 
-4. Trace to mosaic's GPLED pin, connected to PVT LED.  
+4. Trace to mosaic's GPLED pin, connected to PVT LED.  <br />
 
-5. Indicator LEDs, PWR LED is directly connected to 3.3V power plane. 
+5. Indicator LEDs, PWR LED is directly connected to 3.3V power plane. <br />
 
 PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the Hardware Manual for blinking behaviour of each mode. Both General LEDs (GL1 and GL2) could be directly controlled by Raspberry Pi for customized user applications.
 
