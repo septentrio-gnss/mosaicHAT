@@ -185,5 +185,17 @@ Mosaichat comes with five blue indicator LEDs.
 
 <img src="doc_resources/psdboard_leds.png" width="60%">
 
+1. Raspberry Pi's (GPIO 6) which is pin 31 in header, connected to GL1 LED.
+
+2. Raspberry Pi's (GPIO 26) which is pin 37 in header, connected to GL2 LED.
+
+3. PPSO 3.3V level, connected to PPS LED.
+
+4. Trace to mosaic's GPLED pin, connected to PVT LED.
+
+5. Indicator LEDS, PWR LED is directly connected to 3.3V power plane. 
+
+
+
 ### 1.11	Clock Frequency Reference 
 
