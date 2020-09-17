@@ -181,7 +181,7 @@ Port A tracks 1.8V while port B tracks 3.3V level. Direction could be set for tw
 
 Mosaichat comes with five blue indicator LEDs.
 
-<img src="doc_resources/leds_sch.PNG" width="60%">
+<img src="doc_resources/leds_sch.PNG" width="40%">
 
 ### 1.11	Clock Frequency Reference 
 
