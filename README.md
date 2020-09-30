@@ -8,13 +8,13 @@
 
 - To enable RPi's UART, go to `/boot/config.txt` and set `enable_uart=1` at the end of the file. This could be done directly on SD card or using:
  
-`sudo nano /boot/config.txt` 
+  `sudo nano /boot/config.txt` 
 
 - You will also need to disable UART console login. To do so on RPi 4, use:
 
-`sudo nano /boot/firmware/nobtcmd.txt` 
+  `sudo nano /boot/firmware/nobtcmd.txt` 
 
-And delete `console=ttyAMA0,115200` from the file. For different RPi versions, the cmd configuration file could be `/boot/cmdline.txt`.
+  And delete `console=ttyAMA0,115200` from the file. For different RPi versions, the cmd configuration file could be `/boot/cmdline.txt`.
 
 - TCP/IP over USB may not be enabled by default. To enable TCP/IP over USB, go to:
 
