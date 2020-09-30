@@ -17,7 +17,19 @@ You will also need to disable UART console login. To do so on RPi 4, delete `con
 
 On different RPi versions, the cmd file could be `/boot/cmdline.txt`.
 
+TCP/IP over USB may not be enabled by default. To enable TCP/IP over USB, go to:
 
+`sudo nano /etc/network/interfaces`
+
+and add:
+
+`allow-hotplug usb0
+
+iface usb0 inet dhcp`
+
+
+
+`
 
 
 
