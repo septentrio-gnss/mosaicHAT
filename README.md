@@ -18,14 +18,14 @@
 
 - TCP/IP over USB may not be enabled by default. To enable TCP/IP over USB, go to:
 
- `sudo nano /etc/network/interfaces`
+  `sudo nano /etc/network/interfaces`
 
- And add:
-```
-allow-hotplug usb0
+  And add:
+  ```
+  allow-hotplug usb0
 
-iface usb0 inet dhcp
-```
+  iface usb0 inet dhcp
+  ```
 
 
 
