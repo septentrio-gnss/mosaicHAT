@@ -2,6 +2,28 @@
 
 ## 0.	Connecting to Raspberry Pi
 ### 0.1	Setting Up Mosaichat
+
+### Raspbian OS
+
+#### Ubuntu OS
+
+To enable RPi's UART, go to `/boot/config.txt` and set `enable_uart=1` at the end of the file. This could be done directly on SD card or using:
+ 
+`sudo nano /boot/config.txt` 
+
+You will also need to disable UART console login. To do so on RPi 4, delete `console=ttyAMA0,115200` from `/boot/firmware/nobtcmd.txt`. The content of the file should look like:
+
+`net.ifnames=0 dwc_otg.lpm_enable=0 cgroup_enable=cpuset cgroup_enable=memory cg$`
+
+On different RPi versions, the cmd file could be `/boot/cmdline.txt`.
+
+
+
+
+
+
+
+
 ### 0.2	Serial Communication
 ### 0.3	Input Reset
 ### 0.4	General Purpose LEDs
