@@ -1,4 +1,4 @@
-# Mosaichat
+# mosaicHAT
 
 ## 0.	Preparing Raspberry Pi
 
