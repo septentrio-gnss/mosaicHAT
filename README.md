@@ -26,20 +26,18 @@
 
   iface usb0 inet dhcp
   ```
+### 0.5	USB Communication
 
 
-
-`
-
-
-
-
-
+Connecting RPi, as well as any other PC, to mosaic via USB provides:
+- Septentrio's web interface
+- Two USB serial ports
+- Multiple TCP/IP ports
 
 ### 0.2	Serial Communication
 ### 0.3	Input Reset
 ### 0.4	General Purpose LEDs
-### 0.5	USB Communication
+
 ### 0.6	Applications
 
 
