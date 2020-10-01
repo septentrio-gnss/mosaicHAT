@@ -211,7 +211,9 @@ Port A tracks 1.8V while port B tracks 3.3V level. Direction could be set for tw
 
 Second serial connection to mosaic (COM2) is exposed through 2.54 mm pin headers. The FTDI connection could be used to communicate with other devices through serial (e.g. HC-06 Bluetooth module).
 
-If the device needs Mosaichat's power, like HC-06, VCC pin of FTDI could be used. 5V or 3.3V could be choosed by moving The FTDI PWR SRC jumpers.
+If the device needs Mosaichat's power, like HC-06, VCC pin of FTDI could be used. 5V or 3.3V could be provided by moving The FTDI PWR SRC jumpers.
+
+<img src="doc_resources/ftdi_sch.PNG" width="80%">
 
 ### 1.9	LEDs
 
