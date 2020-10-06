@@ -23,7 +23,7 @@ To enable communication between mosaicHAT and Raspberry Pi (RPi), you should mak
 
   Select **Yes**.
 
-- Finally, exit the config and reboot RPi for changes to take place.
+- Finally, exit the config and reboot RPi for changes to take effect.
 
 #### 2.1.2 Ubuntu OS
 
@@ -47,6 +47,8 @@ To enable communication between mosaicHAT and Raspberry Pi (RPi), you should mak
 
   iface usb0 inet dhcp
   ```
+-  Reboot RPi for changes to take effect.
+
 ### 2.2	USB Communication
 
 
