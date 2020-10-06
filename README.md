@@ -4,7 +4,7 @@
 
 ## 1. Introduction to mosaicHAT
 
-<img src="doc_resources/mosaicHAT_features.png" width="60%">
+<img src="doc_resources/mosaicHAT_features.png" width="80%">
 
 ## 2.	Connecting to Raspberry Pi
 
