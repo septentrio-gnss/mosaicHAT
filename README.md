@@ -10,9 +10,17 @@ License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Comm
 
 ## 1. Introduction to mosaicHAT
 ### 1.1 What is mosaicHAT?
-The mosaicHAT is an Open Source GPS/GNSS HW PCB which integrates <a href="https://www.septentrio.com/en/products/gnss-receivers/rover-base-receivers/receivers-module/mosaic">Septentrio's mosaic-X5</a> GNSS module (and other Septentrio pin compatible modules such as <a href="https://www.septentrio.com/en/products/correction-services/precise-point-positioning-services-land/secorx-s/mosaic-sx">Septentrio's mosaic-Sx</a>) with basic communications and which can be stacked into a Raspberry Pi system. The design can be used either to produce the board or can be used as an starting point for new HW integrations.
+The mosaicHAT is an Open Source GPS/GNSS HW PCB HAT which integrates <a href="https://www.septentrio.com/en/products/gnss-receivers/rover-base-receivers/receivers-module/mosaic">Septentrio's mosaic-X5</a> GNSS module (and other Septentrio pin compatible modules such as <a href="https://www.septentrio.com/en/products/correction-services/precise-point-positioning-services-land/secorx-s/mosaic-sx">Septentrio's mosaic-Sx</a>) with basic communications and which can be stacked into a Raspberry Pi system. 
 
-The goal of the design is to allow easy HW prototyping using the mosaic-X5 GNSS module taking the advantage of the computer ecosystem provided by the Raspberry Pi environment.
+The goal of the design is to allow easy HW prototyping using the mosaic-X5 GNSS module taking the advantage of the computer ecosystem provided by the Raspberry Pi environment. The board however can also be used standalone since it can be powered either via USB or via power pins. 
+This project and design can be used either produced with your local electronics assembly house or can also be used as an starting point for your own HW integrations.
+
+### 1.1.1 How is the mosaicHAT a HAT for Raspberry Pi?
+HAT stands for “Hardware attached on top”. It is a new hardware specification for add-one modules for the new Raspberry Pi model B+. HATs have several advantages compared to older add-on modules for the Raspberry Pi.
+### 1.1.1.1 No soldering, just plug it onto the Raspbery Pi
+With our older HiFiBerry boards you had to solder an 8-pin header onto the Raspberry Pi. While this is not a problem for experienced hackers, not everybody owns a solder station and can do this.
+### 1.1.1.2 Robust mechanical design
+With 4 mounting holes the connection between the Raspberry Pi and the add-on board is very robust. 
 
 ### 1.2 What is Septentrio's mosaic-X5 or mosaic-Sx?
 ### 1.2.1 mosaic-X5
@@ -24,11 +32,11 @@ The goal of the design is to allow easy HW prototyping using the mosaic-X5 GNSS 
 ### 1.2.3 Who is Septentrio?
 Septentrio designs, manufactures and sells high-precision, multi-frequency, multi-constellation GPS/GNSS equipment for use in demanding applications. Septentrio products are used in a wide variety of industries including marine, construction, precision agriculture, logistics, machine control, rail, automotive, survey and mapping, geographic information systems (GIS), unmanned aerial vehicles (UAVs) and scientific. Septentrio receivers deliver consistently accurate and precise GNSS positioning scalable to centimeter-level and designed to perform solidly in the most challenging environments. Septentrio receivers are available as OEM boards, housed receivers and smart antennas.
 
-The technology offers high accuracy and reliability thanks to GNSS+ algorithms as well as Septentrio's Advanced Interference Monitoring and Mitigation (AIM+) which protects against RF interference (jamming) and spoofing.
+The technology offers high accuracy and reliability thanks to GNSS+ algorithms as well as <a href="https://www.septentrio.com/en/advanced-interference-monitoring-mitigation-aim">Septentrio's Advanced Interference Monitoring and Mitigation (AIM+)</a> which protects against RF interference (jamming) and spoofing.
 
 For more information about Septentrio products go to http:\\www.septentrio.com
 
-### 1.2 Is the project open source?
+### 1.3 Is the project open source?
 Yes, as it allows easy adaptations and thus enables the robotics and autonomous community to create their own spin off projects.
 As such this can be also a starting reference point for integrators when in need of GNSS integration.
 
@@ -39,16 +47,29 @@ With open source it means that the following is provided:
 -May require attribution
 -We encourage you to stand on our shoulders and even make money at it! 
 
-More info about licensing can be found here: OSHWA.org.
-
-### 1.2 What are the main interfaces of mosaicHAT?
-<img src="doc_resources/mosaicHAT_features.png" width="80%">
-
-### 1.2 Where can I find more information about mosaic-X5?
-Septentrio is a 
+More info about licensing can be found here: 
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a>
 
 ### 1.2 Disclaimer
+This project is provided as is and while the general interfaces have been tested, the project has not been fully validated nor by the author nor by Septentrio. 
+We recommend you to contact Septentrio should you have questions on how to integrate Septentrio's GNSS modules.
 
+Their support email address is <support AT septentrio DOT com> </br>
+
+### 1.4 What are the main interfaces of mosaicHAT?
+The board exposes the following interfaces:
+<img src="doc_resources/mosaicHAT_features.png" width="80%">
+### 1.4.1 Power
+The board can be powrered as follows
+### 1.4.1.1 Using USB
+Connecting the board to a USB source will provide enough power for the mosaicHAT to work properly.
+### 1.4.1.1 Using Raspberry Pi
+If you mount the mosaicHAT board into 
+### 1.4.2 Serial communication
+### 1.4.3 USB communication
+### 1.4.4 External Events
+### 1.4.5 PPS output
+### 1.4.6 GPIOs for LED management
 
 ## 2.	Connecting to Raspberry Pi
 
