@@ -180,10 +180,16 @@ The following sections provide more details on mosaicHAT design.
 
 ### mosaic Pinout
 
-Septentrio mosaic-X5 is the base of mosaicHAT board. mosaic is a 31x31mm LGA module with 239 pins. All needed information on mosaic could be found in the [Hardware Manual](Refrences/mosaic_hardware_manual_v1.3.0.pdf) 
+Septentrio mosaic-X5 is the base of mosaicHAT board. mosaic is a 31x31mm LGA module with 239 pins. All needed information on mosaic connections could be found in the [Hardware Manual](Refrences/mosaic_hardware_manual_v1.3.0.pdf) 
 
 <img src="doc_resources/mosaic_mech.jpg" width="60%">
 
+KiCAD symbol, footprint and a 3D model of mosaic could be found in folder [mosaic Design Components](mosaic_design_components).
+
+- All ground pins and the pins marked “Reserved_GND” are connected to GND.
+- A 3.3VDC supply is connected to VDD_3V3 pins and to the VDD_BAT pin. A 10uF decoupling capacitor has been used.
+- 1V8_OUT is connected to SYNC (required according to Hardware Manual).
+- Pin A3 (RTC_XTALI) is connected to GND (required according to Hardware Manual).
 
 ### Power Sources
 
