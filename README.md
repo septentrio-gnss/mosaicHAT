@@ -162,7 +162,7 @@ mosaicHAT was designed using [KiCAD](https://kicad-pcb.org), an open source suit
 
 Following is the schematic plan, for higher quality check [PDF plan](schematic.pdf).
 
-<img src="doc_resources/schematic_big.PNG" width="60%">
+<img src="doc_resources/schematic_photo.PNG" width="60%">
 
 
 A top 3D view of mosaicHAT showing main components.
