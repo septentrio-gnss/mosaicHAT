@@ -2,9 +2,40 @@
 
 <img src="doc_resources/mosaicHAT_logo_withText.png" width="60%">
 
-## 1. Introduction to mosaicHAT
+mosaicHAT: A GNSS HAT for Raspberry PI 
+Maintainer: Septentrio <githubuser AT septentrio DOT com>
+Author: Jamal Sa'd <jamalhazem127 AT gmail DOT com>
+License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a>         
+External website: https://github.com/septentrio-gnss/rosaic
+Source: git https://github.com/septentrio-gnss/rosaic.git (branch: master)
 
+## 1. Introduction to mosaicHAT
+### 1.1 What is mosaicHAT?
+The mosaicHAT is an Open Source GPS/GNSS HW PCB which integrates Septentrio's mosaic-X5 GNSS module with basic communications and which can be stacked into a Raspberry Pi system. The design can be used either to produce the board or can be used as an starting point for new HW integrations.
+
+The goal of the design is to allow easy HW prototyping using the mosaic-X5 GNSS module taking the advantage of the computer ecosystem provided by the Raspberry Pi environment.
+
+### 1.2 Is the project open source?
+Yes, as it allows easy adaptations and thus enables the robotics and autonomous community to create their own spin off projects.
+As such this can be also a starting reference point for integrators when in need of GNSS integration.
+
+With open source it means that the following is provided:
+-Editable source files
+-Modifications and spinn off projects allowed
+-You are allowed to sell your version. No -NC limitations.
+-May require attribution
+-We encourage you to stand on our shoulders and even make money at it! 
+
+More info about licensing can be found here: OSHWA.org.
+
+### 1.2 What are the main interfaces of mosaicHAT?
 <img src="doc_resources/mosaicHAT_features.png" width="80%">
+
+### 1.2 Where can I find more information about mosaic-X5?
+Septentrio is a 
+
+### 1.2 Disclaimer
+
 
 ## 2.	Connecting to Raspberry Pi
 
