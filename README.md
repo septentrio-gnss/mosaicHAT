@@ -167,7 +167,7 @@ Following is the schematic plan, for higher quality check [PDF plan](schematic.p
 
 A top 3D view of mosaicHAT showing main components.
 
-<img src="doc_resources/3dplan.PNG" width="60%">
+<img src="doc_resources/3dplan.png" width="60%">
 
 The following sections provide more details on mosaicHAT design.
 
