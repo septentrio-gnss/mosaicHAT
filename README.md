@@ -180,7 +180,7 @@ The following sections provide more details on mosaicHAT design.
 
 ### mosaic Pinout
 
-Septentrio mosaic-X5 is the base of mosaicHAT board. mosaic is a 31x31mm LGA module with 239 pins. All needed information on mosaic could be found in the [Hardware Manual] (mosaicHAT/Refrences/mosaic_hardware_manual_v1.3.0.pdf). 
+Septentrio mosaic-X5 is the base of mosaicHAT board. mosaic is a 31x31mm LGA module with 239 pins. All needed information on mosaic could be found in the [Hardware Manual](Refrences/mosaic_hardware_manual_v1.3.0.pdf) 
 
 ### Power Sources
 
@@ -227,7 +227,7 @@ It is also important to stich vias every few millimetres around the RF line for 
 
 <img src="doc_resources/stiching_vias.PNG" width="60%">
 
-For more details on antennas and interference please refer to mosaic's [Hardware Manual](HWManual.pdf).
+For more details on antennas and interference please refer to mosaic's [Hardware Manual](mosaicHAT/Refrences/mosaic_hardware_manual_v1.3.0.pdf).
 
 Following is the first antenna part of board layout. The center of SMA connector is copper freed to prevent undesired capacitance due to high copper density.
 
