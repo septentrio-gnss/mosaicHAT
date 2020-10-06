@@ -6,6 +6,8 @@
 
 ### 2.1 Preparing Raspberry Pi
 
+To enable communication between mosaicHAT and Raspberry Pi (RPi), you should make sure needed communication permissions are set. We've tested mosaicHAT with both Raspbian OS and Ubuntu OS on RPi and found the following points needed.
+
 #### 2.1.1 Raspbian OS
 - To enable RPi serial communication, go to terminal and run:
 
