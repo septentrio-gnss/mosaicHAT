@@ -182,6 +182,9 @@ The following sections provide more details on mosaicHAT design.
 
 Septentrio mosaic-X5 is the base of mosaicHAT board. mosaic is a 31x31mm LGA module with 239 pins. All needed information on mosaic could be found in the [Hardware Manual](Refrences/mosaic_hardware_manual_v1.3.0.pdf) 
 
+<img src="doc_resources/mosaic_mech.jpg" width="60%">
+
+
 ### Power Sources
 
 mosaicHAT could be powered by three options; Raspberry Pi, Micro USB and external power pin headers. mosaic module itself runs on 3.3V, thus a voltage regulator is used (LD1117AS33TR). According to its datasheet, the regulator's maximum input is 15V. Raspberry Pi and Micro USB already provide 5V. User should be careful when connecting higher voltage to external power pin headers. Though 5V is preferable, user can input up to 15V only if both VANT and FTDI PWR SRC jumpers are connected to 3.3V. Pin headers of 5V in the jumpers are connected directly to the input source as it's presumed to be 5V.
