@@ -1,5 +1,7 @@
 # mosaicHAT
 
+<img src="doc_resources/mosaicHAT_logo_withText.png" width="60%">
+
 ## 1. Introduction to mosaicHAT
 
 ## 2.	Connecting to Raspberry Pi
