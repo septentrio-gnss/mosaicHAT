@@ -20,7 +20,18 @@ Table of contents
       * [Is the project Open Source?](#is-the-project-open-source)
       * [Disclaimer](#disclaimer)
    * [mosaicHAT user documentation](#mosaichat-user-documentation)
-      * [main interfaces of mosaicHAT]
+      * [general interfaces of mosaicHAT](#general-interfaces-of-mosaichat)
+      * [Connecting to Raspberry Pi](#connecting-to-raspberry-pi)
+      * [USB Communication](#usb-communication)
+      * [Serial Communication](#serial-communication)
+      * [General Purpose LEDs](#general-purpose-leds)
+      * [FTDI](#ftdi)
+      * [Input Reset](#input-reset)
+      * [ppso](#ppso)
+      * [events](#events)
+   * [mosaicHAT Design documentation](#mosaichat-design-documentation)
+      * [general interfaces of mosaicHAT](#general-interfaces-of-mosaichat)
+
 <!--te-->
 
 ## Introduction to mosaicHAT
@@ -153,7 +164,7 @@ Other than the female Raspberry Pi connecter, all components are placed on the T
 
 mosaicHAT was designed using [KiCAD](https://kicad-pcb.org), an open source suite for Electric Design Automation. KiCAD provides a beautiful 3D viewer besides its design capabilities.
 
-Following is the schematic plan, for higher quality check [PDF plan](mosaicHAT_schematic.pdf).
+Following is the schematic plan, for higher quality check [PDF plan](schematic.pdf).
 
 <img src="doc_resources/schematic_big.PNG" width="60%">
 
