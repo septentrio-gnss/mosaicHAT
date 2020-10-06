@@ -2,12 +2,11 @@
 
 <img src="doc_resources/mosaicHAT_logo_withText.png" width="60%">
 
-mosaicHAT: A GNSS HAT for Raspberry PI 
-Maintainer: Septentrio <githubuser AT septentrio DOT com>
-Author: Jamal Sa'd <jamalhazem127 AT gmail DOT com>
-License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a>         
-External website: https://github.com/septentrio-gnss/rosaic
-Source: git https://github.com/septentrio-gnss/rosaic.git (branch: master)
+mosaicHAT: A GNSS HAT for Raspberry PI </br>
+Maintainer: Septentrio <githubuser AT septentrio DOT com> </br>
+Author: Jamal Sa'd <jamalhazem127 AT gmail DOT com> </br>
+License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a> </br>        
+External website: https://github.com/septentrio-gnss/mosaicHAT </br>
 
 ## 1. Introduction to mosaicHAT
 ### 1.1 What is mosaicHAT?
