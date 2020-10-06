@@ -16,9 +16,11 @@ Table of contents
       * [What is mosaicHAT?](#what-is-mosaichat)
       * [A HAT for Raspberry Pi?](#a-hat-for-raspberry-pi)
       * [What is Septentrio's mosaic-X5 or mosaic-Sx?](#what-is-the-mosaic-x5-or-mosaic-sx?)
-   * [Who is Septentrio?](#who-is-septentrio)
-   * [Is the project Open Source?](#is-the-project-open-source)
-   * [Disclaimer](#disclaimer)
+      * [Who is Septentrio?](#who-is-septentrio)
+      * [Is the project Open Source?](#is-the-project-open-source)
+      * [Disclaimer](#disclaimer)
+   * [mosaicHAT user documentation](#mosaichat-user-documentation)
+      * [main interfaces of mosaicHAT]
 <!--te-->
 
 ## Introduction to mosaicHAT
@@ -42,14 +44,14 @@ With 4 mounting holes the connection between the Raspberry Pi and the add-on boa
 #### mosaic-Sx
 <a href="https://www.septentrio.com/en/products/correction-services/precise-point-positioning-services-land/secorx-s/mosaic-sx">Septentrio's mosaic-Sx</a> module offers a unique approach to GNSS positioning. It provides convenient always-on high-accuracy positioning right out of the box. No need for any additional correction service selection, subscription and maintenance. This is made possible by an integration of a PPP-RTK sub-decimeter correction service into Septentrio’s latest core GNSS technology. With all-in-view satellite tracking and unmatched anti-jamming technology mosaic-Sx offers a perfect combination of convenience and performance in a very small size factor.
 
-## Who is Septentrio?
+### Who is Septentrio?
 Septentrio designs, manufactures and sells high-precision, multi-frequency, multi-constellation GPS/GNSS equipment for use in demanding applications. Septentrio products are used in a wide variety of industries including marine, construction, precision agriculture, logistics, machine control, rail, automotive, survey and mapping, geographic information systems (GIS), unmanned aerial vehicles (UAVs) and scientific. Septentrio receivers deliver consistently accurate and precise GNSS positioning scalable to centimeter-level and designed to perform solidly in the most challenging environments. Septentrio receivers are available as OEM boards, housed receivers and smart antennas.
 
 The technology offers high accuracy and reliability thanks to GNSS+ algorithms as well as <a href="https://www.septentrio.com/en/advanced-interference-monitoring-mitigation-aim">Septentrio's Advanced Interference Monitoring and Mitigation (AIM+)</a> which protects against RF interference (jamming) and spoofing.
 
 For more information about Septentrio products go to http:\\www.septentrio.com
 
-## Is the project open source?
+### Is the project open source?
 Yes, as it allows easy adaptations and thus enables the robotics and autonomous community to create their own spin off projects.
 As such this can be also a starting reference point for integrators when in need of GNSS integration.
 
@@ -63,34 +65,24 @@ With open source it means that the following is provided:
 More info about licensing can be found here: 
 <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a>
 
-## Disclaimer
+### Disclaimer
 This project is provided as is and while the general interfaces have been tested, the project has not been fully validated nor by the author nor by Septentrio. 
 We recommend you to contact Septentrio should you have questions on how to integrate Septentrio's GNSS modules.
 
 Their support email address is <support AT septentrio DOT com> </br>
 
-## What are the main interfaces of mosaicHAT?
+## mosaicHAT user documentation
+### general interfaces of mosaicHAT
 The board exposes the following interfaces:
 <img src="doc_resources/mosaicHAT_features.png" width="80%">
-### Power
-The board can be powrered as follows
-### Using USB
-Connecting the board to a USB source will provide enough power for the mosaicHAT to work properly.
-### Using Raspberry Pi
-If you mount the mosaicHAT board into 
-### Serial communication
-### USB communication
-### External Events
-### PPS output
-### GPIOs for LED management
 
-## Connecting to Raspberry Pi
+### Connecting to Raspberry Pi
 
-### Preparing Raspberry Pi
+#### Preparing Raspberry Pi
 
 To enable communication between mosaicHAT and Raspberry Pi (RPi), you should make sure needed communication permissions are set. We've tested mosaicHAT with both Raspbian OS and Ubuntu OS on RPi and found the following points needed.
 
-#### Raspbian OS
+##### Raspbian OS
 - To enable RPi serial communication, go to terminal and run:
 
   `sudo raspi-config`
@@ -107,7 +99,7 @@ To enable communication between mosaicHAT and Raspberry Pi (RPi), you should mak
 
 - Finally, exit the config and reboot RPi for changes to take effect.
 
-#### Ubuntu OS
+##### Ubuntu OS
 
 - To enable RPi's UART, go to `/boot/config.txt` and set `enable_uart=1` at the end of the file. This could be done directly on SD card or using:
  
@@ -131,7 +123,7 @@ To enable communication between mosaicHAT and Raspberry Pi (RPi), you should mak
   ```
 -  Reboot RPi for changes to take effect.
 
-### USB Communication
+#### USB Communication
 
 
 Connecting RPi, as well as any other PC, to mosaic via USB provides:
@@ -139,20 +131,21 @@ Connecting RPi, as well as any other PC, to mosaic via USB provides:
 - Two USB serial ports
 - Multiple TCP/IP ports
 
-### Serial Communication
+#### Serial Communication
 
-### General Purpose LEDs
+#### General Purpose LEDs
 
-### FTDI
+#### FTDI
 
-### Input Reset
+#### Input Reset
 
-### PPSO
+#### PPSO
 
-### Events
+#### Events
 
 
-## mosaicHAT Design
+## mosaicHAT Design documentation
+This section is intended for people who want to understand more about the design of the mosaicHAT
 ### Design Overview
 mosaicHAT is a 4-Layer Printed Circuit Board (PCB) designed to stack on top of Raspberry Pi. Both Top and Back layers are used for power and signals. The first inner layer is a GND plane whereas the second inner layer functions as a 3.3V power plane with a slight use of other connections.
 
@@ -162,12 +155,12 @@ mosaicHAT was designed using [KiCAD](https://kicad-pcb.org), an open source suit
 
 Following is the schematic plan, for higher quality check [PDF plan](schematic.pdf).
 
-<img src="doc_resources/schematic_photo.PNG" width="60%">
+<img src="doc_resources/schematic_big.PNG" width="60%">
 
 
 A top 3D view of mosaicHAT showing main components.
 
-<img src="doc_resources/3dplan.png" width="60%">
+<img src="doc_resources/3dplan.PNG" width="60%">
 
 The following sections provide more details on mosaicHAT design.
 
