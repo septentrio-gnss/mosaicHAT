@@ -157,7 +157,9 @@ Connecting RPi, as well as any other PC, to mosaic via USB provides:
 
 
 ## mosaicHAT Design documentation
-This section is intended for people who want to understand more about the design of the mosaicHAT
+
+This section is intended for people who want to understand more about the design of the mosaicHAT.
+
 ### Design Overview
 mosaicHAT is a 4-Layer Printed Circuit Board (PCB) designed to stack on top of Raspberry Pi. Both Top and Back layers are used for power and signals. The first inner layer is a GND plane whereas the second inner layer functions as a 3.3V power plane with a slight use of other connections.
 
@@ -178,7 +180,7 @@ The following sections provide more details on mosaicHAT design.
 
 ### mosaic Pinout
 
-// to add later
+Septentrio mosaic-X5 is the base of mosaicHAT board. mosaic is a 31x31mm LGA module with 239 pins. All needed information on mosaic could be found in the [Hardware Manual] (mosaicHAT/Refrences/mosaic_hardware_manual_v1.3.0.pdf). 
 
 ### Power Sources
 
@@ -201,6 +203,8 @@ In the figure above:
 4. Micro USB power source.
 
 ### Antennas
+
+// mosaic-X5 is single antenna, explain more 
 
 mosaic is a dual-antenna module. It can perfectly function with one antenna, however, connecting a second antenna increases accuracy and enables heading sensing.
 
