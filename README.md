@@ -7,22 +7,21 @@
 ### 2.1 Preparing Raspberry Pi
 
 #### 2.1.1 Raspbian OS
-To enable RPi serial communication, go to terminal and run:
+- To enable RPi serial communication, go to terminal and run:
 
-`sudo raspi-config`
+  `sudo raspi-config`
 
-Select **Interfacing Options**, then from the menu select **Serial**. You will get the question:
+- Select **Interfacing Options**, then from the menu select **Serial**. You will get the question:
 
-*Would you like a login shell to be accessible over serial?*
+  *Would you like a login shell to be accessible over serial?*
 
-Select **No**. Another prompt will ask:
+  Select **No**. Another prompt will ask:
 
-*Would you like the serial port hardware to be enabled?*
+  *Would you like the serial port hardware to be enabled?*
 
-Select **Yes**.
+  Select **Yes**.
 
-Finally, exit the config and reboot RPi for changes to take place.
-
+- Finally, exit the config and reboot RPi for changes to take place.
 
 #### 2.1.2 Ubuntu OS
 
