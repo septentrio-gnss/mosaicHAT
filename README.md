@@ -153,7 +153,7 @@ Other than the female Raspberry Pi connecter, all components are placed on the T
 
 mosaicHAT was designed using [KiCAD](https://kicad-pcb.org), an open source suite for Electric Design Automation. KiCAD provides a beautiful 3D viewer besides its design capabilities.
 
-Following is the schematic plan, for higher quality check [PDF plan](schematic.pdf).
+Following is the schematic plan, for higher quality check [PDF plan](mosaicHAT_schematic.pdf).
 
 <img src="doc_resources/schematic_big.PNG" width="60%">
 
