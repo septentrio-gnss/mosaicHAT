@@ -8,7 +8,7 @@
 
 #### 2.1.1 Raspbian OS
 
-### 2.1.2 Ubuntu OS
+#### 2.1.2 Ubuntu OS
 
 - To enable RPi's UART, go to `/boot/config.txt` and set `enable_uart=1` at the end of the file. This could be done directly on SD card or using:
  
