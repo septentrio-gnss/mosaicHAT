@@ -5,14 +5,28 @@
 mosaicHAT: A GNSS HAT for Raspberry PI </br>
 Maintainer: Septentrio <githubuser AT septentrio DOT com> </br>
 Author: Jamal Sa'd <jamalhazem127 AT gmail DOT com> </br>
-License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a> </br>        
 External website: https://github.com/septentrio-gnss/mosaicHAT </br>
+License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a>
 
 ## 1. Introduction to mosaicHAT
 ### 1.1 What is mosaicHAT?
-The mosaicHAT is an Open Source GPS/GNSS HW PCB which integrates Septentrio's mosaic-X5 GNSS module with basic communications and which can be stacked into a Raspberry Pi system. The design can be used either to produce the board or can be used as an starting point for new HW integrations.
+The mosaicHAT is an Open Source GPS/GNSS HW PCB which integrates <a href="https://www.septentrio.com/en/products/gnss-receivers/rover-base-receivers/receivers-module/mosaic">Septentrio's mosaic-X5</a> GNSS module (and other Septentrio pin compatible modules such as <a href="https://www.septentrio.com/en/products/correction-services/precise-point-positioning-services-land/secorx-s/mosaic-sx">Septentrio's mosaic-Sx</a>) with basic communications and which can be stacked into a Raspberry Pi system. The design can be used either to produce the board or can be used as an starting point for new HW integrations.
 
 The goal of the design is to allow easy HW prototyping using the mosaic-X5 GNSS module taking the advantage of the computer ecosystem provided by the Raspberry Pi environment.
+
+### 1.2 What is Septentrio's mosaic-X5 or mosaic-Sx?
+### 1.2.1 mosaic-X5
+<a href="https://www.septentrio.com/en/products/gnss-receivers/rover-base-receivers/receivers-module/mosaic">Septentrio's mosaic-X5</a>, a multi-band, multi-constellation GNSS receiver in a low power surface mount module with a wide array of interfaces, designed for mass market applications like robotics and autonomous systems, capable of tracking all Global Navigation Satellite System (GNSS) constellations supporting current and future signals. With unique built-in AIM+ technology for interference mitigation, Septentrio is offering a performance benchmark in mass market GNSS positioning building blocks.
+
+### 1.2.2 mosaic-Sx
+<a href="https://www.septentrio.com/en/products/correction-services/precise-point-positioning-services-land/secorx-s/mosaic-sx">Septentrio's mosaic-Sx</a> module offers a unique approach to GNSS positioning. It provides convenient always-on high-accuracy positioning right out of the box. No need for any additional correction service selection, subscription and maintenance. This is made possible by an integration of a PPP-RTK sub-decimeter correction service into Septentrio’s latest core GNSS technology. With all-in-view satellite tracking and unmatched anti-jamming technology mosaic-Sx offers a perfect combination of convenience and performance in a very small size factor.
+
+### 1.2.3 Who is Septentrio?
+Septentrio designs, manufactures and sells high-precision, multi-frequency, multi-constellation GPS/GNSS equipment for use in demanding applications. Septentrio products are used in a wide variety of industries including marine, construction, precision agriculture, logistics, machine control, rail, automotive, survey and mapping, geographic information systems (GIS), unmanned aerial vehicles (UAVs) and scientific. Septentrio receivers deliver consistently accurate and precise GNSS positioning scalable to centimeter-level and designed to perform solidly in the most challenging environments. Septentrio receivers are available as OEM boards, housed receivers and smart antennas.
+
+The technology offers high accuracy and reliability thanks to GNSS+ algorithms as well as Septentrio's Advanced Interference Monitoring and Mitigation (AIM+) which protects against RF interference (jamming) and spoofing.
+
+For more information about Septentrio products go to http:\\www.septentrio.com
 
 ### 1.2 Is the project open source?
 Yes, as it allows easy adaptations and thus enables the robotics and autonomous community to create their own spin off projects.
