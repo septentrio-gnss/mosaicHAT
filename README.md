@@ -1,10 +1,14 @@
 # mosaicHAT
 
-## 0.	Preparing Raspberry Pi
+## 1. Introduction to mosaicHAT
 
-### Raspbian OS
+## 2.	Connecting to Raspberry Pi
 
-### Ubuntu OS
+### 2.1 Preparing Raspberry Pi
+
+#### 2.1.1 Raspbian OS
+
+### 2.1.2 Ubuntu OS
 
 - To enable RPi's UART, go to `/boot/config.txt` and set `enable_uart=1` at the end of the file. This could be done directly on SD card or using:
  
@@ -26,7 +30,7 @@
 
   iface usb0 inet dhcp
   ```
-### 0.5	USB Communication
+### 2.2	USB Communication
 
 
 Connecting RPi, as well as any other PC, to mosaic via USB provides:
@@ -34,15 +38,21 @@ Connecting RPi, as well as any other PC, to mosaic via USB provides:
 - Two USB serial ports
 - Multiple TCP/IP ports
 
-### 0.2	Serial Communication
-### 0.3	Input Reset
-### 0.4	General Purpose LEDs
+### 2.3	Serial Communication
 
-### 0.6	Applications
+### 2.4	General Purpose LEDs
+
+### 2.5	FTDI
+
+### 2.6	Input Reset
+
+### 2.7 PPSO
+
+### 2.8 Events
 
 
-## 1. mosaicHAT Design
-### 1.1 Design Overview
+## 3. mosaicHAT Design
+### 3.1 Design Overview
 mosaicHAT is a 4-Layer Printed Circuit Board (PCB) designed to stack on top of Raspberry Pi. Both Top and Back layers are used for power and signals. The first inner layer is a GND plane whereas the second inner layer functions as a 3.3V power plane with a slight use of other connections.
 
 Other than the female Raspberry Pi connecter, all components are placed on the Top layer. All components are Surface Mount Devices (SMD) except for connectors.
@@ -60,11 +70,11 @@ A top 3D view of mosaicHAT showing main components.
 
 The following sections provide more details on mosaicHAT design.
 
-### 1.2 mosaic Pinout
+### 3.2 mosaic Pinout
 
 // to add later
 
-### 1.3 Power Sources
+### 3.3 Power Sources
 
 mosaicHAT could be powered by three options; Raspberry Pi, Micro USB and external power pin headers. mosaic module itself runs on 3.3V, thus a voltage regulator is used (LD1117AS33TR). According to its datasheet, the regulator's maximum input is 15V. Raspberry Pi and Micro USB already provide 5V. User should be careful when connecting higher voltage to external power pin headers. Though 5V is preferable, user can input up to 15V only if both VANT and FTDI PWR SRC jumpers are connected to 3.3V. Pin headers of 5V in the jumpers are connected directly to the input source as it's presumed to be 5V.
 
@@ -84,7 +94,7 @@ In the figure above:
 
 4. Micro USB power source.
 
-### 1.4 Antennas
+### 3.4 Antennas
 
 mosaic is a dual-antenna module. It can perfectly function with one antenna, however, connecting a second antenna increases accuracy and enables heading sensing.
 
@@ -92,7 +102,7 @@ Following is the antennas part in schematic.
 
 <img src="doc_resources/ant_sch.PNG" width="60%">
  
-#### 1.4.2	First Antenna
+#### 3.4.1	First Antenna
 The first antenna SMA connector is directly connected to ANT1 pad. ANT1 is ESD-protected within the module and carries DC voltage. The DC voltage of ANT1 is supplied from mosaic's VANT pad. mosaicHAT's user could choose between 3.3V and 5V supply to VANT using 2.00 mm header jumpers.
 
 The nominal input impedance of the RF line is 50 Ohms. Thus, antenna trace should have a characteristic impedance (Zo) of 50 Ohms. Line impedance could be measured by different tools, such as the freeware [Saturn PCB toolkit](https://saturnpcb.com/pcb_toolkit).
@@ -117,7 +127,7 @@ Following is the first antenna part of board layout. The center of SMA connector
 
 // check about capacitance
 
-#### 1.4.3	Second Antenna
+#### 3.4.2	Second Antenna
 
 The second antenna is similar to first antenna except that ANT2 pad in mosaic is not internally ESD-protected and does not carry DC voltage by itself. Wherefore, both protection and DC biasing are needed.
 
@@ -142,7 +152,7 @@ In the figure above:
 
 // highlight SMA connectors
 
-### 1.5	Raspberry Pi Serial
+### 3.5	Raspberry Pi Serial
 
 Serial communication with Raspberry Pi is conducted by connecting COM1 of mosaic to Raspberry Pi UART pins: TX (GPIO 14) and RX (GPIO 15). GPIO 14 is pin 8 on the GPIO header whereas GPIO 15 is pin 10. Raspberry Pi's TX is connected to mosiac's RX1 while RX is connected to mosaic's TX1.
 
@@ -157,9 +167,9 @@ Thus, MosaicRX1 signal has been tri-stated by MODULE_RDY using tri-state buffer 
 
 // rename buffer in schematic
 
-### 1.10	Reset Input
+### 3.6	Reset Input
 
-### 1.6	Micro USB
+### 3.7	Micro USB
 
 To use mosaic as a USB device, the following pins of the module should be connected to a USB connector.
 
@@ -186,7 +196,7 @@ Following board figure shows USB parts highlighted. GND vias were stitched aroun
 
 4. USB_V.
 
-### 1.7	Events and PPSO
+### 3.8	Events and PPSO
 
 mosaic offers two event inputs which could be used to time tag external events. Both input pads of mosaic, EVENTA and EVENTB, use 1.8V level. For better integration with external applications, a level shifter (SN74AVC4T245PWR) is used to transform signals into 3.3V level.
 
@@ -207,7 +217,7 @@ Port A tracks 1.8V while port B tracks 3.3V level. Direction could be set for tw
 3. 3.3V level pin headers.
 
 
-### 1.8	FTDI
+### 3.9	FTDI
 
 Second serial connection to mosaic (COM2) is exposed through 2.54 mm pin headers. The FTDI connection could be used to communicate with other devices through serial (e.g. HC-06 Bluetooth module).
 
@@ -215,7 +225,7 @@ If the device needs mosaicHAT's power, like HC-06, VCC pin of FTDI could be used
 
 <img src="doc_resources/ftdi_sch.PNG" width="80%">
 
-### 1.9	LEDs
+### 3.10	LEDs
 
 mosaicHAT comes with five blue indicator LEDs.
 
@@ -235,7 +245,7 @@ mosaicHAT comes with five blue indicator LEDs.
 
 PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the Hardware Manual for blinking behaviour of each mode. Both General LEDs (GL1 and GL2) could be directly controlled by Raspberry Pi for customized user applications.
 
-### 1.11	Clock Frequency Reference 
+### 3.11	Clock Frequency Reference 
 
 mosaic module embeds an internal Temperature Compensated Crystal Oscillator (TCXO) for frequency reference. The module can either use its internal TCXO frequency reference or an external frequency reference. In Mosiachat's case, internal reference is used. Following are  Hardware Manual instructions for using internal TCXO.
 
