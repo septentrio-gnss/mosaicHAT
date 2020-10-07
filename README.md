@@ -24,11 +24,11 @@ Table of contents
       * [Connecting to Raspberry Pi](#connecting-to-raspberry-pi)
       * [USB Communication](#usb-communication)
       * [Serial Communication](#serial-communication)
-      * [General Purpose LEDs](#general-purpose-leds)
       * [FTDI](#ftdi)
+      * [General Purpose LEDs](#general-purpose-leds)
       * [Input Reset](#input-reset)
-      * [ppso](#ppso)
       * [events](#events)
+      * [ppso](#ppso)
    * [mosaicHAT Design documentation](#mosaichat-design-documentation)
       * [general interfaces of mosaicHAT](#general-interfaces-of-mosaichat)
 
@@ -148,10 +148,11 @@ Connecting RPi, as well as any other PC, to mosaic via USB provides:
 A simple way to communicate with the mosaicHAT receiver is to connect one of its COM-ports.
 The mosaicHAT offers 2 COM port connectors:
    * *COM connector to Raspberry-Pi*: The std connector of Raspberry Pi systems offer a serial communication. The mosaic-X5 COM1 port is connected to the Raspberry-Pi for easy integration.
-   * *COM on the board (usable for FTDI)*: An extra serial port (COM2 of the mosaic-X5) is exposed via another connector on the board. This port (TTL levels) can be usable as a secondary port or can also be usable to connect an FTDI converter (e.g. serial to Bluetooth or TTL to RS232 converter)
+   * *COM on the board (usable for FTDI)*: An extra serial port (COM2 of the mosaic-X5) is exposed via another connector on the board. This port (TTL levels) can be usable as a secondary port or can also be usable to connect an FTDI converter (e.g. serial to Bluetooth or TTL to RS232 converter). See next FTDI section
    
 default COM-port settings are:
-|*Parameter*|*Value*|
+|Parameter|Value|
+|--------|----------|
 |baud rate | 115200 |
 |data bits| 8|
 |parity| no|
@@ -163,9 +164,11 @@ Septentrio's RxTools is a SW which can be used to communicate to the mosaicHAT a
 Once you have downloaded it you can use Septentrio's RxControl and Data Link which can communicate with the receiver over a COM-port connection:
 select Serial Connection option when opening the connection to the receiver.
 
+#### FTDI
+
 #### General Purpose LEDs
 
-#### FTDI
+
 
 #### Input Reset
 
