@@ -167,12 +167,25 @@ Other than the female Raspberry Pi connecter, all components are placed on the T
 
 mosaicHAT was designed using [KiCAD](https://kicad-pcb.org), an open source suite for Electric Design Automation. KiCAD provides a beautiful 3D viewer besides its design capabilities.
 
-Following is the schematic plan, for higher quality check [PDF plan](schematic.pdf).
+Following is the schematic plan, for higher quality check [PDF schematic](mosaicHAT_schematic.pdf).
 
 <img src="doc_resources/schematic_photo.PNG" width="60%">
 
+The board layout, hiding filled areas in zones. 
 
-A top 3D view of mosaicHAT showing main components.
+<img src="doc_resources/layout.PNG" width="60%">
+
+- Layer 1: Red traces, trace free zones are filled with GND copper pour.
+
+- Layer 2: Full GND plane.
+
+- Layer 3: Pink traces, trace free zones make a 3.3V power plane.
+
+- Layer 4: Green traces, trace free zones are filled with GND copper pour.
+
+
+
+A top 3D view of mosaicHAT, featuring main electronic components.
 
 <img src="doc_resources/3dplan.png" width="60%">
 
