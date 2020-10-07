@@ -145,6 +145,24 @@ Connecting RPi, as well as any other PC, to mosaic via USB provides:
 
 #### Serial Communication
 
+A simple way to communicate with the mosaicHAT receiver is to connect one of its COM-ports.
+The mosaicHAT offers 2 COM port connectors:
+   * *COM connector to Raspberry-Pi*: The std connector of Raspberry Pi systems offer a serial communication. The mosaic-X5 COM1 port is connected to the Raspberry-Pi for easy integration.
+   * *COM on the board (usable for FTDI)*: An extra serial port (COM2 of the mosaic-X5) is exposed via another connector on the board. This port (TTL levels) can be usable as a secondary port or can also be usable to connect an FTDI converter (e.g. serial to Bluetooth or TTL to RS232 converter)
+   
+default COM-port settings are:
+|*Parameter*|*Value*|
+|baud rate | 115200 |
+|data bits| 8|
+|parity| no|
+|stop bits| 1|
+|flow control| none|
+
+The baud rate can be modified at any time by using the *setCOMSettings* command.
+Septentrio's RxTools is a SW which can be used to communicate to the mosaicHAT and can be downloaded free of charge from the [Septentrio support side](https://www.septentrio.com/en/support/software/rxtools).
+Once you have downloaded it you can use Septentrio's RxControl and Data Link which can communicate with the receiver over a COM-port connection:
+select Serial Connection option when opening the connection to the receiver.
+
 #### General Purpose LEDs
 
 #### FTDI
