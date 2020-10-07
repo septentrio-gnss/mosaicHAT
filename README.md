@@ -198,6 +198,8 @@ Following the manual instructions:
 - All "Reserved_NC" pins are left unconnected.
 - Other unused functions pins are left unconnected.
 
+Note that a second un-assembled capacitor place has been left for debugging and testing. The second capacitor is not necessary for the function of mosaicHAT.
+
 ### Power Sources
 
 mosaicHAT could be powered by three options; Raspberry Pi, Micro USB and external power pin headers. mosaic module itself runs on 3.3V, thus a voltage regulator is used (LD1117AS33TR). According to its datasheet, the regulator's maximum input is 15V. Raspberry Pi and Micro USB already provide 5V. User should be careful when connecting higher voltage to external power pin headers. Though 5V is preferable, user can input up to 15V only if both VANT and FTDI PWR SRC jumpers are connected to 3.3V. Pin headers of 5V in the jumpers are connected directly to the input source as it's presumed to be 5V.
