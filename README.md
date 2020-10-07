@@ -190,10 +190,13 @@ KiCAD symbol, footprint and a 3D model of mosaic could be found in folder [mosai
 
 Following the manual instructions:
 
-- The 3.3VDC supply is connected to VDD_3V3 pins and to the VDD_BAT pin. A decoupling capacitor has been used.
-- All ground pins and the pins marked “Reserved_GND” are connected to GND.
+- The 3.3VDC supply is connected to all VDD_3V3 pins and to the VDD_BAT pin. A decoupling capacitor has been used.
+- All ground pins are connected to GND.
 - 1V8_OUT is connected to SYNC.
 - Pin A3 (RTC_XTALI) is connected to GND.
+- Pin AB7 (Reserved_GND) is connected to GND.
+- All "Reserved_NC" pins are left unconnected.
+- Other unused functions pins are left unconnected.
 
 ### Power Sources
 
