@@ -195,6 +195,9 @@ select Serial Connection option when opening the connection to the receiver.
 #### FTDI
 As mentioned an extra serial port is made available and can be used as an FTDI. The pins are aligned with standard FTDI conformity thus you can add support for converting the TTL to an RS-232 or USB signals. FTDI can also be used with some Bluetooth devices. There is a large variety of FTDI devices which can help in communicating with the mosaicHAT. 
 
+Example of an FTDI (USB cable)
+<img src="doc_resources/FTDI_USB_cable_TTL-232R1.jpg" width="60%">
+
 #### General Purpose LEDs
 The following LEDs are defined on the mosaicHAT:
 |LED|Description|
