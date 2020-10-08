@@ -103,7 +103,9 @@ More info about licensing can be found here:
 <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a>
 
 ### Disclaimer
-This project is* provided as is* and while the general interfaces have been tested, the project has not been fully validated nor by the author nor by Septentrio. 
+<img src="doc_resources/warning.jpg" width="7%">
+This project is **PROVIDED AS IS** and while the general interfaces have been tested, the project has not been fully validated nor by the author nor by Septentrio.
+It remains your responsability when producing or using this design for your own purposes.
 We recommend you to contact Septentrio should you have questions on how to integrate Septentrio's GNSS mosaic modules.
 
 Their support email address is <support AT septentrio DOT com> </br>.
