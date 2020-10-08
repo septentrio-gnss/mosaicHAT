@@ -25,14 +25,24 @@ Table of contents
       * [Connecting an antenna](#connectin-an-antenna)
       * [USB Communication](#usb-communication)
       * [Serial Communication](#serial-communication)
-      * [FTDI](#ftdi)
+      * [FTDI-connector](#ftdi-connector)
       * [General Purpose LEDs](#general-purpose-leds)
-      * [Input Reset](#input-reset)
+      * [Reset Connector](#reset-connector)
       * [events](#events)
       * [PPS Output](#ppsoutput)
+      * [ROS support with ROSai](#ros-support-with-rosaic)
    * [mosaicHAT Design documentation](#mosaichat-design-documentation)
-      * [general interfaces of mosaicHAT](#general-interfaces-of-mosaichat)
-
+      * [mosaic Pinout](#mosaic-pinout)
+      * [Power Sources](#power-sources)
+      * [Antennas](#antennas)
+      * [Raspberry Pi Serial](#raspberry-pi-serial)
+      * [Reset Input](#reset-input)
+      * [Micro USB](#micro-usb)
+      * [Events and PPSO](#events-and-ppso)
+      * [FTDI](#ftdi)
+      * [LEDs](#leds)
+      * [Clock Frequency Reference ](#clock-frequency-reference )
+   * [Further improvements](#further-improvements)
 <!--te-->
 
 ## Introduction to mosaicHAT
@@ -242,7 +252,7 @@ Septentrio's RxTools is a SW which can be used to communicate to the mosaicHAT a
 Once you have downloaded it you can use Septentrio's RxControl and Data Link which can communicate with the receiver over a COM-port connection:
 select Serial Connection option when opening the connection to the receiver.
 
-#### FTDI
+#### FTDI Connector
 As mentioned an extra serial port is made available and can be used as an FTDI. The pins are aligned with standard FTDI conformity thus you can add support for converting the TTL to an RS-232 or USB signals. FTDI can also be used with some Bluetooth devices. There is a large variety of FTDI devices which can help in communicating with the mosaicHAT. 
 
 <img src="doc_resources/ftdi_jumper.png" width="50%">
@@ -266,20 +276,12 @@ The following LEDs are defined on the mosaicHAT:
 // JAMAL to explain how can this be controled from Raspberry Pi
 
 
-#### Input Reset
+#### Reset connector
 A pin reset is also available via the Raspberry Pi connector. This is connected directly to the reset pin of the mosaicHAT.
 
 // JAMAL to explain which pin is used
 // JAMAL to explain how can this be controled from Raspberry Pi
 
-#### PPS Output
-PPS signals are used for precise timekeeping and time measurement. One increasingly common use is in time synchronization with other sensors (e.g. Lidars or IMUs). 
-
-The receiver is able to generate an x-pulse-per-second (xPPS) signal aligned with either GPS, Galileo or GLONASS system time, or with UTC, or with the internal receiver time.
-
-//JAMAL to explain which pin is used
-  
-More information on the definition of PPS output or on how to configure the PPS parameters can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
 #### Events
 The receiver can time-tag electrical level transitions on its Event input with an accuracy of 20ns.
@@ -293,6 +295,22 @@ Events can be used as an example for UAV Photogrametry (tagging the pictures tak
 //JAMAL to explain which pin is used
 
 More information on the Events input of mosaic-X5 can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
+
+#### PPS Output
+PPS signals are used for precise timekeeping and time measurement. One increasingly common use is in time synchronization with other sensors (e.g. Lidars or IMUs). 
+
+The receiver is able to generate an x-pulse-per-second (xPPS) signal aligned with either GPS, Galileo or GLONASS system time, or with UTC, or with the internal receiver time.
+
+//JAMAL to explain which pin is used
+  
+More information on the definition of PPS output or on how to configure the PPS parameters can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
+
+
+#### ROS support with ROSai
+The mosaic-X5 but also mosaicHAT are supported by ROSaic. ROSaic is a ROS driver for the mosaic modules and allows you to do integrations for robotic applications.
+ROSaic is also an open source project and can be found here:
+   * [http://wiki.ros.org/rosaic](http://wiki.ros.org/rosaic)
+   * [https://github.com/septentrio-gnss/rosaic](https://github.com/septentrio-gnss/rosaic)
 
 ## mosaicHAT Design documentation
 
@@ -534,5 +552,13 @@ Layout connections for REF and 2V8.
 
 <img src="doc_resources/REF_2V8_lyo.png" width="60%">
 
+
+## Further improvements
+Further improvemts or recomendations on this project are welcome either here or on spinoff porjects.
+Here some possible improvements to the current design.
+   * Addition of Ethernet communication
+   * Addition of I2C communication or similar to aid further HAT stacks
+   * Further support for mosaic-T receiver (proper timing signals exposure)
+   * Communication module (to aid corrections input)
 
 
