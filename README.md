@@ -49,7 +49,7 @@ With our older HiFiBerry boards you had to solder an 8-pin header onto the Raspb
 With 4 mounting holes the connection between the Raspberry Pi and the add-on board is very robust. 
 
 ### Can I buy it?
-At this moment we do not know of anybody who sells the manufactured version of this board. However you can use the reference design, layout and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them).
+At this moment we do not know of anybody who sells the manufactured version of this board. However you can use the reference design, layout and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufactring-and-assembly)
 
 #### Do I need to source special components for producing this board?
 Not really, most of the components are generic enough. The mosaic GNSS module can be obatined from Digikey or directly from Septentrio. Should you project be larger then we recommend you to contact Septentrio sales team directly (contact <sales AT septentrio DOT com>.
@@ -72,6 +72,21 @@ The technology offers high accuracy and reliability thanks to GNSS+ algorithms a
 
 For more information about Septentrio products go to http:\\www.septentrio.com
 
+### Deliverables
+This project makes the following deliverables for both integrators and designers of systems around Septentrio's mosaic modules.
+
+|File|Description|
+|--------|----------|
+|HATv1.0.kicad_pcb | JAMAL to describe file |
+|HATv1.0.pro| JAMAL to describe file|
+|HATv1.0.sch| JAMAL to describe file|
+|mosaicHAT_schematic.pdf| JAMAL to describe file|
+|mosaic-X5.lib| JAMAL to describe file|
+|mosaic3D.stp| JAMAL to describe file|
+|mosaic_X5.kicad_mod| JAMAL to describe file|
+
+JAMAL TO CHECK FOLDERS...
+
 ### Is the project open source?
 Yes, as it allows easy adaptations and thus enables the robotics and autonomous community to create their own spin off projects.
 As such this can be also a starting reference point for integrators when in need of GNSS integration.
@@ -93,6 +108,17 @@ We recommend you to contact Septentrio should you have questions on how to integ
 Their support email address is <support AT septentrio DOT com> </br>.
 
 ## mosaicHAT user documentation
+### mosaicHAT Manufacturing and Assembly
+You can use the reference design, layout files from this project and contact your local manufacturing company for producing it. Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board  (both PCB and assembly can be done by them).
+
+#### Elements to provide when manufactring the board
+The following elements are the more important when asking Eurocircuits or a local manufactring company:
+   * Provide PCB layout
+   * Provide Reference design file
+   * Provide the HW manual of the mosaic-X5 which ... // JAMAL to add here
+   * //JAMAL TO ADD MORE THINGS HERE
+   * It is important that you make sure 
+
 ### general interfaces of mosaicHAT
 The board exposes the following interfaces:
 <img src="doc_resources/mosaicHAT_features.png" width="80%">
@@ -157,8 +183,7 @@ installed through the RxTools software suite.
 
 Septentrio's RxTools is a SW which can be used to communicate to the mosaicHAT and can be downloaded free of charge from the [Septentrio support site](https://www.septentrio.com/en/support/software/rxtools).
 
-On Linux, the standard Linux CDC-ACM driver
-is suitable. Most terminal emulation programs will make no distinction between virtual and
+On Linux, the standard Linux CDC-ACM driver is suitable. Most terminal emulation programs will make no distinction between virtual and
 native COM ports. Note that the port settings (baud rate, etc) for virtual serial ports are not
 relevant, and can be left in their default configuration in the terminal emulation program.
 When connecting the USB cable to a Windows PC, a new drive appears in the file manager.
@@ -166,7 +191,9 @@ This drive contains an installer for the USB driver. Running this installer is n
 you have already installed the RxTools suite. 
 
 When the USB cable is connected, the receiver supports Ethernet-over-USB. The IP address
-allocated to the Ethernet-over-USB interface is 192.168.3.1. 
+allocated to the Ethernet-over-USB interface is 192.168.3.1. The Web user interface of the receiver can then be accessed using (http://192.168.3.1).
+
+<img src="doc_resources/webui.PNG" width="40%">
 
 More information on how to configure or access the web interface can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
@@ -213,15 +240,15 @@ The following LEDs are defined on the mosaicHAT:
 #### Input Reset
 A pin reset is also available via the Raspberry Pi connector. This is connected directly to the reset pin of the mosaicHAT.
 
-<JAMAL to explain which pin is used>
-<JAMAL to explain how can this be controled from Raspberry Pi>
+// JAMAL to explain which pin is used
+// JAMAL to explain how can this be controled from Raspberry Pi
 
 #### PPS Output
 PPS signals are used for precise timekeeping and time measurement. One increasingly common use is in time synchronization with other sensors (e.g. Lidars or IMUs). 
 
 The receiver is able to generate an x-pulse-per-second (xPPS) signal aligned with either GPS, Galileo or GLONASS system time, or with UTC, or with the internal receiver time.
 
-<JAMAL to explain which pin is used>
+//JAMAL to explain which pin is used
   
 More information on the definition of PPS output or on how to configure the PPS parameters can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
@@ -232,7 +259,7 @@ Upon detection of a transition, the receiver can output the time and/or the posi
 
 Events can be used as an example for UAV Photogrametry (tagging the pictures taken either by a UAV or a robot).
 
-<JAMAL to explain which pin is used>
+//JAMAL to explain which pin is used
 
 More information on the Events input of mosaic-X5 can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
