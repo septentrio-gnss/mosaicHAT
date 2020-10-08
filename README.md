@@ -83,7 +83,7 @@ Septentrio designs, manufactures and sells high-precision, multi-frequency, mult
 
 The technology offers high accuracy and reliability thanks to GNSS+ algorithms as well as <a href="https://www.septentrio.com/en/advanced-interference-monitoring-mitigation-aim">Septentrio's Advanced Interference Monitoring and Mitigation (AIM+)</a> which protects against RF interference (jamming) and spoofing.
 
-For more information about Septentrio products go to http:\\www.septentrio.com
+For more information about Septentrio products go to <http:\\www.septentrio.com>.
 
 ### Deliverables
 This project makes the following deliverables for both integrators and designers of systems around Septentrio's mosaic modules.
@@ -137,7 +137,7 @@ The following elements are the more important when asking Eurocircuits or a loca
    * //JAMAL TO ADD MORE THINGS HERE
    * It is important that you make sure 
 #### Ordering mosaic
-You can order the mosaic-X5 from [Digikey](https://www.digikey.com/en/product-highlight/s/septentrio/mosaic-x5-module) or you can contact [Septentrio](www.septentrio.com) for direct purchasing or for other mosiac models.
+You can order the mosaic-X5 from [Digikey](https://www.digikey.com/en/product-highlight/s/septentrio/mosaic-x5-module) or you can contact Septentrio at <www.septentrio.com> for direct purchasing or for other mosiac models.
 
 |Organization|part number|
 |--------|----------|
