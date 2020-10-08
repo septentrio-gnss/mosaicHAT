@@ -8,7 +8,7 @@ Maintainer: (Septentrio gnss github user) <githubuser@septentrio.com> </br>
 External website: https://github.com/septentrio-gnss/mosaicHAT </br>
 License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a>
 
-<img src="doc_resources/mosaicHAT_keyselling.png" width="60%">
+<img src="doc_resources/mosaicHAT_keyselling.png" width="80%">
 
 Table of contents
 =================
