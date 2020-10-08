@@ -28,7 +28,7 @@ Table of contents
       * [General Purpose LEDs](#general-purpose-leds)
       * [Input Reset](#input-reset)
       * [events](#events)
-      * [ppso](#ppso)
+      * [PPS Output](#ppsoutput)
    * [mosaicHAT Design documentation](#mosaichat-design-documentation)
       * [general interfaces of mosaicHAT](#general-interfaces-of-mosaichat)
 
@@ -48,12 +48,21 @@ With our older HiFiBerry boards you had to solder an 8-pin header onto the Raspb
 #### Robust mechanical design
 With 4 mounting holes the connection between the Raspberry Pi and the add-on board is very robust. 
 
+### Can I buy it?
+At this moment we do not know of anybody who sells the manufactured version of this board. However you can use the reference design, layout and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them).
+
+#### Do I need to source special components for producing this board?
+Not really, most of the components are generic enough. The mosaic GNSS module can be obatined from Digikey or directly from Septentrio. Should you project be larger then we recommend you to contact Septentrio sales team directly (contact <sales AT septentrio DOT com>.
+
 ### What is the's mosaic-X5 or mosaic-Sx?
 #### mosaic-X5
 <a href="https://www.septentrio.com/en/products/gnss-receivers/rover-base-receivers/receivers-module/mosaic">Septentrio's mosaic-X5</a>, a multi-band, multi-constellation GNSS receiver in a low power surface mount module with a wide array of interfaces, designed for mass market applications like robotics and autonomous systems, capable of tracking all Global Navigation Satellite System (GNSS) constellations supporting current and future signals. With unique built-in AIM+ technology for interference mitigation, Septentrio is offering a performance benchmark in mass market GNSS positioning building blocks.
 
 #### mosaic-Sx
 <a href="https://www.septentrio.com/en/products/correction-services/precise-point-positioning-services-land/secorx-s/mosaic-sx">Septentrio's mosaic-Sx</a> module offers a unique approach to GNSS positioning. It provides convenient always-on high-accuracy positioning right out of the box. No need for any additional correction service selection, subscription and maintenance. This is made possible by an integration of a PPP-RTK sub-decimeter correction service into Septentrio’s latest core GNSS technology. With all-in-view satellite tracking and unmatched anti-jamming technology mosaic-Sx offers a perfect combination of convenience and performance in a very small size factor.
+
+#### Other mosaic versions
+Any other mosaic pin compatible products could also be used on this design, however you would need to take into consideration the functions or pins which would need to exposed and then modify the design for your own project. Surely feel free to spin of the project and refer to this one should you make other open source designs based on mosaicHAT.
 
 ### Who is Septentrio?
 <img src="doc_resources/Septentrio_logo.png" width="30%">
@@ -78,10 +87,10 @@ More info about licensing can be found here:
 <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a>
 
 ### Disclaimer
-This project is provided as is and while the general interfaces have been tested, the project has not been fully validated nor by the author nor by Septentrio. 
-We recommend you to contact Septentrio should you have questions on how to integrate Septentrio's GNSS modules.
+This project is* provided as is* and while the general interfaces have been tested, the project has not been fully validated nor by the author nor by Septentrio. 
+We recommend you to contact Septentrio should you have questions on how to integrate Septentrio's GNSS mosaic modules.
 
-Their support email address is <support AT septentrio DOT com> </br>
+Their support email address is <support AT septentrio DOT com> </br>.
 
 ## mosaicHAT user documentation
 ### general interfaces of mosaicHAT
@@ -137,11 +146,30 @@ To enable communication between mosaicHAT and Raspberry Pi (RPi), you should mak
 
 #### USB Communication
 
-
 Connecting RPi, as well as any other PC, to mosaic via USB provides:
 - Septentrio's web interface
 - Two USB serial ports
 - Multiple TCP/IP ports
+
+The Windows USB driver provided with mosaicHAT emulates two virtual serial ports, which
+can be used as standard COM ports to access the receiver. The Windows USB diver can be
+installed through the RxTools software suite. 
+
+Septentrio's RxTools is a SW which can be used to communicate to the mosaicHAT and can be downloaded free of charge from the [Septentrio support site](https://www.septentrio.com/en/support/software/rxtools).
+
+On Linux, the standard Linux CDC-ACM driver
+is suitable. Most terminal emulation programs will make no distinction between virtual and
+native COM ports. Note that the port settings (baud rate, etc) for virtual serial ports are not
+relevant, and can be left in their default configuration in the terminal emulation program.
+When connecting the USB cable to a Windows PC, a new drive appears in the file manager.
+This drive contains an installer for the USB driver. Running this installer is not needed if
+you have already installed the RxTools suite. 
+
+When the USB cable is connected, the receiver supports Ethernet-over-USB. The IP address
+allocated to the Ethernet-over-USB interface is 192.168.3.1. 
+
+More information on how to configure or access the web interface can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
+
 
 #### Serial Communication
 
@@ -160,22 +188,49 @@ default COM-port settings are:
 |flow control| none|
 
 The baud rate can be modified at any time by using the *setCOMSettings* command.
-Septentrio's RxTools is a SW which can be used to communicate to the mosaicHAT and can be downloaded free of charge from the [Septentrio support side](https://www.septentrio.com/en/support/software/rxtools).
+Septentrio's RxTools is a SW which can be used to communicate to the mosaicHAT and can be downloaded free of charge from the [Septentrio support site](https://www.septentrio.com/en/support/software/rxtools).
 Once you have downloaded it you can use Septentrio's RxControl and Data Link which can communicate with the receiver over a COM-port connection:
 select Serial Connection option when opening the connection to the receiver.
 
 #### FTDI
+As mentioned an extra serial port is made available and can be used as an FTDI. The pins are aligned with standard FTDI conformity thus you can add support for converting the TTL to an RS-232 or USB signals. FTDI can also be used with some Bluetooth devices. There is a large variety of FTDI devices which can help in communicating with the mosaicHAT. 
 
 #### General Purpose LEDs
-
-
+The following LEDs are defined on the mosaicHAT:
+|LED|Description|
+|--------|----------|
+|1 | PVT |
+|2| Measurements|
+|3| ...|
+|4| ...|
+|5| ...|
+<JAMAL to explain hwich LEDS are actually used>
+<JAMAL to explain how can this be controled from Raspberry Pi>
 
 #### Input Reset
+A pin reset is also available via the Raspberry Pi connector. This is connected directly to the reset pin of the mosaicHAT.
 
-#### PPSO
+<JAMAL to explain which pin is used>
+<JAMAL to explain how can this be controled from Raspberry Pi>
+
+#### PPS Output
+PPS signals are used for precise timekeeping and time measurement. One increasingly common use is in time synchronization with other sensors (e.g. Lidars or IMUs). 
+
+The receiver is able to generate an x-pulse-per-second (xPPS) signal aligned with either GPS, Galileo or GLONASS system time, or with UTC, or with the internal receiver time.
+
+<JAMAL to explain which pin is used>
+  
+More information on the definition of PPS output or on how to configure the PPS parameters can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
 #### Events
+The receiver can time-tag electrical level transitions on its Event input with an accuracy of 20ns.
+By default, the receiver reacts on low-to-high transitions but can also be configured on the receiver (setEventParameters command).
 
+Upon detection of a transition, the receiver can output the time and/or the position at the instant of the event. This will be output in the Septentrio binary format.
+
+<JAMAL to explain which pin is used>
+
+More information on the Events input of mosaic-X5 can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
 ## mosaicHAT Design documentation
 
