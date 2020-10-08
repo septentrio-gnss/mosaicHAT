@@ -3,8 +3,8 @@
 <img src="doc_resources/mosaicHAT_logo_withText.png" width="60%">
 
 mosaicHAT: A GNSS HAT for Raspberry PI </br>
-Maintainer: Septentrio <githubuser AT septentrio DOT com> </br>
-Author: Jamal Sa'd <jamalhazem127 AT gmail DOT com> </br>
+Maintainer: (Septentrio) <githubuser@septentrio.com> </br>
+Author: (Jamal Sa'd) <jamalhazem127@gmail.com> </br>
 External website: https://github.com/septentrio-gnss/mosaicHAT </br>
 License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a>
 
@@ -16,22 +16,23 @@ Table of contents
    * [Introduction to mosaicHAT](#introduction-to-mosaichat)
       * [What is mosaicHAT?](#what-is-mosaichat)
       * [A HAT for Raspberry Pi?](#a-hat-for-raspberry-pi)
-      * [What is Septentrio's mosaic-X5 or mosaic-Sx?](#what-is-the-mosaic-x5-or-mosaic-sx?)
+      * [What is the mosaic module?](#what-is-the-mosaic-module)
       * [Who is Septentrio?](#who-is-septentrio)
       * [Is the project Open Source?](#is-the-project-open-source)
       * [Disclaimer](#disclaimer)
    * [mosaicHAT user documentation](#mosaichat-user-documentation)
+      * [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
       * [general interfaces of mosaicHAT](#general-interfaces-of-mosaichat)
       * [Connecting to Raspberry Pi](#connecting-to-raspberry-pi)
-      * [Connecting an antenna](#connectin-an-antenna)
+      * [Connecting an antenna](#connecting-an-antenna)
       * [USB Communication](#usb-communication)
       * [Serial Communication](#serial-communication)
       * [FTDI-connector](#ftdi-connector)
       * [General Purpose LEDs](#general-purpose-leds)
       * [Reset Connector](#reset-connector)
       * [events](#events)
-      * [PPS Output](#ppsoutput)
-      * [ROS support with ROSai](#ros-support-with-rosaic)
+      * [PPS Output](#pps-output)
+      * [ROS support with ROSaic](#ros-support-with-rosaic)
    * [mosaicHAT Design documentation](#mosaichat-design-documentation)
       * [mosaic Pinout](#mosaic-pinout)
       * [Power Sources](#power-sources)
@@ -64,9 +65,9 @@ With 4 mounting holes the connection between the Raspberry Pi and the add-on boa
 At this moment we do not know of anybody who sells the manufactured version of this board. However you can use the reference design, layout and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
 
 #### Do I need to source special components for producing this board?
-Not really, most of the components are generic enough. The mosaic GNSS module can be obatined from Digikey or directly from Septentrio. Should you project be larger then we recommend you to contact Septentrio sales team directly (contact <sales AT septentrio DOT com>.
+Not really, most of the components are generic enough. The mosaic GNSS module can be obatined from Digikey or directly from Septentrio. Should you project be larger then we recommend you to contact Septentrio sales team directly at <sales@septentrio.com>.
 
-### What is the's mosaic-X5 or mosaic-Sx?
+### What is the mosaic module?
 #### mosaic-X5
 <a href="https://www.septentrio.com/en/products/gnss-receivers/rover-base-receivers/receivers-module/mosaic">Septentrio's mosaic-X5</a>, a multi-band, multi-constellation GNSS receiver in a low power surface mount module with a wide array of interfaces, designed for mass market applications like robotics and autonomous systems, capable of tracking all Global Navigation Satellite System (GNSS) constellations supporting current and future signals. With unique built-in AIM+ technology for interference mitigation, Septentrio is offering a performance benchmark in mass market GNSS positioning building blocks.
 
@@ -119,7 +120,10 @@ This project is **PROVIDED AS IS** and while the general interfaces have been te
 It remains your responsability when producing or using this design for your own purposes.
 We recommend you to contact Septentrio should you have questions on how to integrate Septentrio's GNSS mosaic modules.
 
-Their support email address is <support AT septentrio DOT com> </br>.
+Their support email address is <support@septentrio,com> </br>.
+
+### Documentation sections
+This project contains two important sections for documentation. The first one which is an user documentation (see section [mosaicHAT user documentation](#mosaichat-user-documentation)) and the second one (see section [mosaicHAT Design documentation](#mosaichat-design-documentation)) which is documentation for designers wanting to modify the reference design of this project.
 
 ## mosaicHAT user documentation
 ### mosaicHAT Manufacturing and Assembly
@@ -307,7 +311,7 @@ The receiver is able to generate an x-pulse-per-second (xPPS) signal aligned wit
 More information on the definition of PPS output or on how to configure the PPS parameters can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
 
-#### ROS support with ROSai
+#### ROS support with ROSaic
 The mosaic-X5 but also mosaicHAT are supported by ROSaic. ROSaic is a ROS driver for the mosaic modules and allows you to do integrations for robotic applications.
 ROSaic is also an open source project and can be found here:
    * [http://wiki.ros.org/rosaic](http://wiki.ros.org/rosaic)
