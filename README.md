@@ -22,6 +22,7 @@ Table of contents
    * [mosaicHAT user documentation](#mosaichat-user-documentation)
       * [general interfaces of mosaicHAT](#general-interfaces-of-mosaichat)
       * [Connecting to Raspberry Pi](#connecting-to-raspberry-pi)
+      * [Connecting an antenna](#connectin-an-antenna)
       * [USB Communication](#usb-communication)
       * [Serial Communication](#serial-communication)
       * [FTDI](#ftdi)
@@ -49,7 +50,7 @@ With our older HiFiBerry boards you had to solder an 8-pin header onto the Raspb
 With 4 mounting holes the connection between the Raspberry Pi and the add-on board is very robust. 
 
 ### Can I buy it?
-At this moment we do not know of anybody who sells the manufactured version of this board. However you can use the reference design, layout and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufactring-and-assembly)
+At this moment we do not know of anybody who sells the manufactured version of this board. However you can use the reference design, layout and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
 
 #### Do I need to source special components for producing this board?
 Not really, most of the components are generic enough. The mosaic GNSS module can be obatined from Digikey or directly from Septentrio. Should you project be larger then we recommend you to contact Septentrio sales team directly (contact <sales AT septentrio DOT com>.
@@ -118,6 +119,14 @@ The following elements are the more important when asking Eurocircuits or a loca
    * Provide the HW manual of the mosaic-X5 which ... // JAMAL to add here
    * //JAMAL TO ADD MORE THINGS HERE
    * It is important that you make sure 
+#### Ordering mosaic
+You can order the mosaic-X5 from [Digikey](https://www.digikey.com/en/product-highlight/s/septentrio/mosaic-x5-module) or you can contact [Septentrio](www.septentrio.com) for direct purchasing or for other mosiac models.
+
+|Organization|part number|
+|--------|----------|
+|Digikey part number | 2771-410322-ND |
+|Septentrio part number| 410322|
+
 
 ### general interfaces of mosaicHAT
 The board exposes the following interfaces:
@@ -170,6 +179,18 @@ To enable communication between mosaicHAT and Raspberry Pi (RPi), you should mak
   ```
 -  Reboot RPi for changes to take effect.
 
+#### Connecting an antenna
+In order to benefit from the multiple signals and constellations that the mosaicHAT board has it is recommended to purchase a capable multiband antenna.
+There are several GNSS antenna manufacturers in the market (e.g. Maxtenna, Tallysman, etc). For more information you can also contact Septentrio.
+
+There are also different antenna types each of them suitable for different applications (e.g. robotics, larger machines, etc). Surely the larger the antenna the better performance you might get, however it is not all about size but also quality of antenna elements themselves.
+
+<img src="doc_resources/antennas.png" width="60%">
+
+Please make sure you get the right jumper so you can also set the right voltage depending on the chosen GNSS antenna.
+
+<img src="doc_resources/antenna_jumper.png" width="50%">
+
 #### USB Communication
 
 Connecting RPi, as well as any other PC, to mosaic via USB provides:
@@ -193,7 +214,7 @@ you have already installed the RxTools suite.
 When the USB cable is connected, the receiver supports Ethernet-over-USB. The IP address
 allocated to the Ethernet-over-USB interface is 192.168.3.1. The Web user interface of the receiver can then be accessed using (http://192.168.3.1).
 
-<img src="doc_resources/webui.PNG" width="40%">
+<img src="doc_resources/webui.PNG" width="50%">
 
 More information on how to configure or access the web interface can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
@@ -222,20 +243,26 @@ select Serial Connection option when opening the connection to the receiver.
 #### FTDI
 As mentioned an extra serial port is made available and can be used as an FTDI. The pins are aligned with standard FTDI conformity thus you can add support for converting the TTL to an RS-232 or USB signals. FTDI can also be used with some Bluetooth devices. There is a large variety of FTDI devices which can help in communicating with the mosaicHAT. 
 
+<img src="doc_resources/ftdi_jumper.png" width="50%">
+
 Example of an FTDI (USB cable)
-<img src="doc_resources/FTDI_USB_cable_TTL-232R1.jpg" width="20%">
+
+<img src="doc_resources/FTDI_USB_cable_TTL-232R1.jpg" width="30%">
 
 #### General Purpose LEDs
 The following LEDs are defined on the mosaicHAT:
 |LED|Description|
 |--------|----------|
-|1 | GL1 LED - controled by the Raspberry Pi |
-|2| GL2 LED - controled by the Raspberry Pi|
-|3| PPS LED|
-|4| PVT LED|
-|5| Power LED|
+|1| Power LED|
+|2| PPS LED|
+|3| GL1 LED - controled by the Raspberry Pi |
+|4| GL2 LED - controled by the Raspberry Pi|
+|5| PVT LED|
 
-<JAMAL to explain how can this be controled from Raspberry Pi>
+<img src="doc_resources/leds.png" width="50%">
+
+// JAMAL to explain how can this be controled from Raspberry Pi
+
 
 #### Input Reset
 A pin reset is also available via the Raspberry Pi connector. This is connected directly to the reset pin of the mosaicHAT.
@@ -258,6 +285,8 @@ By default, the receiver reacts on low-to-high transitions but can also be confi
 Upon detection of a transition, the receiver can output the time and/or the position at the instant of the event. This will be output in the Septentrio binary format.
 
 Events can be used as an example for UAV Photogrametry (tagging the pictures taken either by a UAV or a robot).
+
+<img src="doc_resources/hotshoe.png" width="50%">
 
 //JAMAL to explain which pin is used
 
