@@ -196,18 +196,18 @@ select Serial Connection option when opening the connection to the receiver.
 As mentioned an extra serial port is made available and can be used as an FTDI. The pins are aligned with standard FTDI conformity thus you can add support for converting the TTL to an RS-232 or USB signals. FTDI can also be used with some Bluetooth devices. There is a large variety of FTDI devices which can help in communicating with the mosaicHAT. 
 
 Example of an FTDI (USB cable)
-<img src="doc_resources/FTDI_USB_cable_TTL-232R1.jpg" width="60%">
+<img src="doc_resources/FTDI_USB_cable_TTL-232R1.jpg" width="20%">
 
 #### General Purpose LEDs
 The following LEDs are defined on the mosaicHAT:
 |LED|Description|
 |--------|----------|
-|1 | PVT |
-|2| Measurements|
-|3| ...|
-|4| ...|
-|5| ...|
-<JAMAL to explain hwich LEDS are actually used>
+|1 | GL1 LED - controled by the Raspberry Pi |
+|2| GL2 LED - controled by the Raspberry Pi|
+|3| PPS LED|
+|4| PVT LED|
+|5| Power LED|
+
 <JAMAL to explain how can this be controled from Raspberry Pi>
 
 #### Input Reset
@@ -228,8 +228,9 @@ More information on the definition of PPS output or on how to configure the PPS 
 #### Events
 The receiver can time-tag electrical level transitions on its Event input with an accuracy of 20ns.
 By default, the receiver reacts on low-to-high transitions but can also be configured on the receiver (setEventParameters command).
-
 Upon detection of a transition, the receiver can output the time and/or the position at the instant of the event. This will be output in the Septentrio binary format.
+
+Events can be used as an example for UAV Photogrametry (tagging the pictures taken either by a UAV or a robot).
 
 <JAMAL to explain which pin is used>
 
