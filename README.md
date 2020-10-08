@@ -3,8 +3,8 @@
 <img src="doc_resources/mosaicHAT_logo_withText.png" width="60%">
 
 mosaicHAT: A GNSS HAT for Raspberry PI </br>
-Maintainer: (Septentrio) <githubuser@septentrio.com> </br>
 Author: (Jamal Sa'd) <jamalhazem127@gmail.com> </br>
+Maintainer: (Septentrio gnss github user) <githubuser@septentrio.com> </br>
 External website: https://github.com/septentrio-gnss/mosaicHAT </br>
 License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a>
 
