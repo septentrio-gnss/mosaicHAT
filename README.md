@@ -246,6 +246,8 @@ Communication with mosaicHAT could be tested using tools like [PuTTY](https://ww
 
 TCP/IP ports could be also tested using PuTTY, or directly from terminal. Note that 28784 is the default TCP command port: 
 
+`sudo telnet 192.168.3.1 28784`
+
 <img src="doc_resources/USB_telnet.png" width="60%">
 
 
