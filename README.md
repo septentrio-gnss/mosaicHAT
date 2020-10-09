@@ -209,6 +209,10 @@ Please make sure you get the right jumper so you can also set the right voltage 
 
 <img src="doc_resources/antenna_jumper.png" width="50%">
 
+In the following photo, a Tallysman antenna has been connected to mosaicHAT. Jumper has been placed to supply 5V to antenna.
+
+<img src="doc_resources/antenna_connected.jpg" width="60%">
+
 #### USB Communication
 
 Connecting RPi, as well as any other PC, to mosaic via USB provides:
