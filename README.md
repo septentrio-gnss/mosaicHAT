@@ -240,7 +240,7 @@ allocated to the Ethernet-over-USB interface is 192.168.3.1. The Web user interf
 
 More information on how to configure or access the web interface can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
-Communication with mosaicHAT could be tested using tools like [PuTTY](https://www.putty.org/). For example, here USB1 serial port is accessed to stream NMEA GGA messages:
+USB communication with mosaicHAT could be tested using tools like [PuTTY](https://www.putty.org/). For example, here USB1 serial port is accessed to stream NMEA GGA messages:
 
 <img src="doc_resources/USB_serial_PuTTY.png" width="60%">
 
