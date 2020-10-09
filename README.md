@@ -90,15 +90,16 @@ This project makes the following deliverables for both integrators and designers
 
 |File|Description|
 |--------|----------|
-|HATv1.0.kicad_pcb | JAMAL to describe file |
-|HATv1.0.pro| JAMAL to describe file|
-|HATv1.0.sch| JAMAL to describe file|
-|mosaicHAT_schematic.pdf| JAMAL to describe file|
-|mosaic-X5.lib| JAMAL to describe file|
-|mosaic3D.stp| JAMAL to describe file|
-|mosaic_X5.kicad_mod| JAMAL to describe file|
+|KiCAD_files/HATv1.0.pro| KiCAD project |
+|KiCAD_files/HATv1.0.kicad_pcb | KiCAD layout |
+|KiCAD_files/HATv1.0.sch| KiCAD schematic |
+|KiCAD_files/mosaicHAT_library.lib| Project schematic library |
+|mosaic_design_components/mosaic_X5.kicad_mod| mosaic symbol |
+|mosaic_design_components/mosaic_X5.kicad_mod| mosaic footprint |
+|mosaic_design_components/mosaic3D.stp| mosaic 3D object |
 
-JAMAL TO CHECK FOLDERS...
+
+
 
 ### Is the project open source?
 Yes, as it allows easy adaptations and thus enables the robotics and autonomous community to create their own spin off projects.
