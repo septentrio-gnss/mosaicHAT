@@ -337,6 +337,10 @@ More information on the definition of PPS output or on how to configure the PPS 
 
 ### Python Script
 
+// modify to RPi UART
+
+Following is a a sample python script that could be used to read coordinates from mosaicHAT. The script streams NMEA GGA messages from mosaic via serial, parse them and prints out coordinates.
+
 ```
 import serial
 import time
@@ -382,6 +386,10 @@ while True:
 ser.close()
 
 ```
+
+Running the script:
+
+<img src="doc_resources/python_code.png" width="60%">
 
 #### ROS support with ROSaic
 <img src="doc_resources/ROSaic.png" width="60%">
