@@ -312,6 +312,7 @@ More information on the definition of PPS output or on how to configure the PPS 
 
 
 #### ROS support with ROSaic
+<img src="doc_resources/ROSaic.png" width="60%">
 The mosaic-X5 but also mosaicHAT are supported by ROSaic. ROSaic is a ROS driver for the mosaic modules and allows you to do integrations for robotic applications.
 ROSaic is also an open source project and can be found here:
    * [http://wiki.ros.org/rosaic](http://wiki.ros.org/rosaic)
