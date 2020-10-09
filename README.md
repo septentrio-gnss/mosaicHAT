@@ -238,8 +238,6 @@ allocated to the Ethernet-over-USB interface is 192.168.3.1. The Web user interf
 
 <img src="doc_resources/webui.PNG" width="50%">
 
-More information on how to configure or access the web interface can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
-
 USB communication with mosaicHAT could be tested using tools like [PuTTY](https://www.putty.org/). For example, here USB1 serial port is accessed to stream NMEA GGA messages:
 
 <img src="doc_resources/USB_serial_PuTTY.png" width="60%">
@@ -251,6 +249,7 @@ TCP/IP ports could be also tested using PuTTY, or directly from terminal. Note t
 
 <img src="doc_resources/USB_telnet.png" width="60%">
 
+More information on how to configure or access the web interface, USB serial and USB TCP can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
 #### Serial Communication
 
@@ -310,14 +309,20 @@ A pin reset is also available via the Raspberry Pi connector. This is connected 
 
 #### Events
 The receiver can time-tag electrical level transitions on its Event input with an accuracy of 20ns.
-By default, the receiver reacts on low-to-high transitions but can also be configured on the receiver (setEventParameters command).
-Upon detection of a transition, the receiver can output the time and/or the position at the instant of the event. This will be output in the Septentrio binary format.
+By default, the receiver reacts on low-to-high transitions but can also be configured on the receiver using **setEventParameters command**.
+Upon detection of a transition, the receiver can output the time and/or the position at the instant of the event. This will be output in the Septentrio Binary Format.
 
 Events can be used as an example for UAV Photogrametry (tagging the pictures taken either by a UAV or a robot).
 
 <img src="doc_resources/hotshoe.png" width="50%">
 
-//JAMAL to explain which pin is used
+EVENTs could be tested directly on mosaicHAT board by connecting PPS Output to one of the EVENTs pins. Here EVENTA is connected to PPSO, with PPS interval set to 1 sec. 
+
+<img src="doc_resources/events_testing.jpg" width="60%">
+
+To monitor EVENTs through web interface, choose PPS/Timing from GNSS menu:
+
+<img src="doc_resources/Events_interface.png" width="60%">
 
 More information on the Events input of mosaic-X5 can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
