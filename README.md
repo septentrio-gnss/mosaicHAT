@@ -94,7 +94,7 @@ This project makes the following deliverables for both integrators and designers
 |KiCAD_files/HATv1.0.kicad_pcb | KiCAD layout |
 |KiCAD_files/HATv1.0.sch| KiCAD schematic |
 |KiCAD_files/mosaicHAT_library.lib| Project schematic library |
-|mosaic_design_components/mosaic_X5.kicad_mod| mosaic symbol |
+|mosaic_design_components/mosaic_X5.mosaic-X5.lib | mosaic symbol |
 |mosaic_design_components/mosaic_X5.kicad_mod| mosaic footprint |
 |mosaic_design_components/mosaic3D.stp| mosaic 3D object |
 
