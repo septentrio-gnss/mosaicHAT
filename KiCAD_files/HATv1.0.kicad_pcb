@@ -1801,7 +1801,7 @@
       (net 10 /VANT) (zone_connect 2))
     (pad U21 smd circle (at -6.35 11.43 180) (size 0.6 0.6) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
-    (model "C:/Users/JMA0162986/Documents/Github res/mosaic_design_components/mosaic3D.stp"
+    (model ${KIPRJMOD}/Shapes3D/mosaic3D.stp
       (offset (xyz 15.5 -15.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
@@ -2202,12 +2202,7 @@
       (net 1 GND))
     (pad 2 thru_hole circle (at -2.54 2.54 90) (size 2.25 2.25) (drill 1.7) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model ${KISYS3DMOD}/Connector_Coaxial.3dshapes/SMA_Amphenol_132203-12_Horizontal.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1.1))
-      (rotate (xyz 0 0 0))
-    )
-    (model C:/Users/JMA0162986/Desktop/HATv1.0/Libraries/internet_3d_models/SMA-angled.STEP
+    (model ${KIPRJMOD}/Shapes3D/SMA.STEP
       (offset (xyz 0 0 -4))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2717,12 +2712,7 @@
       (net 1 GND))
     (pad 2 thru_hole circle (at -2.54 2.54 90) (size 2.25 2.25) (drill 1.7) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model ${KISYS3DMOD}/Connector_Coaxial.3dshapes/SMA_Amphenol_132203-12_Horizontal.wrl
-      (offset (xyz 0 0 -4.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model C:/Users/JMA0162986/Desktop/HATv1.0/Libraries/internet_3d_models/SMA-angled.STEP
+    (model ${KIPRJMOD}/Shapes3D/SMA.STEP
       (offset (xyz 0 0 -4))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3468,12 +3458,7 @@
       (net 1 GND))
     (pad 6 smd rect (at 1 1.2375) (size 1.5 1.9) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
-    (model ${KISYS3DMOD}/Connector_USB.3dshapes/USB_Micro-B_Molex-105017-0001.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model C:/Users/JMA0162986/Desktop/HATv1.0/Libraries/internet_3d_models/AB2_USB_MICRO_SMD.wrl
+    (model ${KIPRJMOD}/Shapes3D/MicroUSB.wrl
       (offset (xyz 0 -5 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
