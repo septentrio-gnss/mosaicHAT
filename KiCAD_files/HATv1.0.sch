@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L mosaicHAT_symbols:raspberrypi_hat_OX40HAT J4
+L mosaicHAT_library:raspberrypi_hat_OX40HAT J4
 U 1 1 5F1A9F88
 P 20200 5400
 F 0 "J4" H 20200 5625 50  0000 C CNN
@@ -664,7 +664,7 @@ Wire Wire Line
 Wire Wire Line
 	15000 5975 15450 5975
 $Comp
-L mosaicHAT_symbols:ECMF02-2AMX6 FL1
+L mosaicHAT_library:ECMF02-2AMX6 FL1
 U 1 1 5F6C5D27
 P 16300 6075
 F 0 "FL1" H 16200 6440 50  0000 C CNN
@@ -1055,7 +1055,7 @@ F 3 "" H 21540 10420 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mosaicHAT_symbols:3-state_Buffer U4
+L mosaicHAT_library:3-state_Buffer U4
 U 1 1 5F54618A
 P 21440 10220
 F 0 "U4" H 21715 10080 50  0000 L CNN
@@ -1593,7 +1593,7 @@ Wire Wire Line
 	5045 5190 5045 5290
 Connection ~ 5045 5290
 $Comp
-L mosaicHAT_symbols:mosaic-X5 U1
+L mosaicHAT_library:mosaic-X5 U1
 U 1 1 5F7720EE
 P 6795 5890
 F 0 "U1" H 6595 10255 50  0000 C CNN
