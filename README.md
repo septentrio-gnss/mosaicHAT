@@ -269,9 +269,13 @@ default COM-port settings are:
 |flow control| none|
 
 The baud rate can be modified at any time by using the *setCOMSettings* command.
+
 Septentrio's RxTools is a SW which can be used to communicate to the mosaicHAT and can be downloaded free of charge from the [Septentrio support site](https://www.septentrio.com/en/support/software/rxtools).
+
 Once you have downloaded it you can use Septentrio's RxControl and Data Link which can communicate with the receiver over a COM-port connection:
 select Serial Connection option when opening the connection to the receiver.
+
+Note that currently there's no RxTools release for RPi (ARM architecture). Thus, RxTools should be used on a regular PC.
 
 #### FTDI Connector
 As mentioned an extra serial port is made available and can be used as an FTDI. The pins are aligned with standard FTDI conformity thus you can add support for converting the TTL to an RS-232 or USB signals. FTDI can also be used with some Bluetooth devices. There is a large variety of FTDI devices which can help in communicating with the mosaicHAT. 
