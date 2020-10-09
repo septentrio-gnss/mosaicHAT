@@ -34,7 +34,7 @@ Table of contents
       * [PPS Output](#pps-output)
       * [Python Script](#python-script)
       * [ROS support with ROSaic](#ros-support-with-rosaic)
-      * [mosaicHAT Design documentation](#mosaichat-design-documentation)
+   * [mosaicHAT Design documentation](#mosaichat-design-documentation)
       * [mosaic Pinout](#mosaic-pinout)
       * [Power Sources](#power-sources)
       * [Antennas](#antennas)
