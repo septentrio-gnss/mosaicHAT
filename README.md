@@ -282,6 +282,10 @@ Example of an FTDI (USB cable)
 
 <img src="doc_resources/FTDI_USB_cable_TTL-232R1.jpg" width="30%">
 
+In the following example, the common Bluetooth module (HC-06) has been used to control mosaicHAT from Android mobile phone. Note that most modules have a default 9600 baud rate while mosaic's default is 115200. Both devices should be set to the same baud rate for proper communication.
+
+<img src="doc_resources/FTDI_bluetooth.jpg" width="60%">
+
 #### General Purpose LEDs
 The following LEDs are defined on the mosaicHAT:
 |LED|Description|
