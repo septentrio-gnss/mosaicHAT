@@ -335,6 +335,53 @@ The receiver is able to generate an x-pulse-per-second (xPPS) signal aligned wit
   
 More information on the definition of PPS output or on how to configure the PPS parameters can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
+### Python Script
+
+```
+import serial
+import time
+
+# Establish serial connection
+ser = serial.Serial('/dev/ttyACM1', 115200)
+# Serial USB port, this is not fixed, to check your ports run: dmesg | grep tty
+# Your application may not have access to USB serial, if you got an error run: sudo chmod 666 /dev/ttyACM1
+time.sleep(1) # Wait for connection
+ser.write(b'SSSSSSSSSSSSS\n') # Push mosaic to run in command mode
+time.sleep(0.1) 
+ser.write(b'sno, Stream1, USB1, GGA, sec1\n') # starting NMEA GGA stream command
+time.sleep(0.1)
+
+while True:
+    nmea_bytes = ser.readline()        
+    nmea_string = str(nmea_bytes.decode())  
+    nmea_string = nmea_string.rstrip()
+    if (nmea_string.startswith('$GPGGA')):
+
+        nmea_array = [element.strip() for element in nmea_string.split(',')]
+        Quality_Indicator = int(nmea_array[6])
+        if Quality_Indicator==0:
+            print("No GPS Fix Available!") # NMEA GGA Quality indicator = 0 means no fix available
+        else:
+            # Parse NMEA GGA message
+            UTC_Time= float(nmea_array[1])
+            Latitude= float(nmea_array[2])*0.01
+            Latitude_direction = nmea_array[3]
+            Longitude = float(nmea_array[4])*0.01
+            Longitude_direction = nmea_array[5]
+            Height = float(nmea_array[9])
+            Height_unit = nmea_array[10]
+            # Print coordinates
+            print('UTC Time: ' + str(UTC_Time))
+            print(' Latitude: ' + str(Latitude) + Latitude_direction)
+            print(' Longitude: ' + str(Longitude) + Longitude_direction)
+            print(' Height: ' + str(Height) + Height_unit)  
+        time.sleep(0.1)
+    else:
+        continue         
+
+ser.close()
+
+```
 
 #### ROS support with ROSaic
 <img src="doc_resources/ROSaic.png" width="60%">
