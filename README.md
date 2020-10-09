@@ -316,11 +316,11 @@ Events can be used as an example for UAV Photogrametry (tagging the pictures tak
 
 <img src="doc_resources/hotshoe.png" width="50%">
 
-EVENTs could be tested directly on mosaicHAT board by connecting PPS Output to one of the EVENTs pins. Here EVENTA is connected to PPSO, with PPS interval set to 1 sec. 
+EVENTs could be tested directly on mosaicHAT board by connecting PPS Output to one of the EVENTs pins. Note that this works with a single wire because they share the same GND. Here EVENTA is connected to PPSO, with PPS interval set to 1 sec. 
 
 <img src="doc_resources/events_testing.jpg" width="60%">
 
-To monitor EVENTs through web interface, choose PPS/Timing from GNSS menu:
+To monitor EVENTs through web interface, go to PPS/Timing from GNSS menu:
 
 <img src="doc_resources/Events_interface.png" width="60%">
 
