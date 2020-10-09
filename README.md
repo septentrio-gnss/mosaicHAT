@@ -341,7 +341,7 @@ More information on the definition of PPS output or on how to configure the PPS 
 
 Following is a a sample python script that could be used to read coordinates from mosaicHAT. The script streams NMEA GGA messages from mosaic via serial, parse them and prints out coordinates.
 
-```
+````
 import serial
 import time
 
@@ -385,7 +385,7 @@ while True:
 
 ser.close()
 
-```
+````
 
 Running the script:
 
