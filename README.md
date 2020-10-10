@@ -434,6 +434,12 @@ The board layout, hiding filled areas in zones.
 
 - Layer 4: Green traces, trace free zones are filled with GND copper pour.
 
+|Layer|Description|
+|--------|----------|
+|Layer 1| Red traces, trace free zones are filled with GND copper pour |
+|Layer 2 | Full GND plane |
+|Layer 3| Pink traces, trace free zones make a 3.3V power plane |
+|Layer 4| Green traces, trace free zones are filled with GND copper pour |
 
 
 A top 3D view of mosaicHAT, featuring main electronic components.
