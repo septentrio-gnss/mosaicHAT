@@ -556,7 +556,6 @@ Thus, MosaicRX1 signal has been tri-stated by MODULE_RDY using tri-state buffer 
 
 <img src="doc_resources/serial_sch.PNG" width="80%">
 
-// rename buffer in schematic
 
 ### Reset Input
 
