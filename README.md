@@ -294,7 +294,7 @@ The following LEDs are defined on the mosaicHAT:
 
 |LED|Description|
 |--------|----------|
-|1| PWR LED - mosaicHAT on |
+|1| PWR LED - mosaicHAT state (on/off) |
 |2| PPS LED - Pulse Per Second |
 |3| GL1 LED - controled by the RPi (GPIO 6) |
 |4| GL2 LED - controled by the RPi (GPIO 26) |
