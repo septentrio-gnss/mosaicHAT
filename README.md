@@ -186,7 +186,7 @@ To enable communication between mosaicHAT and Raspberry Pi (RPi), you should mak
 
   And delete `console=ttyAMA0,115200` from the file. For different RPi versions, the cmd configuration file could be `/boot/cmdline.txt`.
 
-- TCP/IP over USB may not be enabled by default. To enable TCP/IP over USB, go to:
+- Ethernet-over-USB may not be enabled by default. To enable Ethernet-over-USB, go to:
 
   `sudo nano /etc/network/interfaces`
 
