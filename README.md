@@ -294,11 +294,11 @@ The following LEDs are defined on the mosaicHAT:
 
 |LED|Description|
 |--------|----------|
-|1| PWR LED - device state (on/off) |
-|2| PPS LED - Pulse Per Second |
-|3| GL1 LED - controled by the RPi (GPIO 6) |
-|4| GL2 LED - controled by the RPi (GPIO 26) |
-|5| PVT LED - PVT Available |
+|PWR LED | device state (on/off) |
+|PPS LED | Pulse Per Second |
+|GL1 LED | controled by the RPi (GPIO 6) |
+|GL2 LED | controled by the RPi (GPIO 26) |
+|PVT LED | PVT Available |
 
 <img src="doc_resources/leds.png" width="50%">
 
