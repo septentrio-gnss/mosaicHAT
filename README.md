@@ -426,13 +426,7 @@ The board layout, hiding filled areas in zones.
 
 <img src="doc_resources/layout.PNG" width="60%">
 
-- Layer 1: Red traces, trace free zones are filled with GND copper pour.
-
-- Layer 2: Full GND plane.
-
-- Layer 3: Pink traces, trace free zones make a 3.3V power plane.
-
-- Layer 4: Green traces, trace free zones are filled with GND copper pour.
+Following is the layout layers description:
 
 |Layer|Description|
 |--------|----------|
