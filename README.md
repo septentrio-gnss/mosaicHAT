@@ -294,7 +294,7 @@ The following LEDs are defined on the mosaicHAT:
 
 |LED|Description|
 |--------|----------|
-|PWR | Device state (ON/OFF) |
+|PWR | Device State (ON/OFF) |
 |PPS | Pulse Per Second |
 |GL1 | Connected to RPi (GPIO 6) |
 |GL2 | Connected to RPi (GPIO 26) |
