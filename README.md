@@ -291,17 +291,22 @@ In the following example, the common Bluetooth module (HC-06) has been used to c
 
 #### General Purpose LEDs
 The following LEDs are defined on the mosaicHAT:
+
 |LED|Description|
 |--------|----------|
-|1| Power LED|
-|2| PPS LED|
-|3| GL1 LED - controled by the Raspberry Pi |
-|4| GL2 LED - controled by the Raspberry Pi|
-|5| PVT LED|
+|1| PWR LED - mosaicHAT on |
+|2| PPS LED - Pulse Per Second |
+|3| GL1 LED - controled by the RPi (GPIO 6) |
+|4| GL2 LED - controled by the RPi (GPIO 26) |
+|5| PVT LED - PVT Available |
 
 <img src="doc_resources/leds.png" width="50%">
 
-// JAMAL to explain how can this be controled from Raspberry Pi
+PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the Hardware Manual for blinking behaviour of each mode. Both General LEDs (GL1 and GL2) could be directly controlled by Raspberry Pi for customized user applications.
+
+Just for illustration, the following python script runs GL1 and GL2 in alternate blinking mode. It is up to users to control those LEDs as convenient for their applications. 
+
+// to be added later
 
 
 #### Reset connector
@@ -461,7 +466,6 @@ Note that a second un-assembled capacitor place has been left for debugging and 
 
 ### Power Sources
 
-mosaicHAT could be powered by three options; Raspberry Pi, Micro USB and external power pin headers. mosaic module itself runs on 3.3V, thus a voltage regulator is used (LD1117AS33TR). According to its datasheet, the regulator's maximum input is 15V. Raspberry Pi and Micro USB already provide 5V. User should be careful when connecting higher voltage to external power pin headers. Though 5V is preferable, user can input up to 15V only if both VANT and FTDI PWR SRC jumpers are connected to 3.3V. Pin headers of 5V in the jumpers are connected directly to the input source as it's presumed to be 5V.
 
 Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Decoupling capacirors (100nF and 10uF) are used according to regulator’s datasheet. Following is the power part of schematic.
 
@@ -556,6 +560,8 @@ Thus, MosaicRX1 signal has been tri-stated by MODULE_RDY using tri-state buffer 
 
 ### Reset Input
 
+
+
 ### Micro USB
 
 To use mosaic as a USB device, the following pins of the module should be connected to a USB connector.
@@ -630,11 +636,9 @@ mosaicHAT comes with five blue indicator LEDs.
 
 5. Indicator LEDs, PWR LED is directly connected to 3.3V power plane. 
 
-PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the Hardware Manual for blinking behaviour of each mode. Both General LEDs (GL1 and GL2) could be directly controlled by Raspberry Pi for customized user applications.
-
 ### Clock Frequency Reference 
 
-mosaic module embeds an internal Temperature Compensated Crystal Oscillator (TCXO) for frequency reference. The module can either use its internal TCXO frequency reference or an external frequency reference. In Mosiachat's case, internal reference is used. Following are  Hardware Manual instructions for using internal TCXO.
+mosaic module embeds an internal Temperature Compensated Crystal Oscillator (TCXO) for frequency reference. The module can either use its internal TCXO frequency reference or an external frequency reference. In mosiacHAT's case, internal reference is used. Following are  Hardware Manual instructions for using internal TCXO.
 
 <img src="doc_resources/ref_hwmanual.PNG" width="60%">
 
