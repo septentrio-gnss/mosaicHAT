@@ -276,7 +276,7 @@ Serial connection between RPi and mosaicHAT could be tested using PuTTY:
 - Write the right baud rate **(default: 115200)**.
 - To send commands, force on *Local echo* and *Local line editing* from **Terminal** tab.
 
-<img src="doc_resources/putty_rpi_serial.png" width="60%">
+<img src="doc_resources/putty_rpi_serial.png" width="100%">
 
 <img src="doc_resources/serial_terminal_putty.png" width="60%">
 
