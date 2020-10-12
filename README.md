@@ -358,9 +358,7 @@ More information on the definition of PPS output or on how to configure the PPS 
 
 ### Python Script
 
-// modify to RPi UART
-
-Following is a a sample python script that could be used to read coordinates from mosaicHAT. The script streams NMEA GGA messages from mosaic via serial, parse them and prints out coordinates.
+Following is a a sample python script that could run on RPi to read coordinates from mosaicHAT. The script streams NMEA GGA messages from mosaic via serial, parse them and prints out coordinates.
 
 ```
 import serial
