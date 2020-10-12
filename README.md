@@ -663,7 +663,9 @@ mosaicHAT comes with five blue indicator LEDs.
 
 ### Clock Frequency Reference 
 
-mosaic module embeds an internal Temperature Compensated Crystal Oscillator (TCXO) for frequency reference. The module can either use its internal TCXO frequency reference or an external frequency reference. In mosiacHAT's case, internal reference is used. Following are  Hardware Manual instructions for using internal TCXO.
+mosaic module embeds an internal Temperature Compensated Crystal Oscillator (TCXO) for frequency reference. The module can either use its internal TCXO frequency reference or an external frequency reference. In mosiacHAT's case, internal reference is used. 
+
+Following are  Hardware Manual instructions for using internal TCXO.
 
 <img src="doc_resources/ref_hwmanual.PNG" width="60%">
 
