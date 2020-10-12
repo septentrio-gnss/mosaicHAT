@@ -372,7 +372,7 @@ ser = serial.Serial('/dev/ttyS0', 115200)
 time.sleep(1) # Wait for connection
 ser.write(b'SSSSSSSSSSSSS\n') # Push mosaic to run in command mode
 time.sleep(0.1) 
-ser.write(b'sno, Stream1, COM1, GGA, sec1\n') # starting NMEA GGA stream command, for USB replace COM1 to USB1 or USB2
+ser.write(b'sno, Stream1, COM1, GGA, sec1\n') # starting NMEA GGA stream command, for USB replace COM1 with USB1 or USB2
 time.sleep(0.1)
 
 while True:
