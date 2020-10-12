@@ -367,13 +367,14 @@ import serial
 import time
 
 # Establish serial connection
-ser = serial.Serial('/dev/ttyACM1', 115200)
-# Serial USB port, this is not fixed, to check your ports run: dmesg | grep tty
-# Your application may not have access to USB serial, if you got an error run: sudo chmod 666 /dev/ttyACM1
+ser = serial.Serial('/dev/ttyS0', 115200)
+# /dev/ttyS0 is the RPi UART, 115200 is mosaic default baud rate
+# For USB Serial, this could be (/dev/ttyACM0),the number is not fixed, to check your ports run: dmesg | grep tty
+# Your application may not have access to USB serial, if you got an error run: sudo chmod 666 /dev/ttyACM0
 time.sleep(1) # Wait for connection
 ser.write(b'SSSSSSSSSSSSS\n') # Push mosaic to run in command mode
 time.sleep(0.1) 
-ser.write(b'sno, Stream1, USB1, GGA, sec1\n') # starting NMEA GGA stream command
+ser.write(b'sno, Stream1, COM1, GGA, sec1\n') # starting NMEA GGA stream command, for USB replace COM1 to USB1 or USB2
 time.sleep(0.1)
 
 while True:
@@ -408,9 +409,6 @@ ser.close()
 
 ```
 
-Running the script:
-
-<img src="doc_resources/python_code.png" width="60%">
 
 #### ROS support with ROSaic
 <img src="doc_resources/ROSaic.png" width="60%">
