@@ -268,7 +268,7 @@ default COM-port settings are:
 |stop bits| 1|
 |flow control| none|
 
-The baud rate can be modified at any time by using the **setCOMSettings** command. Make 
+The baud rate can be modified at any time by using the **setCOMSettings** command.  
 
 Serial connection between RPi and mosaicHAT could be tested using PuTTY:
 
@@ -278,7 +278,7 @@ Serial connection between RPi and mosaicHAT could be tested using PuTTY:
 
 <img src="doc_resources/putty_rpi_serial.png" width="60%">
 
-
+<img src="doc_resources/serial_terminal_putty.png" width="60%">
 
 Septentrio's RxTools is a SW which can be used to communicate to the mosaicHAT and can be downloaded free of charge from the [Septentrio support site](https://www.septentrio.com/en/support/software/rxtools).
 Once you have downloaded it you can use Septentrio's RxControl and Data Link which can communicate with the receiver over a COM-port connection:
