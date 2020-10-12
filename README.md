@@ -272,8 +272,8 @@ The baud rate can be modified at any time by using the **setCOMSettings** comman
 
 Serial connection between RPi and mosaicHAT could be tested using PuTTY:
 
-- Choose Serial connection type **/dev/ttyS0**.
-- Choose the right baud rate **(default: 115200)**.
+- Choose serial connection type **/dev/ttyS0**.
+- Write the right baud rate **(default: 115200)**.
 - To send commands, force on *Local echo* and *Local line editing* from **Terminal** tab.
 
 <img src="doc_resources/putty_rpi_serial.png" width="60%">
