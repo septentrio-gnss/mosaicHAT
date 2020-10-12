@@ -208,7 +208,7 @@ There are also different antenna types each of them suitable for different appli
 
 Please make sure you get the right jumper so you can also set the right voltage depending on the chosen GNSS antenna.
 
-<img src="doc_resources/antenna_jumper.png" width="50%">
+<img src="doc_resources/vant_jumper_new.jpg" width="50%">
 
 In the following photo, a Tallysman antenna has been connected to mosaicHAT. Jumper has been placed to supply 5V to antenna.
 
@@ -291,7 +291,7 @@ Note that currently there's no RxTools release for RPi (ARM architecture). Thus,
 #### FTDI Connector
 As mentioned an extra serial port is made available and can be used as an FTDI. The pins are aligned with standard FTDI conformity thus you can add support for converting the TTL to an RS-232 or USB signals. FTDI can also be used with some Bluetooth devices. There is a large variety of FTDI devices which can help in communicating with the mosaicHAT. 
 
-<img src="doc_resources/ftdi_jumper.png" width="50%">
+<img src="doc_resources/ftdi_jumper_new.jpg" width="50%">
 
 Example of an FTDI (USB cable)
 
