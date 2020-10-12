@@ -312,7 +312,7 @@ The following LEDs are defined on the mosaicHAT:
 |GL2 | Connected to RPi (GPIO 26) |
 |PVT | PVT Available |
 
-<img src="doc_resources/leds.png" width="50%">
+<img src="doc_resources/leds_new.PNG" width="50%">
 
 PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the Hardware Manual for blinking behaviour of each mode. Both General LEDs (GL1 and GL2) could be directly controlled by Raspberry Pi GPIO.
 
