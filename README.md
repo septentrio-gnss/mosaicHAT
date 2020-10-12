@@ -318,7 +318,25 @@ PPSO clock could be tuned using **setPPSParameters** command. While GPLED defaul
 
 Just for illustration, the following python script runs GL1 and GL2 in alternate blinking mode. It is up to users to customize those LEDs as convenient for their applications. 
 
-// to be added later
+```
+import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
+from time import sleep # Import the sleep function from the time module
+
+GPIO.setwarnings(False) # Ignore warning for now
+GPIO.setmode(GPIO.BCM) # Use BCM pin numbering
+
+# Set pins 6 &26 to be output pins and set their initial values to low (off)
+GPIO.setup(26, GPIO.OUT, initial=GPIO.LOW) 
+GPIO.setup(6, GPIO.OUT, initial=GPIO.LOW) 
+
+while True: # Run forever
+ GPIO.output(26, GPIO.HIGH) # Turn 26 on
+ GPIO.output(6, GPIO.LOW) # Turn 26 off
+ sleep(1) # Sleep for 1 second
+ GPIO.output(26, GPIO.LOW) # Turn 26 off
+ GPIO.output(6, GPIO.HIGH) # Turn 6 on
+ sleep(1) # Sleep for 1 second
+```
 
 
 #### Reset connector
