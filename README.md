@@ -301,7 +301,7 @@ In the following example, the common Bluetooth module (HC-06) has been used to c
 
 <img src="doc_resources/FTDI_bluetooth.jpg" width="60%">
 
-#### General Purpose LEDs
+#### Indicator LEDs
 The following LEDs are defined on the mosaicHAT:
 
 |LED|Description|
@@ -314,7 +314,7 @@ The following LEDs are defined on the mosaicHAT:
 
 <img src="doc_resources/leds_new.PNG" width="50%">
 
-PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the Hardware Manual for blinking behaviour of each mode. Both General LEDs (GL1 and GL2) could be directly controlled by Raspberry Pi GPIO.
+PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the Hardware Manual for blinking behaviour of each mode. Both General Purpose LEDs (GL1 and GL2) could be directly controlled by Raspberry Pi GPIO.
 
 Just for illustration, the following python script runs GL1 and GL2 in alternate blinking mode. It is up to users to customize those LEDs as convenient for their applications. 
 
@@ -368,9 +368,9 @@ More information on the Events input of mosaic-X5 can be found in the mosaic-X5 
 #### PPS Output
 PPS signals are used for precise timekeeping and time measurement. One increasingly common use is in time synchronization with other sensors (e.g. Lidars or IMUs). 
 
-The receiver is able to generate an x-pulse-per-second (xPPS) signal aligned with either GPS, Galileo or GLONASS system time, or with UTC, or with the internal receiver time.
+The receiver is able to generate an x-pulse-per-second (xPPS) signal aligned with either GPS, Galileo or GLONASS system time, or with UTC, or with the internal receiver time (RxClock). RxClock could be used to test PPS if no antenna or PVT available.
 
-//JAMAL to explain which pin is used
+<img src="doc_resources/events_pps.PNG" width="60%">
   
 More information on the definition of PPS output or on how to configure the PPS parameters can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
