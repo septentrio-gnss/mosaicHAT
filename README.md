@@ -28,10 +28,10 @@ Table of contents
       * [USB Communication](#usb-communication)
       * [Serial Communication](#serial-communication)
       * [FTDI-connector](#ftdi-connector)
-      * [General Purpose LEDs](#general-purpose-leds)
+      * [Indicator LEDs](#general-purpose-leds)
       * [Reset Connector](#reset-connector)
-      * [events](#events)
       * [PPS Output](#pps-output)
+      * [events](#events)
       * [Python Script](#python-script)
       * [ROS support with ROSaic](#ros-support-with-rosaic)
    * [mosaicHAT Design documentation](#mosaichat-design-documentation)
@@ -345,6 +345,15 @@ A pin reset is also available via the Raspberry Pi connector. This is connected 
 // JAMAL to explain which pin is used
 // JAMAL to explain how can this be controled from Raspberry Pi
 
+#### PPS Output
+PPS signals are used for precise timekeeping and time measurement. One increasingly common use is in time synchronization with other sensors (e.g. Lidars or IMUs). 
+
+The receiver is able to generate an x-pulse-per-second (xPPS) signal aligned with either GPS, Galileo or GLONASS system time, or with UTC, or with the internal receiver time (RxClock). RxClock could be used to test PPS if no antenna or PVT available.
+
+<img src="doc_resources/events_pps.PNG" width="40%">
+  
+More information on the definition of PPS output or on how to configure the PPS parameters can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
+
 
 #### Events
 The receiver can time-tag electrical level transitions on its Event input with an accuracy of 20ns.
@@ -364,15 +373,6 @@ To monitor EVENTs through web interface, go to PPS/Timing from GNSS menu:
 <img src="doc_resources/Events_interface.png" width="60%">
 
 More information on the Events input of mosaic-X5 can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
-
-#### PPS Output
-PPS signals are used for precise timekeeping and time measurement. One increasingly common use is in time synchronization with other sensors (e.g. Lidars or IMUs). 
-
-The receiver is able to generate an x-pulse-per-second (xPPS) signal aligned with either GPS, Galileo or GLONASS system time, or with UTC, or with the internal receiver time (RxClock). RxClock could be used to test PPS if no antenna or PVT available.
-
-<img src="doc_resources/events_pps.PNG" width="60%">
-  
-More information on the definition of PPS output or on how to configure the PPS parameters can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
 ### Python Script
 
