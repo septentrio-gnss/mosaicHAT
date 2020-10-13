@@ -350,14 +350,18 @@ PPS signals are used for precise timekeeping and time measurement. One increasin
 
 The receiver is able to generate an x-pulse-per-second (xPPS) signal aligned with either GPS, Galileo or GLONASS system time, or with UTC, or with the internal receiver time (RxClock). RxClock could be used to test PPS if no antenna or PVT available.
 
+ Polarity, frequency and pulse width of PPSO could be configured by **setPPSParameters** command. 
+ 
 <img src="doc_resources/events_pps.PNG" width="40%">
+
+PPS Output is directly connected to an indicator LED. While most PPS applications require a short pulse width, you may need to increase the pulse width to notice LED blinking.
   
 More information on the definition of PPS output or on how to configure the PPS parameters can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
 
 #### Events
 The receiver can time-tag electrical level transitions on its Event input with an accuracy of 20ns.
-By default, the receiver reacts on low-to-high transitions but can also be configured on the receiver using **setEventParameters command**.
+By default, the receiver reacts on low-to-high transitions but can also be configured on the receiver using **setEventParameters** command.
 Upon detection of a transition, the receiver can output the time and/or the position at the instant of the event. This will be output in the Septentrio Binary Format.
 
 Events can be used as an example for UAV Photogrametry (tagging the pictures taken either by a UAV or a robot).
