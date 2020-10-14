@@ -339,11 +339,17 @@ while True: # Run forever
 ```
 
 
-#### Reset connector
-A pin reset is also available via the Raspberry Pi connector. This is connected directly to the reset pin of the mosaicHAT.
+#### Reset Input
 
-// JAMAL to explain which pin is used
-// JAMAL to explain how can this be controled from Raspberry Pi
+mosaic-X5 could be forced to reset from Raspberry Pi. The nRST_IN pin of mosaic is directly connected to RPi GPIO 5 (Pin 29 in physical header).
+
+The nRST_IN pin is active negative, which means mosaic will be in RESET mode when nRST_IN is low (GND). The pin is internally debounced (pull-up resistor) so if pin is left unconnected (floating) the module will not enter RESET mode.
+
+
+
+
+
+A pin reset is also available via the Raspberry Pi connector. This is connected directly to the reset pin of the mosaicHAT.
 
 #### PPS Output
 PPS signals are used for precise timekeeping and time measurement. One increasingly common use is in time synchronization with other sensors (e.g. Lidars or IMUs). 
