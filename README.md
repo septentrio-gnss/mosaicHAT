@@ -132,12 +132,18 @@ This project contains two important sections for documentation. The first one wh
 You can use the reference design, layout files from this project and contact your local manufacturing company for producing it. Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board  (both PCB and assembly can be done by them).
 
 #### Elements to provide when manufactring the board
-The following elements are the more important when asking Eurocircuits or a local manufactring company:
-   * Provide PCB layout
-   * Provide Reference design file
-   * Provide the HW manual of the mosaic-X5 which ... // JAMAL to add here
-   * //JAMAL TO ADD MORE THINGS HERE
-   * It is important that you make sure 
+
+If you decided to make the board through a PCB manufacturing service, they will ask for the following parts:
+
+For manufacturing the board:
+
+- Layout design (Some services accept native KiCAD files, otherwise you will need to export the layout to the standard Gerber format).
+
+For assembly:
+
+- Bill of Materials (BOM), the list of used electronic components alongside with their reference designators. For our project, check [mosaicHAT BOM](BOM/BOM.xlsx).
+- Component Placement List (CPL), 
+
 #### Ordering mosaic
 You can order the mosaic-X5 from [Digikey](https://www.digikey.com/en/product-highlight/s/septentrio/mosaic-x5-module) or you can contact Septentrio at <www.septentrio.com> for direct purchasing or for other mosiac models.
 
@@ -247,7 +253,6 @@ TCP/IP ports could be also tested using PuTTY, or directly from terminal. Note t
 
 `telnet 192.168.3.1 28784`
 
-
 <img src="doc_resources/USB_telnet.png" width="60%">
 
 More information on how to configure or access the web interface, USB serial and USB TCP can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
@@ -283,8 +288,6 @@ Serial connection between RPi and mosaicHAT could be tested using PuTTY:
 Septentrio's RxTools is a SW which can be used to communicate to the mosaicHAT and can be downloaded free of charge from the [Septentrio support site](https://www.septentrio.com/en/support/software/rxtools).
 Once you have downloaded it you can use Septentrio's RxControl and Data Link which can communicate with the receiver over a COM-port connection:
 select Serial Connection option when opening the connection to the receiver.
-
-// add RxTools screenschot
 
 Note that currently there's no RxTools release for RPi (ARM architecture). Thus, RxTools should be used on a regular PC.
 
@@ -519,9 +522,7 @@ In the figure above:
 
 ### Antennas
 
-// mosaic-X5 is single antenna, explain more 
-
-mosaic is a dual-antenna module. It can perfectly function with one antenna, however, connecting a second antenna increases accuracy and enables heading sensing.
+// mosaic-X5 is single antenna but.. explain more
 
 Following is the antennas part in schematic.
 
@@ -548,10 +549,6 @@ Following is the first antenna part of board layout. The center of SMA connector
 
 <img src="doc_resources/ant1layout.PNG" width="60%">
 
-// ask about the freq
-
-// check about capacitance
-
 #### Second Antenna
 
 The second antenna is similar to first antenna except that ANT2 pad in mosaic is not internally ESD-protected and does not carry DC voltage by itself. Wherefore, both protection and DC biasing are needed.
@@ -575,7 +572,7 @@ In the figure above:
 
 5. TVS diode.
 
-// highlight SMA connectors
+6 &7. SMA female connector.
 
 ### Raspberry Pi Serial
 
@@ -586,7 +583,6 @@ According to the hardware manual, non-zero voltage should not be driven to mosai
 <img src="doc_resources/drive_nonzero.PNG" width="100%">
 
 Thus, MosaicRX1 signal has been tri-stated by MODULE_RDY using tri-state buffer (SN74LVC1G126DRLR). 
-
 
 <img src="doc_resources/serial_sch.PNG" width="80%">
 
