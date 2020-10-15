@@ -29,9 +29,9 @@ Table of contents
       * [Serial Communication](#serial-communication)
       * [FTDI-connector](#ftdi-connector)
       * [Indicator LEDs](#indicator-leds)
-      * [Reset Input](#reset-mosaic)
+      * [Reset mosaic](#reset-mosaic)
       * [PPS Output](#pps-output)
-      * [events](#events)
+      * [Events](#events)
       * [Python Script](#python-script)
       * [ROS support with ROSaic](#ros-support-with-rosaic)
    * [mosaicHAT Design documentation](#mosaichat-design-documentation)
@@ -593,7 +593,7 @@ Thus, MosaicRX1 signal has been tri-stated by MODULE_RDY using tri-state buffer 
 
 ### Reset Input
 
-The nRST_IN pin of mosaic is directly connected to RPi GPIO 5 (Pin 29 in physical header). Refer to [Reset mosaic](#reset-mosaic) 
+The nRST_IN pin of mosaic is directly connected to RPi GPIO 5 (Pin 29 in physical header). Refer to [Reset mosaic](#reset-mosaic) in user documentation for more details.
 
 ### Micro USB
 
