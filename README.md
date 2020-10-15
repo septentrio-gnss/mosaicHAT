@@ -28,8 +28,8 @@ Table of contents
       * [USB Communication](#usb-communication)
       * [Serial Communication](#serial-communication)
       * [FTDI-connector](#ftdi-connector)
-      * [Indicator LEDs](#general-purpose-leds)
-      * [Reset Connector](#reset-connector)
+      * [Indicator LEDs](#indicator-leds)
+      * [Reset Input](#reset-mosaic)
       * [PPS Output](#pps-output)
       * [events](#events)
       * [Python Script](#python-script)
@@ -339,7 +339,7 @@ while True: # Run forever
 ```
 
 
-#### Reset Input
+#### Reset mosaic
 
 mosaic-X5 could be forced to reset from Raspberry Pi. The nRST_IN pin of mosaic is directly connected to RPi GPIO 5 (Pin 29 in physical header).
 
@@ -593,7 +593,7 @@ Thus, MosaicRX1 signal has been tri-stated by MODULE_RDY using tri-state buffer 
 
 ### Reset Input
 
-
+The nRST_IN pin of mosaic is directly connected to RPi GPIO 5 (Pin 29 in physical header). Refer to [Reset mosaic](#reset-mosaic) 
 
 ### Micro USB
 
