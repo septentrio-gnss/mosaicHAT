@@ -345,9 +345,9 @@ mosaic-X5 could be forced to reset from Raspberry Pi. The nRST_IN pin of mosaic 
 
 The nRST_IN pin is active negative, which means mosaic will be in RESET mode when nRST_IN is low (GND). The pin is internally debounced (pull-up) so if pin is left unconnected (floating) the module will not enter RESET mode.
 
-Initially, the RPi GPIO pins are set to INPUT mode. As the RPi input line have high impedance, nRST_IN will be floating. This means mosaicHAT board could run without issues initially even if GPIO 5 is not set to HIGH (while kept in input mode). However, it is not recommended to rely on the GPIO initial state in your application. Users should drive HIGH to GPIO 5 for the stability of their applications.
+Initially, the RPi GPIO pins are set to INPUT mode. As the RPi input line have high impedance, nRST_IN will be floating. This means mosaicHAT board could run without issues initially even if GPIO 5 is not set to HIGH (while kept in input mode). However, it is not recommended to rely on the GPIO initial state. Users should drive HIGH to GPIO 5 for the stability of their applications.
 
-
+To reset module, a LOW pulse, not shorter than 1 micro second, should be driven to GPIO 5. 
 
 #### PPS Output
 PPS signals are used for precise timekeeping and time measurement. One increasingly common use is in time synchronization with other sensors (e.g. Lidars or IMUs). 
