@@ -142,7 +142,7 @@ For manufacturing the board:
 For assembly:
 
 - Bill of Materials (BOM), the list of used electronic components alongside with their reference designators. For our project, check [mosaicHAT BOM](BOM/BOM.xlsx).
-- Component Placement List (CPL), 
+- Component Placement List (CPL), the exact position of each component on the board (X,Y and Rotation). CPL could be exported from KiCAD however should not be taken for granted. The user have to check with the manufacturing service to ensure the right placement for components.
 
 #### Ordering mosaic
 You can order the mosaic-X5 from [Digikey](https://www.digikey.com/en/product-highlight/s/septentrio/mosaic-x5-module) or you can contact Septentrio at <www.septentrio.com> for direct purchasing or for other mosiac models.
