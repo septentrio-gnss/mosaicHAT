@@ -220,6 +220,8 @@ In the following photo, a Tallysman antenna has been connected to mosaicHAT. Jum
 
 <img src="doc_resources/antenna_connected.jpg" width="60%">
 
+_Note: A second antenna conector is added in the mosaicHAT design but the second antenna or heading are not supported with the mosaic-x5 or mosaic-Sx modules. The second antenna connector is only preliinary included  for possible future support of heading mosaic modules. It is however important to know that the design with the second antenna connector does not cause any problems when used with the mosaic-x5 or mosaic-Sx modules as long as the main antenna is used (as shown on the picture). Contact Septentrio for more informatoin on dual antenna GNSS receivers._
+
 #### USB Communication
 
 Connecting RPi, as well as any other PC, to mosaic via USB provides:
@@ -438,7 +440,7 @@ ser.close()
 
 
 #### ROS support with ROSaic
-<img src="doc_resources/ROSaic.png" width="60%">
+<img src="doc_resources/ROSaic_small.png" width="60%">
 The mosaic-X5 but also mosaicHAT are supported by ROSaic. ROSaic is a ROS driver for the mosaic modules and allows you to do integrations for robotic applications.
 ROSaic is also an open source project and can be found here:
    * [http://wiki.ros.org/rosaic](http://wiki.ros.org/rosaic)
@@ -550,6 +552,7 @@ Following is the first antenna part of board layout. The center of SMA connector
 <img src="doc_resources/ant1layout.PNG" width="60%">
 
 #### Second Antenna
+_Note: A second antenna conector is added in the mosaicHAT design but the second antenna or heading are not supported with the mosaic-x5 or mosaic-Sx modules. The second antenna connector is only preliinary included  for possible future support of heading mosaic modules. It is however important to know that the design with the second antenna connector does not cause any problems when used with the mosaic-x5 or mosaic-Sx modules as long as the main antenna is used. Contact Septentrio for more informatoin on dual antenna GNSS receivers. The design below is preliminary but is subject to change upon release of future Septentrio mosaic dual antenna modules._
 
 The second antenna is similar to first antenna except that ANT2 pad in mosaic is not internally ESD-protected and does not carry DC voltage by itself. Wherefore, both protection and DC biasing are needed.
 
