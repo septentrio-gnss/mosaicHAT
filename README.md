@@ -10,6 +10,8 @@ License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Comm
 
 <img src="doc_resources/mosaicHAT_keyselling.png" width="80%">
 
+[![Watch the video](https://i9.ytimg.com/vi/61qiGfSO6_o/mq1.jpg?sqp=CPitpvwF&rs=AOn4CLA5lHat9G0NN4khENDz9hcbvhAXAg)](https://youtu.be/61qiGfSO6_o)
+
 Table of contents
 =================
 <!--ts-->
