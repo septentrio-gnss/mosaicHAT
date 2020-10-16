@@ -85,7 +85,7 @@ Septentrio designs, manufactures and sells high-precision, multi-frequency, mult
 
 The technology offers high accuracy and reliability thanks to GNSS+ algorithms as well as <a href="https://www.septentrio.com/en/advanced-interference-monitoring-mitigation-aim">Septentrio's Advanced Interference Monitoring and Mitigation (AIM+)</a> which protects against RF interference (jamming) and spoofing.
 
-For more information about Septentrio products go to <http:\\www.septentrio.com>.
+For more information about Septentrio products go to <https://www.septentrio.com/>.
 
 ### Deliverables
 This project makes the following deliverables for both integrators and designers of systems around Septentrio's mosaic modules.
