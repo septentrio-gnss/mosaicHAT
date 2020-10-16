@@ -57,7 +57,7 @@ This project and design can be used either produced with your local electronics 
 
 ### A HAT for Raspberry Pi?
 HAT stands for “Hardware attached on top”. It is a new hardware specification for add-one modules for the new Raspberry Pi model B+. HATs have several advantages compared to older add-on modules for the Raspberry Pi.
-#### No soldering, just plug it onto the Raspbery Pi
+#### No soldering, just plug it onto the Raspberry Pi
 With our older HiFiBerry boards you had to solder an 8-pin header onto the Raspberry Pi. While this is not a problem for experienced hackers, not everybody owns a solder station and can do this.
 #### Robust mechanical design
 With 4 mounting holes the connection between the Raspberry Pi and the add-on board is very robust. 
@@ -66,7 +66,7 @@ With 4 mounting holes the connection between the Raspberry Pi and the add-on boa
 At this moment we do not know of anybody who sells the manufactured version of this board. However you can use the reference design, layout and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
 
 #### Do I need to source special components for producing this board?
-Not really, most of the components are generic enough. The mosaic GNSS module can be obatined from Digikey or directly from Septentrio. Should you project be larger then we recommend you to contact Septentrio sales team directly at <sales@septentrio.com>.
+Not really, most of the components are generic enough. The mosaic GNSS module can be obtained from Digikey or directly from Septentrio. Should you project be larger then we recommend you to contact Septentrio sales team directly at <sales@septentrio.com>.
 
 ### What is the mosaic module?
 #### mosaic-X5
@@ -108,7 +108,7 @@ As such this can be also a starting reference point for integrators when in need
 
 With open source it means that the following is provided:
 -Editable source files
--Modifications and spinn off projects allowed
+-Modifications and spin off projects allowed
 -You are allowed to sell your version. No -NC limitations.
 -May require attribution
 -We encourage you to stand on our shoulders and even make money at it! 
@@ -119,7 +119,7 @@ More info about licensing can be found here:
 ### Disclaimer
 <img src="doc_resources/warning.jpg" width="7%">
 This project is **PROVIDED AS IS** and while the general interfaces have been tested, the project has not been fully validated nor by the author nor by Septentrio.
-It remains your responsability when producing or using this design for your own purposes.
+It remains your responsibility when producing or using this design for your own purposes.
 We recommend you to contact Septentrio should you have questions on how to integrate Septentrio's GNSS mosaic modules.
 
 Their support web site is <http://www.septentrio.com/support> </br>.
@@ -131,7 +131,7 @@ This project contains two important sections for documentation. The first one wh
 ### mosaicHAT Manufacturing and Assembly
 You can use the reference design, layout files from this project and contact your local manufacturing company for producing it. Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board  (both PCB and assembly can be done by them).
 
-#### Elements to provide when manufactring the board
+#### Elements to provide when manufacturing the board
 
 If you decided to make the board through a PCB manufacturing service, they will ask for the following parts:
 
@@ -145,7 +145,7 @@ For assembly:
 - Component Placement List (CPL), the exact position of each component on the board (X,Y and Rotation). CPL could be exported from KiCAD however should not be taken for granted. The user have to check with the manufacturing service to ensure the right placement for components.
 
 #### Ordering mosaic
-You can order the mosaic-X5 from [Digikey](https://www.digikey.com/en/product-highlight/s/septentrio/mosaic-x5-module) or you can contact Septentrio at <www.septentrio.com> for direct purchasing or for other mosiac models.
+You can order the mosaic-X5 from [Digikey](https://www.digikey.com/en/product-highlight/s/septentrio/mosaic-x5-module) or you can contact Septentrio at <www.septentrio.com> for direct purchasing or for other mosaic models.
 
 |Organization|part number|
 |--------|----------|
@@ -319,7 +319,7 @@ The following LEDs are defined on the mosaicHAT:
 
 <img src="doc_resources/leds_new.PNG" width="50%">
 
-PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the Hardware Manual for blinking behaviour of each mode. Both General Purpose LEDs (GL1 and GL2) could be directly controlled by Raspberry Pi GPIO.
+PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the Hardware Manual for blinking behavior of each mode. Both General Purpose LEDs (GL1 and GL2) could be directly controlled by Raspberry Pi GPIO.
 
 Just for illustration, the following python script runs GL1 and GL2 in alternate blinking mode. It is up to users to customize those LEDs as convenient for their applications. 
 
@@ -373,7 +373,7 @@ The receiver can time-tag electrical level transitions on its Event input with a
 By default, the receiver reacts on low-to-high transitions but can also be configured on the receiver using **setEventParameters** command.
 Upon detection of a transition, the receiver can output the time and/or the position at the instant of the event. This will be output in the Septentrio Binary Format.
 
-Events can be used as an example for UAV Photogrametry (tagging the pictures taken either by a UAV or a robot).
+Events can be used as an example for UAV Photogrammetry (tagging the pictures taken either by a UAV or a robot).
 
 <img src="doc_resources/hotshoe.png" width="50%">
 
@@ -506,7 +506,7 @@ Note that a second un-assembled capacitor place has been left for debugging and 
 ### Power Sources
 
 
-Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Decoupling capacirors (100nF and 10uF) are used according to regulator’s datasheet. Following is the power part of schematic.
+Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Decoupling capacitors (100nF and 10uF) are used according to regulator’s datasheet. Following is the power part of schematic.
 
 <img src="doc_resources/regulator_sch.PNG" width="60%">
 
@@ -516,7 +516,7 @@ In the figure above:
 
 1. Regulator's circuit.
 
-2. Raspberrpi power source (5V pins).
+2. Raspberry Pi power source (5V pins).
 
 3. External power source headers.
 
@@ -541,7 +541,7 @@ Right characteristic impedance (45-55 Ohms) could be reached by adjusting the wi
 
 Having right characteristic impedance insures reduced reflections in the opposite direction thus higher quality of signals. For uniform lines, characteristic impedance is not dependent on trace length.
 
-It is also important to stich vias every few millimetres around the RF line for good ground coherence. Stitching GND vias help to protect line from interference.
+It is also important to stich vias every few millimeters around the RF line for good ground coherence. Stitching GND vias help to protect line from interference.
 
 <img src="doc_resources/stiching_vias.PNG" width="60%">
 
@@ -556,7 +556,7 @@ _Note: A second antenna conector is added in the mosaicHAT design but the second
 
 The second antenna is similar to first antenna except that ANT2 pad in mosaic is not internally ESD-protected and does not carry DC voltage by itself. Wherefore, both protection and DC biasing are needed.
 
-For ESD protection, TVS diode (SESD0402X1BN-0010-098) is used. TVS diode protects the module against sudden removal of the antenna. As any stubs branching out of the RF line could cause undesired reflections, TVS diode shoud be placed exactly on top of the RF trace.
+For ESD protection, TVS diode (SESD0402X1BN-0010-098) is used. TVS diode protects the module against sudden removal of the antenna. As any stubs branching out of the RF line could cause undesired reflections, TVS diode should be placed exactly on top of the RF trace.
 
 Biasing inductors are used to supply the ANT2 with DC voltage from ANT1 trace. Two inductors, one for each RF line, are used to avoid stubs and provide single tracks for RF signals. The inductor value is best to be around 33 nH with self resonant frequency of 1.4 GHz. A 100 nF bypass capacitor has been placed between inductors to filter out any AC noise.
 
@@ -579,7 +579,7 @@ In the figure above:
 
 ### Raspberry Pi Serial
 
-Serial communication with Raspberry Pi is conducted by connecting COM1 of mosaic to Raspberry Pi UART pins: TX (GPIO 14) and RX (GPIO 15). GPIO 14 is pin 8 on the GPIO header whereas GPIO 15 is pin 10. Raspberry Pi's TX is connected to mosiac's RX1 while RX is connected to mosaic's TX1.
+Serial communication with Raspberry Pi is conducted by connecting COM1 of mosaic to Raspberry Pi UART pins: TX (GPIO 14) and RX (GPIO 15). GPIO 14 is pin 8 on the GPIO header whereas GPIO 15 is pin 10. Raspberry Pi's TX is connected to mosaic's RX1 while RX is connected to mosaic's TX1.
 
 According to the hardware manual, non-zero voltage should not be driven to mosaic's input pads while in standby mode.
 
@@ -682,11 +682,13 @@ Layout connections for REF and 2V8.
 
 
 ## Further improvements
-Further improvemts or recomendations on this project are welcome either here or on spinoff porjects.
+Further improvements or recommendations on this project are welcome either here or on spinoff projects.
 Here some possible improvements to the current design.
-   * Addition of Ethernet communication
+   * Addition of logging capabilities
    * Addition of I2C communication or similar to aid further HAT stacks
    * Further support for mosaic-T receiver (proper timing signals exposure)
    * Communication module (to aid corrections input)
-
+   * Addition of Ethernet communication
+   * A 3D housing enclosure on the mosaicHAT for easy tests
+   * More open source scripts for communication
 
