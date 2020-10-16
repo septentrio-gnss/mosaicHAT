@@ -1,4 +1,4 @@
-update=10/6/2020 9:45:36 PM
+update=10/16/2020 1:35:36 PM
 version=1
 last_client=kicad
 [general]
@@ -294,7 +294,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=C:/Users/JMA0162986/Documents/Github res/schematic/
+PlotDirectoryName=C:/Users/JMA0162986/Documents/Github_res/schematic/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
