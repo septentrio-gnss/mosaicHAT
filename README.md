@@ -59,8 +59,7 @@ This project and design can be used either produced with your local electronics 
 
 ### A HAT for Raspberry Pi?
 HAT stands for “Hardware attached on top”. It is a new hardware specification for add-one modules for the new Raspberry Pi model B+. HATs have several advantages compared to older add-on modules for the Raspberry Pi.
-#### No soldering, just plug it onto the Raspberry Pi
-With our older HiFiBerry boards you had to solder an 8-pin header onto the Raspberry Pi. While this is not a problem for experienced hackers, not everybody owns a solder station and can do this.
+
 #### Robust mechanical design
 With 4 mounting holes the connection between the Raspberry Pi and the add-on board is very robust. 
 
