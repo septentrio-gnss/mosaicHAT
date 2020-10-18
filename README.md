@@ -61,16 +61,16 @@ Table of contents
 The mosaicHAT is an Open Source GPS/GNSS HW PCB HAT which integrates <a href="https://www.septentrio.com/en/products/gnss-receivers/rover-base-receivers/receivers-module/mosaic">Septentrio's mosaic-X5</a> GNSS module (and other Septentrio pin compatible modules such as <a href="https://www.septentrio.com/en/products/correction-services/precise-point-positioning-services-land/secorx-s/mosaic-sx">Septentrio's mosaic-Sx</a>) with basic communications and which can be stacked into a Raspberry Pi system. 
 
 The goal of the design is to allow easy HW prototyping using the mosaic-X5 GNSS module taking the advantage of the computer ecosystem provided by the Raspberry Pi environment. The board however can also be used standalone since it can be powered either via USB or via power pins. 
-This project and design can be used either produced with your local electronics assembly house or can also be used as an starting point for your own HW integrations.
+This project and design can be used either produced with your local electronics assembly house or can also be used as a starting point for your own HW integrations.
 
 ### A HAT for Raspberry Pi?
-HAT stands for “Hardware attached on top”. It is a new hardware specification for add-one modules for the new Raspberry Pi model B+. HATs have several advantages compared to older add-on modules for the Raspberry Pi.
+HAT stands for “Hardware Attached on Top”. It is a new hardware specification for add-one modules for the new Raspberry Pi model B+. HATs have several advantages compared to older add-on modules for the Raspberry Pi.
 
 #### Robust mechanical design
 With 4 mounting holes the connection between the Raspberry Pi and the add-on board is very robust. 
 
 ### Can I buy it?
-At this moment we do not know of anybody who sells the manufactured version of this board. However you can use the reference design, layout and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
+At this moment we do not know of anybody who sells the manufactured version of this board. However, you can use the reference design, layout and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
 
 #### Do I need to source special components for producing this board?
 Not really, most of the components are generic enough. All components used are available on Digi-Key. The mosaic GNSS module can be obtained from Digikey or directly from Septentrio. Should your project be larger then we recommend you to contact Septentrio sales team directly at <sales@septentrio.com>.
@@ -155,7 +155,7 @@ For assembly:
 #### Ordering mosaic
 You can order the mosaic-X5 from [Digikey](https://www.digikey.com/en/product-highlight/s/septentrio/mosaic-x5-module) or you can contact Septentrio at <www.septentrio.com> for direct purchasing or for other mosaic models.
 
-|Organization|part number|
+|Organization | part number|
 |--------|----------|
 |Digikey part number | 2771-410322-ND |
 |Septentrio part number| 410322|
@@ -232,7 +232,7 @@ In the following photo, a Tallysman antenna has been connected to mosaicHAT. Jum
 
 <img src="doc_resources/antenna_connected.jpg" width="60%">
 
-_Note: A second antenna conector is added in the mosaicHAT design but the second antenna or heading are not supported with the mosaic-x5 or mosaic-Sx modules. The second antenna connector is only preliinary included  for possible future support of heading mosaic modules. It is however important to know that the design with the second antenna connector does not cause any problems when used with the mosaic-x5 or mosaic-Sx modules as long as the main antenna is used (as shown on the picture). Contact Septentrio for more informatoin on dual antenna GNSS receivers._
+_Note: A second antenna connector is added in the mosaicHAT design but the second antenna or heading are not supported with the mosaic-x5 or mosaic-Sx modules. The second antenna connector is only preliminary included for possible future support of heading mosaic modules. It is however important to know that the design with the second antenna connector does not cause any problems when used with the mosaic-x5 or mosaic-Sx modules as long as the main antenna is used (as shown on the picture). Contact Septentrio for more information on dual antenna GNSS receivers._
 
 #### USB Communication
 
@@ -279,7 +279,7 @@ The mosaicHAT offers 2 COM port connectors:
    * *COM on the board (usable for FTDI)*: An extra serial port (COM2 of the mosaic-X5) is exposed via another connector on the board. This port (TTL levels) can be usable as a secondary port or can also be usable to connect an FTDI converter (e.g. serial to Bluetooth or TTL to RS232 converter). See next FTDI section
    
 default COM-port settings are:
-|Parameter|Value|
+|Parameter |Value |
 |--------|----------|
 |baud rate | 115200 |
 |data bits| 8|
@@ -331,7 +331,7 @@ The following LEDs are defined on the mosaicHAT:
 
 <img src="doc_resources/leds_new.PNG" width="50%">
 
-PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the Hardware Manual for blinking behavior of each mode. Both General Purpose LEDs (GL1 and GL2) could be directly controlled by Raspberry Pi GPIO.
+PPSO clock could be tuned using **setPPSParameters** command. While GPLED default mode is *PVTLED*, it could be configured to work in different modes (*PVTLED*, *DIFFCORLED* and *TRACKLED*) using **setLEDMode** command. Refer to the Hardware Manual for blinking behaviour of each mode. Both General Purpose LEDs (GL1 and GL2) could be directly controlled by Raspberry Pi GPIO.
 
 Just for illustration, the following python script runs GL1 and GL2 in alternate blinking mode. It is up to users to customize those LEDs as convenient for their applications. 
 
@@ -364,7 +364,7 @@ The nRST_IN pin is active negative, which means mosaic will be in RESET mode whe
 
 Initially, the RPi GPIO pins are set to INPUT mode. As the RPi input line have high impedance, nRST_IN will be floating. This means mosaicHAT board could run without issues initially even if GPIO 5 is not set to HIGH (while kept in input mode). However, it is not recommended to rely on the GPIO initial state. Users should drive HIGH to GPIO 5 for the stability of their applications.
 
-To reset module, a LOW pulse, not shorter than 1 micro second, should be driven to GPIO 5. 
+To reset module, a LOW pulse, not shorter than 1 microsecond, should be driven to GPIO 5. 
 
 #### PPS Output
 PPS signals are used for precise timekeeping and time measurement. One increasingly common use is in time synchronization with other sensors (e.g. Lidars or IMUs). 
@@ -495,7 +495,7 @@ The following sections provide more details on mosaicHAT design.
 
 ### mosaic Pinout
 
-Septentrio mosaic-X5 is the base of mosaicHAT board. mosaic is a 31x31mm LGA module with 239 pins. All needed information on mosaic connections could be found in the [Hardware Manual](Refrences/mosaic_hardware_manual_v1.3.0.pdf) 
+Septentrio mosaic-X5 is the base of mosaicHAT board. mosaic is a 31x31mm LGA module with 239 pins. All needed information on mosaic connections could be found in the [Hardware Manual](References/mosaic_hardware_manual_v1.3.0.pdf) 
 
 <img src="doc_resources/mosaic_mech.jpg" width="60%">
 
@@ -557,20 +557,20 @@ It is also important to stich vias every few millimeters around the RF line for 
 
 <img src="doc_resources/stiching_vias.PNG" width="60%">
 
-For more details on antennas and interference please refer to mosaic's [Hardware Manual](mosaicHAT/Refrences/mosaic_hardware_manual_v1.3.0.pdf).
+For more details on antennas and interference please refer to mosaic's [Hardware Manual](mosaicHAT/References/mosaic_hardware_manual_v1.3.0.pdf).
 
 Following is the first antenna part of board layout. The center of SMA connector is copper freed to prevent undesired capacitance due to high copper density.
 
 <img src="doc_resources/ant1layout.PNG" width="60%">
 
 #### Second Antenna
-_Note: A second antenna conector is added in the mosaicHAT design but the second antenna or heading are not supported with the mosaic-x5 or mosaic-Sx modules. The second antenna connector is only preliinary included  for possible future support of heading mosaic modules. It is however important to know that the design with the second antenna connector does not cause any problems when used with the mosaic-x5 or mosaic-Sx modules as long as the main antenna is used. Contact Septentrio for more informatoin on dual antenna GNSS receivers. The design below is preliminary but is subject to change upon release of future Septentrio mosaic dual antenna modules._
+_Note: A second antenna connector is added in the mosaicHAT design but the second antenna or heading are not supported with the mosaic-x5 or mosaic-Sx modules. The second antenna connector is only preliminary included  for possible future support of heading mosaic modules. It is however important to know that the design with the second antenna connector does not cause any problems when used with the mosaic-x5 or mosaic-Sx modules as long as the main antenna is used. Contact Septentrio for more information on dual antenna GNSS receivers. The design below is preliminary but is subject to change upon release of future Septentrio mosaic dual antenna modules.
 
 The second antenna is similar to first antenna except that ANT2 pad in mosaic is not internally ESD-protected and does not carry DC voltage by itself. Wherefore, both protection and DC biasing are needed.
 
 For ESD protection, TVS diode (SESD0402X1BN-0010-098) is used. TVS diode protects the module against sudden removal of the antenna. As any stubs branching out of the RF line could cause undesired reflections, TVS diode should be placed exactly on top of the RF trace.
 
-Biasing inductors are used to supply the ANT2 with DC voltage from ANT1 trace. Two inductors, one for each RF line, are used to avoid stubs and provide single tracks for RF signals. The inductor value is best to be around 33 nH with self resonant frequency of 1.4 GHz. A 100 nF bypass capacitor has been placed between inductors to filter out any AC noise.
+Biasing inductors are used to supply the ANT2 with DC voltage from ANT1 trace. Two inductors, one for each RF line, are used to avoid stubs and provide single tracks for RF signals. The inductor value is best to be around 33 nH with self-resonant frequency of 1.4 GHz. A 100 nF bypass capacitor has been placed between inductors to filter out any AC noise.
 
 
 <img src="doc_resources/ant_board.png" width="60%">
