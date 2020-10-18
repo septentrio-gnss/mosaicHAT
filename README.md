@@ -161,6 +161,10 @@ The board exposes the following interfaces:
 
 ### Connecting to Raspberry Pi
 
+mosaicHAT could be easily attached on Raspberry Pi as shown here:
+
+<img src="doc_resources/mosaicHAT_attached_RPi.png" width="60%">
+
 #### Preparing Raspberry Pi
 
 To enable communication between mosaicHAT and Raspberry Pi (RPi), you should make sure needed communication permissions are set. We've tested mosaicHAT with both Raspbian OS and Ubuntu OS on RPi and found the following points needed.
