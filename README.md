@@ -67,7 +67,7 @@ With 4 mounting holes the connection between the Raspberry Pi and the add-on boa
 At this moment we do not know of anybody who sells the manufactured version of this board. However you can use the reference design, layout and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
 
 #### Do I need to source special components for producing this board?
-Not really, most of the components are generic enough. The mosaic GNSS module can be obtained from Digikey or directly from Septentrio. Should you project be larger then we recommend you to contact Septentrio sales team directly at <sales@septentrio.com>.
+Not really, most of the components are generic enough. All components used are available on Digi-Key. The mosaic GNSS module can be obtained from Digikey or directly from Septentrio. Should your project be larger then we recommend you to contact Septentrio sales team directly at <sales@septentrio.com>.
 
 ### What is the mosaic module?
 #### mosaic-X5
@@ -99,6 +99,7 @@ This project makes the following deliverables for both integrators and designers
 |mosaic_design_components/mosaic_X5.mosaic-X5.lib | mosaic symbol |
 |mosaic_design_components/mosaic_X5.kicad_mod| mosaic footprint |
 |mosaic_design_components/mosaic3D.stp| mosaic 3D object |
+|BOM/mosaicHAT_BOM.xlsx| mosaicHAT Bill of Materials |
 
 
 
