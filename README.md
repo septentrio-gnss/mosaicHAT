@@ -461,7 +461,7 @@ mosaicHAT was designed using [KiCAD](https://kicad-pcb.org), an open source suit
 
 Following is the schematic plan, for higher quality check [PDF schematic](mosaicHAT_schematic.pdf).
 
-<img src="doc_resources/schematic_photo.PNG" width="60%">
+<img src="doc_resources/schematic_photo.jpg" width="60%">
 
 The board layout, hiding filled areas in zones. 
 
@@ -526,7 +526,7 @@ In the figure above:
 
 ### Antennas
 
-// mosaic-X5 is single antenna but.. explain more
+As mentioned before, mosaic-X5 is a single antenna module. Second antenna is preliinary included for possible future modules. Only first antenna (ANT1) is needed for the function of mosaicHAT.
 
 Following is the antennas part in schematic.
 
