@@ -491,11 +491,11 @@ Septentrio mosaic-X5 is the base of mosaicHAT board. mosaic is a 31x31mm LGA mod
 
 KiCAD symbol, footprint and a 3D model of mosaic could be found in folder [mosaic Design Components](mosaic_design_components).
 
-<img src="doc_resources/mosaic_sch.PNG" width="60%">
+<img src="doc_resources/schematic_mosaic.jpg" width="60%">
 
 Following the manual instructions:
 
-- The 3.3VDC supply is connected to all VDD_3V3 pins and to the VDD_BAT pin. A decoupling capacitor has been used.
+- The 3.3V DC supply is connected to all VDD_3V3 pins and to the VDD_BAT pin. A decoupling capacitor has been used.
 - All ground pins are connected to GND.
 - 1V8_OUT is connected to SYNC.
 - Pin A3 (RTC_XTALI) is connected to GND.
