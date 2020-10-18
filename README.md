@@ -10,7 +10,13 @@ License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Comm
 
 <img src="doc_resources/mosaicHAT_keyselling.png" width="80%">
 
-[![Watch the video](doc_resources/yt_jamal.PNG)](https://youtu.be/61qiGfSO6_o)
+Click to watch this video introducing mosaicHAT
+
+  <a href="https://youtu.be/61qiGfSO6_o">
+         <img alt="Qries" src="doc_resources/yt_jamal.PNG" width=70%">
+  </a>
+
+
 
 Table of contents
 =================
