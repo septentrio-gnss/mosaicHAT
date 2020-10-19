@@ -375,7 +375,7 @@ The receiver is able to generate an x-pulse-per-second (xPPS) signal aligned wit
  
 <img src="doc_resources/events_pps.PNG" width="40%">
 
-PPS Output is directly connected to an indicator LED. While most PPS applications require a short pulse width, you may need to increase the pulse width to notice LED blinking.
+PPS Output runs on 3.3V level. PPSO is directly connected to an indicator LED. While most PPS applications require a short pulse width, you may need to increase the pulse width to notice LED blinking.
   
 More information on the definition of PPS output or on how to configure the PPS parameters can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
@@ -396,6 +396,8 @@ EVENTs could be tested directly on mosaicHAT board by connecting PPS Output to o
 To monitor EVENTs through web interface, go to PPS/Timing from GNSS menu:
 
 <img src="doc_resources/Events_interface.png" width="60%">
+
+EVENTs run on 3.3V level.
 
 More information on the Events input of mosaic-X5 can be found in the mosaic-X5 reference guide. You can download this one from [Septentrio support site](https://www.septentrio.com/en/support/mosaic/mosaic-x5).
 
