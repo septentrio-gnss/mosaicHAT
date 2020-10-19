@@ -458,9 +458,9 @@ ser.close()
 The mosaic-X5 but also mosaicHAT are supported by ROSaic. ROSaic is a ROS driver for the mosaic modules and allows you to do integrations for robotic applications.
 ROSaic is also an open source project and can be found here:
 
-   * ROS Wiki : [http://wiki.ros.org/rosaic](http://wiki.ros.org/rosaic)
+   * ROS Wiki : [http://wiki.ros.org/rosaic](http://wiki.ros.org/septentrio_gnss_driver)
    
-   * Github : [https://github.com/septentrio-gnss/rosaic](https://github.com/septentrio-gnss/rosaic)
+   * Github : [https://github.com/septentrio-gnss/rosaic](https://github.com/septentrio-gnss/septentrio_gnss_driver)
 
 ## mosaicHAT Design documentation
 
@@ -569,7 +569,7 @@ Following is the first antenna part of board layout. The center of SMA connector
 <img src="doc_resources/ant1layout.PNG" width="60%">
 
 #### Second Antenna
-_Note: A second antenna connector is added in the mosaicHAT design but the second antenna or heading are not supported with the mosaic-x5 or mosaic-Sx modules. The second antenna connector is only preliminary included  for possible future support of heading mosaic modules. It is however important to know that the design with the second antenna connector does not cause any problems when used with the mosaic-x5 or mosaic-Sx modules as long as the main antenna is used. Contact Septentrio for more information on dual antenna GNSS receivers. The design below is preliminary but is subject to change upon release of future Septentrio mosaic dual antenna modules.
+_Note: A second antenna connector is added in the mosaicHAT design but the second antenna or heading are not supported with the mosaic-x5 or mosaic-Sx modules. The second antenna connector is only preliminary included  for possible future support of heading mosaic modules. It is however important to know that the design with the second antenna connector does not cause any problems when used with the mosaic-x5 or mosaic-Sx modules as long as the main antenna is used. Contact Septentrio for more information on dual antenna GNSS receivers. The design below is preliminary but is subject to change upon release of future Septentrio mosaic dual antenna modules._
 
 The second antenna is similar to first antenna except that ANT2 pad in mosaic is not internally ESD-protected and does not carry DC voltage by itself. Wherefore, both protection and DC biasing are needed.
 
