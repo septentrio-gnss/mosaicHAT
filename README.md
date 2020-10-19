@@ -455,8 +455,10 @@ ser.close()
 <img src="doc_resources/ROSaic_small.png" width="60%">
 The mosaic-X5 but also mosaicHAT are supported by ROSaic. ROSaic is a ROS driver for the mosaic modules and allows you to do integrations for robotic applications.
 ROSaic is also an open source project and can be found here:
-   * [http://wiki.ros.org/rosaic](http://wiki.ros.org/rosaic)
-   * [https://github.com/septentrio-gnss/rosaic](https://github.com/septentrio-gnss/rosaic)
+
+   - [http://wiki.ros.org/rosaic](http://wiki.ros.org/rosaic)
+   
+   - [https://github.com/septentrio-gnss/rosaic](https://github.com/septentrio-gnss/rosaic)
 
 ## mosaicHAT Design documentation
 
