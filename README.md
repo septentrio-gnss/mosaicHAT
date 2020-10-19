@@ -70,7 +70,7 @@ HAT stands for “Hardware Attached on Top”. It is a new hardware specificatio
 With 4 mounting holes the connection between the Raspberry Pi and the add-on board is very robust. 
 
 ### Can I buy it?
-At this moment we do not know of anybody who sells the manufactured version of this board. However, you can use the reference design, layout and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
+At this moment we do not know of anybody who sells the manufactured version of this board. However, you can use the reference design, layout and Bill Of Materials and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
 
 #### Do I need to source special components for producing this board?
 Not really, most of the components are generic enough. All components used are available on Digi-Key. The mosaic GNSS module can be obtained from Digikey or directly from Septentrio. Should your project be larger then we recommend you to contact Septentrio sales team directly at <sales@septentrio.com>.
