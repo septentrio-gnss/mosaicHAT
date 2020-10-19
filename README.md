@@ -133,7 +133,7 @@ We recommend you to contact Septentrio should you have questions on how to integ
 Their support web site is <http://www.septentrio.com/support> </br>.
 
 ### Documentation sections
-This project contains two important sections for documentation. The first one which is an user documentation (see section [mosaicHAT user documentation](#mosaichat-user-documentation)) and the second one (see section [mosaicHAT Design documentation](#mosaichat-design-documentation)) which is documentation for designers wanting to modify the reference design of this project.
+This project contains two important sections for documentation. The first one which is a user documentation (see section [mosaicHAT user documentation](#mosaichat-user-documentation)) and the second one (see section [mosaicHAT Design documentation](#mosaichat-design-documentation)) which is a documentation for designers wanting to modify the reference design of this project.
 
 ## mosaicHAT user documentation
 ### mosaicHAT Manufacturing and Assembly
