@@ -539,7 +539,7 @@ In the figure above:
 
 ### Antennas
 
-As mentioned before, mosaic-X5 is a single antenna module. Second antenna is preliinary included for possible future modules. Only first antenna (ANT1) is needed for the function of mosaicHAT.
+As mentioned before, mosaic-X5 is a single antenna module. Second antenna is preliminary included for possible future modules. Only first antenna (ANT1) is needed for the function of mosaicHAT.
 
 Following is the antennas part in schematic.
 
@@ -590,7 +590,7 @@ In the figure above:
 
 5. TVS diode.
 
-6 &7. SMA female connector.
+  6 &7. SMA female connectors (Amphenol 132136).
 
 ### Raspberry Pi Serial
 
