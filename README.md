@@ -30,7 +30,7 @@ Table of contents
       * [Disclaimer](#disclaimer)
    * [mosaicHAT user documentation](#mosaichat-user-documentation)
       * [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
-      * [general interfaces of mosaicHAT](#general-interfaces-of-mosaichat)
+      * [General interfaces of mosaicHAT](#General-interfaces-of-mosaichat)
       * [Connecting to Raspberry Pi](#connecting-to-raspberry-pi)
       * [Connecting an antenna](#connecting-an-antenna)
       * [USB Communication](#usb-communication)
@@ -70,7 +70,7 @@ HAT stands for “Hardware Attached on Top”. It is a new hardware specificatio
 With 4 mounting holes the connection between the Raspberry Pi and the add-on board is very robust. 
 
 ### Can I buy it?
-At this moment we do not know of anybody who sells the manufactured version of this board. However, you can use the reference design, layout and Bill Of Materials and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
+At this moment we do not know of anybody who sells the manufactured version of this board. However, you can use the reference design, layout and Bill Of Materials from this project and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
 
 #### Do I need to source special components for producing this board?
 Not really, most of the components are generic enough. All components used are available on Digi-Key and clearly listed in the project's Bill Of Materials. The mosaic GNSS module can be obtained from Digikey or directly from Septentrio. Should your project be larger then we recommend you to contact Septentrio sales team directly at <sales@septentrio.com>.
@@ -137,7 +137,7 @@ This project contains two important sections for documentation. The first one wh
 
 ## mosaicHAT user documentation
 ### mosaicHAT Manufacturing and Assembly
-You can use the reference design, layout files from this project and contact your local manufacturing company for producing it. Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board  (both PCB and assembly can be done by them).
+You can use the reference design, layout and Bill Of Materials files from this project and contact your local manufacturing company for producing it. Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board  (both PCB and assembly can be done by them).
 
 #### Elements to provide when manufacturing the board
 
@@ -161,7 +161,7 @@ You can order the mosaic-X5 from [Digikey](https://www.digikey.com/en/product-hi
 |Septentrio part number| 410322|
 
 
-### general interfaces of mosaicHAT
+### General interfaces of mosaicHAT
 The board exposes the following interfaces:
 <img src="doc_resources/mosaicHAT_features.png" width="80%">
 
