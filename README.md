@@ -528,7 +528,7 @@ Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Dec
 
 In the figure above:
 
-1. Regulator's circuit.
+1. Voltage Regulator (LD1117AS33TR).
 
 2. Raspberry Pi power source (5V pins).
 
