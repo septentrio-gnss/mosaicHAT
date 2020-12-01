@@ -13,7 +13,7 @@ License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Comm
 Click to watch this video introducing mosaicHAT
 
   <a href="https://youtu.be/61qiGfSO6_o">
-         <img alt="Qries" src="doc_resources/yt_jamal.PNG" width=70%">
+         <img alt="Intro to mosaicHAT" src="doc_resources/yt_jamal.PNG" width=70%">
   </a>
 
 
@@ -54,6 +54,7 @@ Table of contents
       * [LEDs](#leds)
       * [Clock Frequency Reference ](#clock-frequency-reference )
    * [Further improvements](#further-improvements)
+   * [mosaicHAT News](#mosaicHAT-News)
 <!--te-->
 
 ## Introduction to mosaicHAT
@@ -697,7 +698,6 @@ Layout connections for REF and 2V8.
 
 <img src="doc_resources/REF_2V8_lyo.png" width="60%">
 
-
 ## Further improvements
 Further improvements or recommendations on this project are welcome either here or on spinoff projects.
 Here some possible improvements to the current design.
@@ -708,4 +708,15 @@ Here some possible improvements to the current design.
    * Addition of Ethernet communication
    * A 3D housing enclosure on the mosaicHAT for easy tests
    * More open source scripts for communication
+   
+ ### mosaicHAT News
+ 
+mosaicHAT has been taken in a GNSS/RTK drive to the lowest point on earth's land - The Dead Sea (-400m Sea Level).
+Click to watch the journey on Youtube:
+
+  <a href="https://www.youtube.com/watch?v=oSGx1Yk3dLs&ab_channel=JamalSa%27d">
+         <img alt="mosaicHAT's jounrney to the Dead Sea" src="doc_resources/deadsea_yt.png" width=70%">
+  </a>
+
+
 
