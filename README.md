@@ -709,7 +709,7 @@ Here some possible improvements to the current design.
    * A 3D housing enclosure on the mosaicHAT for easy tests
    * More open source scripts for communication
    
- ### mosaicHAT News
+ ## mosaicHAT News
  
 mosaicHAT has been taken in a GNSS/RTK drive to the lowest point on earth's land - The Dead Sea (-400m Sea Level).
 Click to watch the journey on Youtube:
