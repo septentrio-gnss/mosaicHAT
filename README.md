@@ -27,6 +27,7 @@ Table of contents
       * [What is the mosaic module?](#what-is-the-mosaic-module)
       * [Who is Septentrio?](#who-is-septentrio)
       * [Is the project Open Source?](#is-the-project-open-source)
+      * [mosaicHAT News](#mosaicHAT-News)
       * [Disclaimer](#disclaimer)
    * [mosaicHAT user documentation](#mosaichat-user-documentation)
       * [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
@@ -54,7 +55,7 @@ Table of contents
       * [LEDs](#leds)
       * [Clock Frequency Reference ](#clock-frequency-reference )
    * [Further improvements](#further-improvements)
-   * [mosaicHAT News](#mosaicHAT-News)
+   
 <!--te-->
 
 ## Introduction to mosaicHAT
@@ -124,6 +125,16 @@ With open source it means that the following is provided:
 
 More info about licensing can be found here: 
 <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a>
+
+### mosaicHAT News
+ 
+mosaicHAT has been taken in a GNSS/RTK drive to the lowest point on earth's land - The Dead Sea (-400m Sea Level).
+Click to watch the journey on Youtube:
+
+  <a href="https://www.youtube.com/watch?v=oSGx1Yk3dLs&ab_channel=JamalSa%27d">
+         <img alt="mosaicHAT's jounrney to the Dead Sea" src="doc_resources/deadsea_yt.png" width=70%">
+  </a>
+
 
 ### Disclaimer
 <img src="doc_resources/warning.jpg" width="7%">
@@ -709,14 +720,5 @@ Here some possible improvements to the current design.
    * A 3D housing enclosure on the mosaicHAT for easy tests
    * More open source scripts for communication
    
- ## mosaicHAT News
- 
-mosaicHAT has been taken in a GNSS/RTK drive to the lowest point on earth's land - The Dead Sea (-400m Sea Level).
-Click to watch the journey on Youtube:
-
-  <a href="https://www.youtube.com/watch?v=oSGx1Yk3dLs&ab_channel=JamalSa%27d">
-         <img alt="mosaicHAT's jounrney to the Dead Sea" src="doc_resources/deadsea_yt.png" width=70%">
-  </a>
-
 
 
