@@ -131,7 +131,7 @@ More info about licensing can be found here:
 mosaicHAT has been taken in a GNSS/RTK drive to the lowest point on earth's land - The Dead Sea (-400m Sea Level).
 Click to watch the journey on Youtube:
 
-  <a href="https://www.youtube.com/watch?v=oSGx1Yk3dLs&ab_channel=JamalSa%27d">
+  <a href="https://youtu.be/uEW19nMdrRw">
          <img alt="mosaicHAT's jounrney to the Dead Sea" src="doc_resources/deadsea_yt.png" width=70%">
   </a>
 
