@@ -330,6 +330,8 @@ In the following example, the common Bluetooth module (HC-06) has been used to c
 
 <img src="doc_resources/FTDI_bluetooth.jpg" width="60%">
 
+
+<img src="doc_resources/mosaicHAT_withBT.png" width="60%">
 #### Indicator LEDs
 The following LEDs are defined on the mosaicHAT:
 
