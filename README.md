@@ -186,7 +186,7 @@ mosaicHAT could be easily attached on Raspberry Pi as shown here:
 If the direct headers connection is expanded for illustration, they will look like:
 
 Power connections:
-<img src="mosiacHAT_RPi_connections_power.png" width="60%">
+<img src="doc_resources/mosiacHAT_RPi_connections_power.png" width="60%">
 
 |Colour |Type |
 |--------|----------|
@@ -195,7 +195,7 @@ Power connections:
 
 Communication connections
 
-<img src="mosiacHAT_RPi_connections.png" width="60%">
+<img src="doc_resources/mosiacHAT_RPi_connections.png" width="60%">
 
 |Colour |Type |
 |--------|----------|
