@@ -409,6 +409,8 @@ EVENTs could be tested directly on mosaicHAT board by connecting PPS Output to o
 
 <img src="doc_resources/events_testing.jpg" width="60%">
 
+<img src="doc_resources/events-pps.png" width="60%">
+
 To monitor EVENTs through web interface, go to PPS/Timing from GNSS menu:
 
 <img src="doc_resources/Events_interface.png" width="60%">
