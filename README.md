@@ -334,9 +334,13 @@ mosaicHAT-HC-06 connections:
 
 <img src="doc_resources/mosaicHAT_withBT.png" width="60%">
 
-FTDI connector could be also used to convert TTL to RS-232. A more detailed schematic could be found in mosaic Hardware manual.
+FTDI connector could be used to convert TTL to RS-232. A more detailed schematic could be found in mosaic Hardware Manual.
 
 <img src="doc_resources/mosaic-rs232.png" width="70%">
+
+TTL to USB connections:
+
+<img src="doc_resources/mosaicHAT_USB.png" width="60%">
 
 #### Indicator LEDs
 The following LEDs are defined on the mosaicHAT:
