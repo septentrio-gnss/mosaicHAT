@@ -183,6 +183,26 @@ mosaicHAT could be easily attached on Raspberry Pi as shown here:
 
 <img src="doc_resources/mosaicHAT_attached_RPi.png" width="60%">
 
+If the direct headers connection is expanded for illustration, they will look like:
+
+Power connections:
+<img src="mosiacHAT_RPi_connections_power.png" width="60%">
+
+|Colour |Type |
+|--------|----------|
+|Red | +5V |
+|Black | GND|
+
+Communication connections
+
+<img src="mosiacHAT_RPi_connections.png" width="60%">
+
+|Colour |Type |
+|--------|----------|
+|Blue | Serial UART |
+|Orange | General LEDs |
+|Purple | Reset |
+
 #### Preparing Raspberry Pi
 
 To enable communication between mosaicHAT and Raspberry Pi (RPi), you should make sure needed communication permissions are set. We've tested mosaicHAT with both Raspbian OS and Ubuntu OS on RPi and found the following points needed.
