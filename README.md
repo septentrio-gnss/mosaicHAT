@@ -183,7 +183,7 @@ mosaicHAT could be easily attached on Raspberry Pi as shown here:
 
 <img src="doc_resources/mosaicHAT_attached_RPi.png" width="60%">
 
-If the direct headers connection is expanded for illustration, they will look like:
+If the direct headers' connections were expanded for illustration, they will look like:
 
 Power connections:
 
