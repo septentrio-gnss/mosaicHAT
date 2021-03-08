@@ -189,7 +189,7 @@ Power connections:
 
 <img src="doc_resources/mosiacHAT_RPi_connections_power.png" width="60%">
 
-|Colour |Type |
+|Wires |Type |
 |--------|----------|
 |Red | +5V |
 |Black | GND|
@@ -198,7 +198,7 @@ Communication connections
 
 <img src="doc_resources/mosiacHAT_RPi_connections.png" width="60%">
 
-|Colour |Type |
+|Wires |Type |
 |--------|----------|
 |Blue | Serial UART |
 |Orange | General LEDs |
