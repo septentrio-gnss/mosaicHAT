@@ -132,7 +132,7 @@ More info about licensing can be found here:
 Low-cost survey-grade GNSS mosaicHAT Station built by Prof. Suzuki from Chiba Institute Of Technology, Japan. The receiver comes with touch display to use the webUI of Septentrio mosaic-X5 GNSS module receiver. Click to visit the project's github repo.
 
  <a href="https://github.com/taroz/mosaicHAT-Station">
-         <img alt="mosaicHAT station" src="doc_resources/mosaicHAT_station.gif" width=70%">
+         <img alt="mosaicHAT station" src="doc_resources/mosaicHAT_station.gif" width=50%">
   </a>
 
 #### Drive test to Dead Sea with RTK corrections 
