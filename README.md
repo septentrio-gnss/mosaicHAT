@@ -128,6 +128,14 @@ More info about licensing can be found here:
 
 ### mosaicHAT News
  
+#### Survey-grade GNSS receiver based on mosaicHAT, by Chiba Institue of Technologyy.
+Low-cost survey-grade GNSS mosaicHAT Station built by Prof. Suzuki from Chiba Institute Of Technology, Japan. The receiver comes with touch display to use the webUI of Septentrio mosaic-X5 GNSS module receiver. Click to visit the project's github repo.
+
+ <a href="https://github.com/taroz/mosaicHAT-Station">
+         <img alt="mosaicHAT station" src="doc_resources/mosaicHAT_station.gif" width=70%">
+  </a>
+
+#### Drive test to Dead Sea with RTK corrections 
 mosaicHAT has been taken in a GNSS/RTK drive to the lowest point on earth's land - The Dead Sea (-400m Sea Level).
 Click to watch the journey on Youtube:
 
