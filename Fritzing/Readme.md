@@ -4,5 +4,6 @@ Fritzing open source tool is widely used to design electronic projects and draw 
 
 ## mosaicHAT SVG
 
+<img src="../doc_resources/mosaicHAT_keyselling.png" width="80%">
 
 ## mosaicHAT Fritzing part
