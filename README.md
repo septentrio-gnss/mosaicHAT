@@ -109,7 +109,7 @@ This project makes the following deliverables for both integrators and designers
 |mosaic_design_components/mosaic3D.stp| mosaic 3D object |
 |BOM/mosaicHAT_BOM.xlsx| mosaicHAT Bill of Materials |
 |Fritzing/mosaicHAT.fzpz| mosaicHAT Fritzing part |
-|mosaicHAT/Fritzing/mosaicHAT_Graphic.svg| mosaicHAT SVG |
+|Fritzing/mosaicHAT_Graphic.svg| mosaicHAT SVG |
 
 
 
