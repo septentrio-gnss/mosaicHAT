@@ -43,7 +43,7 @@ Table of contents
       * [Events](#events)
       * [Python Script](#python-script)
       * [ROS support with ROSaic](#ros-support-with-rosaic)
-      * [Arduino support for mosaicHAT](#arduino-support-with-mosaichat)
+      * [Arduino support for mosaicHAT](#arduino-support-for-mosaichat)
    * [mosaicHAT Design documentation](#mosaichat-design-documentation)
       * [mosaic Pinout](#mosaic-pinout)
       * [Power Sources](#power-sources)
@@ -520,7 +520,7 @@ ROSaic is also an open source project and can be found here:
    
    * Github : [https://github.com/septentrio-gnss/septentrio_gnss_driver](https://github.com/septentrio-gnss/septentrio_gnss_driver)
 
-#### Arduino Support for mosaicHAT
+#### Arduino support for mosaicHAT
 <img src="doc_resources/mosaicHAT_Arduino.png" width="60%">
 The mosaicHAT can also work with Arduino. Take a look at the following project at Instructables.
 mosaicHAT Arduino is also an open source project and can be found here:
