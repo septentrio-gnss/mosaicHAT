@@ -43,6 +43,7 @@ Table of contents
       * [Events](#events)
       * [Python Script](#python-script)
       * [ROS support with ROSaic](#ros-support-with-rosaic)
+      * [Arduino support for mosaicHAT](#arduino-support-with-mosaichat)
    * [mosaicHAT Design documentation](#mosaichat-design-documentation)
       * [mosaic Pinout](#mosaic-pinout)
       * [Power Sources](#power-sources)
