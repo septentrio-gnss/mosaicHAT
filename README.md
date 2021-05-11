@@ -519,6 +519,16 @@ ROSaic is also an open source project and can be found here:
    
    * Github : [https://github.com/septentrio-gnss/septentrio_gnss_driver](https://github.com/septentrio-gnss/septentrio_gnss_driver)
 
+#### Arduino Support for mosaicHAT
+<img src="doc_resources/mosaicHAT_Arduino.png" width="60%">
+The mosaicHAT can also work with Arduino. Take a look at the following project at Instructables.
+mosaicHAT Arduino is also an open source project and can be found here:
+
+   * Instructables page : [https://www.instructables.com/Building-a-GNSS-Receiver-Using-MosaicHAT-and-Ardui/](https://www.instructables.com/Building-a-GNSS-Receiver-Using-MosaicHAT-and-Ardui/)
+   
+   * Github : [https://github.com/septentrio-gnss/mosaicHAT_Arduino_receiver](https://github.com/septentrio-gnss/mosaicHAT_Arduino_receiver)
+
+
 ## mosaicHAT Design documentation
 
 This section is intended for people who want to understand more about the design of the mosaicHAT.
