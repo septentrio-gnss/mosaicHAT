@@ -44,6 +44,7 @@ Table of contents
       * [Python Script](#python-script)
       * [ROS support with ROSaic](#ros-support-with-rosaic)
       * [Arduino support for mosaicHAT](#arduino-support-for-mosaichat)
+      * [Using the Fritzing Schematics](#using-the-fritzing-schematics)
    * [mosaicHAT Design documentation](#mosaichat-design-documentation)
       * [mosaic Pinout](#mosaic-pinout)
       * [Power Sources](#power-sources)
@@ -529,6 +530,10 @@ mosaicHAT Arduino is also an open source project and can be found here:
    
    * Github : [https://github.com/septentrio-gnss/mosaicHAT_Arduino_receiver](https://github.com/septentrio-gnss/mosaicHAT_Arduino_receiver)
 
+#### Using the Fritzing Schematics
+[Fritzing](https://fritzing.org/) is an open-source hardware initiative that makes electronics accessible as a creative material for anyone. They offer a software tool, a community website and services in the spirit of using among others Arduino and to facilitate the layout and manufacturing of professional pcbs.
+
+Jamal to add something here... THE FILE <file> CAN BE USED..... blablablabla
 
 ## mosaicHAT Design documentation
 
