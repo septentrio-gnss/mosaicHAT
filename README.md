@@ -533,7 +533,7 @@ mosaicHAT Arduino is also an open source project and can be found here:
 #### Using the Fritzing Schematics
 [Fritzing](https://fritzing.org/) is an open-source hardware initiative that makes electronics accessible as a creative material for anyone. They offer a software tool, a community website and services in the spirit of using among others Arduino and to facilitate the layout and manufacturing of professional pcbs.
 
-Jamal to add something here... THE FILE <file> CAN BE USED..... blablablabla
+mosaicHAT fritzing part could be downloaded from here [https://github.com/septentrio-gnss/mosaicHAT/tree/master/Fritzing]
 
 ## mosaicHAT Design documentation
 
