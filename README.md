@@ -535,7 +535,7 @@ mosaicHAT Arduino is also an open source project and can be found here:
 
 <img src="doc_resources/fritzing_screenshot.JPG" width="60%">
 
-Fritzing is widely used to design and demonstrate electronics projects. With breadboard, schematic, and layout views designers can have a clear intuition on how the project will work and look like. mosaicHAT fritzing part could be downloaded from [here](Fritzing). Drag and drop the *.fzpz* file into fritzing interface or import through File>Open from the Menu Bar.
+mosaicHAT fritzing part could be downloaded from [here](Fritzing). Drag and drop the *.fzpz* file into fritzing interface or import through File>Open from the Menu Bar. With breadboard, schematic, and layout views designers can have a clear intuition on how the project will work and look like.
 
 ## mosaicHAT Design documentation
 
