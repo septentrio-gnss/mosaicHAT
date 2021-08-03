@@ -276,7 +276,7 @@ Please make sure you get the right jumper so you can also set the right voltage 
                                                         
 Note: mosaicHAT board contains only one voltage regulator (3.3V). The 5V line is directly connected to power sources. As both RPi and USB supply 5V, using them for powering should not impose any threat. However, powering through external power headers should be done carefully. The VANT (Antenna voltage) pad of mosaic module is directly connected to the external +5V pin.  **IT IS NOT PROTECTED AGAINST HIGHER VOLTAGES**. According to mosaic hardware manual, VANT accepts 3V to 5.5V supply.
 
-When using the external power supply, make sure it is not more than 5V. **If more than 5V source is desired, make sure the two PWR jumpers are connected to 3V3 pin, or removed**. Supplying higher voltages to VANT could damage the module.
+When using the external power supply, make sure it is not more than 5V. **If more than 5V source is desired, make sure the two PWR jumpers are connected to 3V3 pin, or removed. Supplying higher voltages to VANT could DAMAGE the module.**
 
 
 In the following photo, a Tallysman antenna has been connected to mosaicHAT. Jumper has been placed to supply 5V to antenna.
@@ -604,7 +604,7 @@ Note that a second un-assembled capacitor place has been left for debugging and 
 
 mosaicHAT could be powered through three options; Raspberry Pi, Micro USB and external power pin headers. mosaic module itself runs on 3.3V, thus a voltage regulator is used (LD1117AS33TR). According to its datasheet, the regulator's maximum input is 15V. Raspberry Pi and Micro USB already provide 5V. User should be careful when connecting higher voltage to external power pin headers. Though 5V is preferable, user can input up to 15V only if both VANT and FTDI PWR SRC jumpers are unconnected or connected to 3.3V. Pin headers of 5V in the jumpers are connected directly to input sources as it's presumed to be 5V.
                    
-Note: It is recommended to isolate external power sources from mosaic pads. Adding a dedicated 5V regulator is a safer option if 5V antenna supply is needed. Supplying higher voltages to VANT could damage the module.
+Note: It is recommended to isolate external power sources from mosaic pads. Adding a dedicated 5V regulator is a safer option if 5V antenna supply is needed. **Supplying higher voltages to VANT could DAMAGE the module.**
 
 Schottky diodes (MBRX120LF-TP) are used to insure one-way current direction. Decoupling capacitors (100nF and 10uF) are used according to regulator’s datasheet. Following is the power part of schematic.
 
