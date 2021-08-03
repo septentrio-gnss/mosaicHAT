@@ -270,8 +270,14 @@ There are also different antenna types each of them suitable for different appli
 <img src="doc_resources/antennas.png" width="60%">
 
 Please make sure you get the right jumper so you can also set the right voltage depending on the chosen GNSS antenna.
+                                              
 
 <img src="doc_resources/vant_jumper_new.jpg" width="50%">
+                                                        
+Note: mosaicHAT board contains only one voltage regulator (3.3V). The 5V line is directly connected to power sources. As both RPi and USB supply 5V, using them for powering should not impose any threat. However, powering through external power headers should be done carefully. The VANT (Antenna voltage) pad of mosaic module is directly connected to the external +5V pin.  **IT IS NOT PROTECTED AGAINST HIGHER VOLTAGES**. According to mosaic hardware manual, VANT accepts 3V to 5.5V supply.
+
+When using the external power supply, make sure it is not more than 5V. **If more than 5V source is desired, make sure the two PWR jumpers are connected to 3V3 pin, or removed**. Supplying higher voltages to VANT could damage the module.
+
 
 In the following photo, a Tallysman antenna has been connected to mosaicHAT. Jumper has been placed to supply 5V to antenna.
 
