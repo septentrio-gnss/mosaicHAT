@@ -75,9 +75,15 @@ HAT stands for “Hardware Attached on Top”. It is a new hardware specificatio
 With 4 mounting holes the connection between the Raspberry Pi and the add-on board is very robust. 
 
 ### Can I buy it?
-#### Buy at Ardusimple
-Yes, the mosaicHAT can now be purchased from Ardusimple directly.
-https://www.ardusimple.com/product/septentrio-mosaichat/
+#### Buy at Ardusimple now
+Yes, the mosaicHAT can now be purchased from Ardusimple directly. Ardusimple is a company which produces easy to use GNSS RTK systems. They can sell the mosaicHAT directly as well as other mosaic based GNSS boards.
+</br>
+Website: https://www.ardusimple.com/product/septentrio-mosaichat/
+
+<a href="https://www.ardusimple.com/product/septentrio-mosaichat/">
+         <img alt="Ardusimple store" src="doc_resources/ardusimple-logo.png" width=50%">
+</a>
+
 
 #### Produce yourself
 You can also use the reference design, layout and Bill Of Materials from this project and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
