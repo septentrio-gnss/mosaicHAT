@@ -6,8 +6,8 @@ mosaicHAT: A GNSS HAT for Raspberry PI </br>
 Author: (Jamal Sa'd) <jamalhazem127@gmail.com> </br>
 Maintainer: (Septentrio gnss github user) <githubuser@septentrio.com> </br>
 External website: https://github.com/septentrio-gnss/mosaicHAT </br>
-License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a>
-Available for purchase here: https://www.ardusimple.com/product/septentrio-mosaichat/
+License: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike License.</a> and <a href="https://www.oshwa.org/definition/">Open Source HW</a> </br>
+Available for purchase here: https://www.ardusimple.com/product/septentrio-mosaichat/ </br>
 
 <img src="doc_resources/mosaicHAT_keyselling.png" width="80%">
 
