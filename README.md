@@ -89,7 +89,7 @@ Website: https://www.ardusimple.com/product/septentrio-mosaichat/
 You can also use the reference design, layout and Bill Of Materials from this project and contact your local manufacturing company for producing it (no restrictions). Within this project we have used [Eurocircuits](https://www.eurocircuits.com/) who can be quite fast in producing a board for you (both PCB and assembly can be done by them). Section [mosaicHAT Manufacturing and Assembly](#mosaichat-manufacturing-and-assembly)
 
 ##### Do I need to source special components for producing this board?
-Not really, most of the components are generic enough. All components used are available on Digi-Key and clearly listed in the project's Bill Of Materials. The mosaic GNSS module can be obtained from Digikey or directly from Septentrio. Should your project be larger then we recommend you to contact Septentrio sales team directly at <sales@septentrio.com>.
+Not really, most of the components are generic enough. All components used are available on Digi-Key and clearly listed in the project's Bill Of Materials. The mosaic GNSS module can be obtained from Digikey or directly from Septentrio. Should your project be larger then we recommend you to contact Septentrio sales team directly at <a href="https://www.septentrio.com/en/contact/ask-question">Septentrio Contact Page</a>.
 
 ### What is the mosaic module?
 #### mosaic-X5
