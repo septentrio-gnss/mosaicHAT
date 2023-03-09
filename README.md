@@ -63,7 +63,7 @@ Table of contents
 
 ## Introduction to mosaicHAT
 ### What is mosaicHAT?
-The mosaicHAT is an Open Source GPS/GNSS HW PCB HAT which integrates <a href="https://www.septentrio.com/en/products/gnss-receivers/rover-base-receivers/receivers-module/mosaic">Septentrio's mosaic-X5</a> GNSS module (and other Septentrio pin compatible modules such as <a href="https://www.septentrio.com/en/products/correction-services/precise-point-positioning-services-land/secorx-s/mosaic-sx">Septentrio's mosaic-Sx</a>) with basic communications and which can be stacked into a Raspberry Pi system. 
+The mosaicHAT is an Open Source GPS/GNSS HW PCB HAT which integrates <a href="https://www.septentrio.com/en/products/gnss-receivers/rover-base-receivers/receivers-module/mosaic">Septentrio's mosaic-X5</a> GNSS module (and other Septentrio pin compatible modules) with basic communications and which can be stacked into a Raspberry Pi system. 
 
 The goal of the design is to allow easy HW prototyping using the mosaic-X5 GNSS module taking the advantage of the computer ecosystem provided by the Raspberry Pi environment. The board however can also be used standalone since it can be powered either via USB or via power pins. 
 This project and design can be used either produced with your local electronics assembly house or can also be used as a starting point for your own HW integrations.
@@ -95,11 +95,11 @@ Not really, most of the components are generic enough. All components used are a
 #### mosaic-X5
 <a href="https://www.septentrio.com/en/products/gnss-receivers/rover-base-receivers/receivers-module/mosaic">Septentrio's mosaic-X5</a>, a multi-band, multi-constellation GNSS receiver in a low power surface mount module with a wide array of interfaces, designed for mass market applications like robotics and autonomous systems, capable of tracking all Global Navigation Satellite System (GNSS) constellations supporting current and future signals. With unique built-in AIM+ technology for interference mitigation, Septentrio is offering a performance benchmark in mass market GNSS positioning building blocks.
 
-#### mosaic-Sx
-<a href="https://www.septentrio.com/en/products/correction-services/precise-point-positioning-services-land/secorx-s/mosaic-sx">Septentrio's mosaic-Sx</a> module offers a unique approach to GNSS positioning. It provides convenient always-on high-accuracy positioning right out of the box. No need for any additional correction service selection, subscription and maintenance. This is made possible by an integration of a PPP-RTK sub-decimeter correction service into Septentrio’s latest core GNSS technology. With all-in-view satellite tracking and unmatched anti-jamming technology mosaic-Sx offers a perfect combination of convenience and performance in a very small size factor.
-
 #### Other mosaic versions
-Any other mosaic pin compatible products could also be used on this design, however you would need to take into consideration the functions or pins which would need to exposed and then modify the design for your own project. Surely feel free to spin of the project and refer to this one should you make other open source designs based on mosaicHAT.
+
+
+
+Any <a href="https://web.septentrio.com/GH-SSN-modules c">other mosaic pin compatible products</a> could also be used on this design, however you would need to take into consideration the functions or pins which would need to exposed and then modify the design for your own project. Surely feel free to spin of the project and refer to this one should you make other open source designs based on mosaicHAT.
 
 ### Who is Septentrio?
 <img src="doc_resources/Septentrio_logo.png" width="30%">
