@@ -564,7 +564,7 @@ mosaicHAT is a 4-Layer Printed Circuit Board (PCB) designed to stack on top of R
 
 Other than the female Raspberry Pi connecter, all components are placed on the Top layer. All components are Surface Mount Devices (SMD) except for connectors.
 
-mosaicHAT was designed using [KiCAD](https://kicad-pcb.org), an open source suite for Electric Design Automation. KiCAD provides a beautiful 3D viewer besides its design capabilities.
+mosaicHAT was designed using [KiCAD](https://kicad.org), an open source suite for Electric Design Automation. KiCAD provides a beautiful 3D viewer besides its design capabilities.
 
 Following is the schematic plan, for higher quality check [PDF schematic](mosaicHAT_schematic.pdf).
 
